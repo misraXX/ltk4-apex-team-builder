@@ -1,4 +1,4 @@
-name: Validate and publish GitHub Pages
+name: Validate static site
 on:
   push:
     branches: [main]
@@ -6,19 +6,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
-concurrency:
-  group: github-pages
-  cancel-in-progress: true
 jobs:
-  publish:
+  validate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
       - name: Check syntax and team allocation rules
@@ -26,10 +16,3 @@ jobs:
           node --check site/core.js
           node --check site/app.js
           node --test tests/*.test.cjs
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: site
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
