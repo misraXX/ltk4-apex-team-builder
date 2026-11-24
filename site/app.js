@@ -59,7 +59,7 @@
   function renderTeams(){
     const d=state.draft,r=report(),done=confirmed(),provisional=active().filter(p=>state.members[p.id].rating===null).length,displayMembers=boardMembers();
     const h=done?state.history.find(h=>h.id===d.id):null;
-    const actions=`${undo.length?`<button data-action="undo">${icon('undo')}元に戻す</button>`:''}${d?`<button data-action="copy">${icon('copy')}チームをコピー</button>`:''}${done?`<button class="primary" data-action="next">次のマッチを編成</button>`:`<button class="primary" data-action="generate">${icon('shuffle')}${d?'再編成':'自動チーム分け'}</button>`}`;
+    const actions=`${undo.length?`<button data-action="undo">${icon('undo')}元に戻す</button>`:''}${d?`<button data-action="capture-teams">${icon('grid')}スクショ用一覧</button><button data-action="copy">${icon('copy')}チームをコピー</button>`:''}${done?`<button class="primary" data-action="next">次のマッチを編成</button>`:`<button class="primary" data-action="generate">${icon('shuffle')}${d?'再編成':'自動チーム分け'}</button>`}`;
     let html=`<div class="toolbar"><div class="toolbar-title"><h2>チームボード</h2><span class="match-label">MATCH ${done?state.history.length:state.history.length+1}</span></div><div class="toolbar-actions">${actions}</div></div>`;
     html+=`<div class="settings-row panel">${[['sameTeam','LTK4同チーム'],['pastTeam','過去LTK同チーム'],['sameOrganization','同じ所属組織'],['repeat','当日の同ペアを減らす']].map(([k,l])=>`<label><input type="checkbox" data-setting="${k}" ${state.settings[k]?'checked':''}>${l}</label>`).join('')}</div>`;
 
@@ -78,12 +78,27 @@
   function filterControls(kind){return `<div class="filter-row"><label class="search-field">${icon('search')}<input id="member-search" type="search" placeholder="名前で検索" aria-label="名前で検索" value="${esc(search)}"></label><select id="team-filter" aria-label="所属で絞り込み"><option value="">すべての所属</option>${window.LTK_ROSTER.teams.map(t=>`<option value="${t.id}" ${filterTeam===t.id?'selected':''}>${t.id} · ${esc(t.name)}</option>`).join('')}</select><select id="attendance-filter" aria-label="出欠で絞り込み"><option value="">出席・欠席すべて</option><option value="yes" ${filterAttendance==='yes'?'selected':''}>出席のみ</option><option value="no" ${filterAttendance==='no'?'selected':''}>欠席のみ</option></select><span id="filtered-count"></span></div><div id="${kind}-results"></div>`;}
   function filtered(){const q=search.trim().toLocaleLowerCase();return roster.filter(p=>(!q||p.name.toLocaleLowerCase().includes(q)||p.id.includes(q)||state.members[p.id].organization.toLocaleLowerCase().includes(q))&&(!filterTeam||p.team===filterTeam)&&(!filterAttendance||(state.members[p.id].attending===(filterAttendance==='yes'))));}
   function renderMembers(){
-    $('#view-content').innerHTML=`<div class="toolbar"><div class="toolbar-title"><h2>メンバー</h2></div><div class="toolbar-actions">${undo.length?`<button data-action="undo">${icon('undo')}元に戻す</button>`:''}<button data-action="research-list">調査一覧</button><button data-action="apply-research">調査値を反映</button><button data-action="all-present">全員出席</button><button data-action="all-absent">全員欠席</button></div></div>${filterControls('member')}`;
+    $('#view-content').innerHTML=`<div class="toolbar"><div class="toolbar-title"><h2>メンバー</h2></div><div class="toolbar-actions">${undo.length?`<button data-action="undo">${icon('undo')}元に戻す</button>`:''}<button data-action="capture-members">${icon('grid')}スクショ用一覧</button><button data-action="research-list">調査一覧</button><button data-action="apply-research">調査値を反映</button><button data-action="all-present">全員出席</button><button data-action="all-absent">全員欠席</button></div></div>${filterControls('member')}`;
     renderMemberRows();
   }
   function renderMemberRows(){
     const list=filtered();$('#filtered-count').textContent=list.length+'人';
-    $('#member-results').innerHTML=`<div class="member-table panel"><div class="member-table-head"><span>メンバー</span><span>所属</span><span>ランク・FPS実績</span><span>IGL適性</span><span>出欠</span><span>詳細</span></div>${list.length?list.map(p=>{const m=state.members[p.id],r=research[p.id];return `<div class="member-row ${!m.attending?'absent':''}"><div class="member-profile">${avatar(p.id)}<div><strong>${esc(p.name)}</strong><small>${esc(p.tier)} · ${esc(p.role)}</small></div></div><div>${tag(p.id)}<small class="member-organization">${esc(m.organization||'未設定')}</small></div><div><div class="rank-editor">${rankBadge(m.rank)}<select data-rank="${p.id}" aria-label="${esc(p.name)}のランク・FPS実績">${rankOptions(m.rank)}</select></div>${proBadge(p.id)}</div><select data-igl="${p.id}" aria-label="${esc(p.name)}のIGL適性">${['unknown','yes','no'].map(v=>`<option value="${v}" ${m.igl===v?'selected':''}>${labelIgl[v]}</option>`).join('')}</select><label class="attend-label"><input type="checkbox" data-attend="${p.id}" ${m.attending?'checked':''} aria-label="${esc(p.name)}の出席">${m.attending?'出席':'欠席'}</label><button class="edit-button" data-edit="${p.id}" aria-label="${esc(p.name)}の詳細を編集">編集</button></div>`;}).join(''):'<p class="list-empty">該当なし</p>'}</div>`;
+    $('#member-results').innerHTML=`<div class="member-table panel"><div class="member-table-head"><span>メンバー</span><span>所属</span><span>ランク・FPS実績</span><span>IGL適性</span><span>知り合いとの編成</span><span>出欠</span><span>詳細</span></div>${list.length?list.map(p=>{const m=state.members[p.id],r=research[p.id];return `<div class="member-row ${!m.attending?'absent':''}"><div class="member-profile">${avatar(p.id)}<div><strong>${esc(p.name)}</strong><small>${esc(p.tier)} · ${esc(p.role)}</small></div></div><div>${tag(p.id)}<small class="member-organization">${esc(m.organization||'未設定')}</small></div><div><div class="rank-editor">${rankBadge(m.rank)}<select data-rank="${p.id}" aria-label="${esc(p.name)}のランク・FPS実績">${rankOptions(m.rank)}</select></div>${proBadge(p.id)}</div><select data-igl="${p.id}" aria-label="${esc(p.name)}のIGL適性">${['unknown','yes','no'].map(v=>`<option value="${v}" ${m.igl===v?'selected':''}>${labelIgl[v]}</option>`).join('')}</select><div class="social-editor"><select data-social="${p.id}" aria-label="${esc(p.name)}の知り合いとの編成">${Object.entries(labelSocial).map(([v,label])=>`<option value="${v}"${m.social===v?' selected':''}>${label}</option>`).join('')}</select><button class="candidate-count text-button" data-edit="${p.id}" aria-label="${esc(p.name)}の同チーム候補を編集">候補 ${m.friends.length}人</button></div><label class="attend-label"><input type="checkbox" data-attend="${p.id}" ${m.attending?'checked':''} aria-label="${esc(p.name)}の出席">${m.attending?'出席':'欠席'}</label><button class="edit-button" data-edit="${p.id}" aria-label="${esc(p.name)}の詳細を編集">編集</button></div>`;}).join(''):'<p class="list-empty">該当なし</p>'}</div>`;
+  }
+  function showCapture(mode){
+    const teams=mode==='teams';
+    if(teams&&!state.draft)return;
+    $('#capture-title').textContent=teams?'チーム編成':'メンバー一覧';
+    if(teams){
+      const r=report(),h=confirmed()?state.history.find(h=>h.id===state.draft.id):null;
+      $('#capture-meta').textContent=`MATCH ${h?state.history.indexOf(h)+1:state.history.length+1} · ${state.draft.teams.length}チーム · ${state.draft.teams.flat().length}人${h?' · 確定済み':''}${h&&h.pointSystem!=='fps-evidence-v1'?' · 旧基準':''}${!r.valid?' · 要調整':''}`;
+      const cards=$('.team-grid').innerHTML.replace(/<button class="team-member/g,'<div class="team-member').replace(/<\/button>/g,'</div>').replace(/ data-select="[^"]*"/g,'').replace(/ disabled/g,'');
+      $('#capture-content').innerHTML=`<div class="capture-team-grid">${cards}</div>`;
+    }else{
+      $('#capture-meta').textContent=`${roster.length}人 · 出席 ${active().length}人`;
+      $('#capture-content').innerHTML=`<div class="capture-member-grid">${window.LTK_ROSTER.teams.map(t=>`<section class="capture-group org-${t.id}" aria-label="${t.id}のメンバー"><header><span class="team-tag"><i class="dot"></i>${esc(t.id)}</span><strong>${esc(t.name)}</strong><span>15人</span></header><div class="capture-people">${roster.filter(p=>p.team===t.id).map(p=>{const m=state.members[p.id];return `<article class="capture-person ${m.attending?'':'absent'}" data-member-id="${p.id}"><img class="avatar" src="${p.avatar}" width="32" height="32" alt="" loading="eager"><div class="capture-person-main"><div class="capture-person-title"><strong>${esc(p.name)}</strong>${!m.attending?'<span class="capture-absent">欠席</span>':''}${pointTag(m)}</div><div class="capture-person-details"><span class="capture-rank">${C.ranks[m.rank]}</span><span class="capture-social ${m.social}">${labelSocial[m.social]}</span><span class="capture-igl ${m.igl}">IGL ${labelIgl[m.igl]}</span></div></div></article>`;}).join('')}</div></section>`).join('')}</div>`;
+    }
+    $('#capture-dialog').showModal();
   }
   function renderRelations(){
     $('#view-content').innerHTML=`<div class="toolbar"><h2>関係性</h2>${undo.length?`<button data-action="undo">${icon('undo')}元に戻す</button>`:''}</div>${filterControls('relation')}`;renderRelationRows();
@@ -146,6 +161,8 @@
     if(navigator.clipboard?.writeText)navigator.clipboard.writeText(text).then(()=>toast('チーム一覧をコピーしました')).catch(()=>message('チーム一覧',text));else message('チーム一覧',text);
   }
   const actions={generate,undo:()=>{if(!undo.length)return;state=undo.pop();selected=null;save();render();toast('ひとつ前の状態に戻しました');},'cancel-swap':()=>{selected=null;renderTeams();},copy:copyTeams,confirm:()=>{if(confirmed())return;confirmAction('この編成でマッチを確定しますか？','実際に使うチームだけを確定してください。次の編成から同じペアの回数に反映します。',()=>{try{mutate(()=>state=C.confirmMatch(state,roster));toast('マッチを確定して履歴に記録しました');}catch(e){message('確定できません',e.message);}},'マッチを確定');},next:generate,'all-present':()=>confirmAction('全員を出席にしますか？','60人すべてを出席に変更します。',()=>mutate(()=>roster.forEach(p=>state.members[p.id].attending=true))),'all-absent':()=>confirmAction('全員を欠席にしますか？','その後、参加する人だけ出席にできます。',()=>mutate(()=>roster.forEach(p=>state.members[p.id].attending=false))),'new-event':()=>confirmAction('当日の履歴をリセットしますか？','履歴と現在のチーム案をリセットします。ランク・IGL・関係性・出欠は残ります。必要なら先に設定を書き出してください。元に戻す操作も可能です。',()=>mutate(()=>{state.history=[];state.draft=null;selected=null;}),'履歴をリセット')};
+  actions['capture-members']=()=>showCapture('members');
+  actions['capture-teams']=()=>showCapture('teams');
   actions['research-list']=showResearch;
   actions['apply-research']=()=>confirmAction('調査値を反映しますか？','未確認・未設定の項目だけを補完します。設定済みのランクは保持します。',()=>{mutate(()=>applyResearch(state));toast('調査値を反映しました');},'反映する');
   document.addEventListener('click',event=>{
@@ -162,6 +179,12 @@
     if(el.dataset.rank)mutate(()=>{const m=state.members[el.dataset.rank];m.rank=el.value;m.rating=C.rankRating(el.value);});
     if(el.id==='edit-rank')$('#edit-rank-icon').innerHTML=rankBadge(el.value);
     if(el.dataset.igl)mutate(()=>state.members[el.dataset.igl].igl=el.value);
+    if(el.dataset.social){
+      const id=el.dataset.social,value=el.value,m=state.members[id];
+      if(value==='required'&&!m.friends.length){
+        el.value=m.social;openEditor(id);$('#edit-social').value='required';toast('同チーム候補を1人以上選択してください');
+      }else mutate(()=>state.members[id].social=value);
+    }
     if(el.dataset.setting)mutate(()=>state.settings[el.dataset.setting]=el.checked);
     if(el.id==='team-filter'){filterTeam=el.value;view==='members'?renderMemberRows():renderRelationRows();}
     if(el.id==='attendance-filter'){filterAttendance=el.value;view==='members'?renderMemberRows():renderRelationRows();}
