@@ -42,3 +42,5 @@ npm.cmd run serve
 `site/roster.js` と同梱人物アイコンは既存LTK4資料から抽出しました。公開活動名・LTK所属の参考データであり、APEX戦力・IGL・私的な関係性を推測していません。既存資料とsourcesは変更していません。生成元の確認情報は `docs/roster-source.json`、補助抽出スクリプトは `tools/extract-roster.cjs` です。抽出スクリプトの再実行には元の隣接BPプロジェクトが必要ですが、ツールの起動・公開には不要です。
 
 仕様と検証の記録は `docs/design.md`、`docs/task-board.md`、`docs/cycle-report.md`、`docs/codex-report.md` を参照してください。
+
+公開URL: https://misraxx.github.io/ltk4-apex-team-builder/

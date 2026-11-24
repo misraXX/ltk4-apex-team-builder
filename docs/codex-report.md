@@ -99,3 +99,34 @@ codex-meta:
 実施: AI運用テンプレ生成CLIをprofile指定で実行し、独立フォルダへコピー。既存名簿60人を構造として読み、GitHubとCloudflare公式資料を確認。profile・設計・タスク・役割別記録を作成した。本体コードは未作成。外部サービス・DB・認証・公開は未実施。
 
 設計整合: 当初の静的単独案に対し2人同期と限定閲覧が追加されたため、変更案を具体化し実装前停止。テスト: CLI成功と名簿構造の確認のみ。本体テストは未実施。既存sources・アプリ・正本・サイトは変更していない。
+
+## 2026-11-24 初版実装・GitHub Pages公開
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "completed"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "公開URLを開き、実際の評価・IGL・関係性・出欠を設定してゆふなさんへ渡す"
+  nextCodexAction: "初回利用のフィードバックに沿って調整する"
+```
+
+成果物: https://misraxx.github.io/ltk4-apex-team-builder/
+
+コード: https://github.com/misraXX/ltk4-apex-team-builder
+
+公開コードコミット: fd7e7c2。Actions run: https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45374965110 （success）。
+
+主な作成ファイル: site/index.html、styles.css、app.js、core.js、roster.js、人物画像60件、mark.svg、tests/core.test.cjs、tools/serve.cjs、tools/extract-roster.cjs、package.json、.github/workflows/pages.yml、README、運用ドキュメント。既存プロジェクトの本体・データ・sourcesは変更していない。
+
+実装: 出欠/1〜10点/IGL/個人の知り合い条件、自動編成、2人チーム、単独/ペアを入れ替える探索、手動交換/Undo、確定とスナップショット履歴、再編成、ブラウザ保存、検証付きJSON入出力、HTML簡易パス。UIは既存の白系LTK4に合わせた。
+
+設計整合: 本人の最新指示どおり回避可能なHTMLパスを採用し、Cloudflare/Firebase/外部DB/外部認証を使わない。保存/データ構造/公開範囲はdesign.mdへ記載。自動同期と厳密2人限定は実装しておらず、TASK-007/008として明示した。
+
+実行: npm.cmd run check（合格）、npm.cmd test（16/16合格）、画像60件のPillow verify（合格）、ブラウザの実操作検証、GitHub Actionsによる構文/16テスト/Pages公開（success）、公開HTML/JS/CSS/名簿/画像のHEAD（200）。ブラウザの検証詳細はcycle-report.md。qa/public-desktop.jpg、qa/public-mobile.jpg、qa/roundtrip-settings.jsonをローカルに保存し、Git/公開対象には含めていない。
+
+セキュリティ確認: 本人が認めた簡易ロックであり、暗号化や強固な認証は主張しない。入力した設定をサーバー・URLへ送信しない。JSONを全体検証してから確認付きで置換し、入力文字はエスケープする。公開物に検証用の主観評価や私的関係性、秘密の資格情報は含めていない。
+
+未対応: 2人の自動同期、厳密な2人限定。未実施: 実スマートフォンでの操作・APEX本番の受け入れ。実際の評価/IGL/関係性の入力は運営者が行う。変更ファイルと役割別の結果はtask-board/cycle-reportを参照。
