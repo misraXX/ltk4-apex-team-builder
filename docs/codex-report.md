@@ -320,3 +320,20 @@ codex-meta:
 ```
 
 TASK-033。変更site/styles.css/index.html/package、README/設計/各記録。通常画面のPC5列専用CSSを取り除き、元の3/2/1列とカード表示に復元。スクショ5×4とメンバー条件列は保持、最新本人指示と設計に整合。ブラウザ確認はCYCLE-008参照。データ/保存/計算/外部連携/認証変更なし。実機スマホ/本番は未実施。公開前。
+
+## 2026-11-24 v5.1.1 公開完了
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "completed"
+  humanCheckNeeded: false
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "通常画面とスクショ用一覧を使い分ける"
+  nextCodexAction: "追加要望へ対応"
+```
+
+TASK-033完了。通常チーム画面を元のPC3列/中幅2列/スマホ1列、大きめのアイコン・カードに復元し、スクショ専用の5×4は維持。メンバー条件列も保持。変更ファイルと設計整合は公開前記録、役割別結果はCYCLE-008。56テスト・構文・通常3/2/1とスクショ20チーム60人5×4・文字重なり0・モバイルはみ出しなしを確認。
+
+公開URL https://misraxx.github.io/ltk4-apex-team-builder/ 。コードdc69a11ba98c4bc92cee304039dce80c485ff72e、Pages639fad5d598eb29cb94d263b68d7e8eeea78c09a built、CI45395071054/Pages45395099747 success。公開HTML/CSS一致、ブラウザv5.1.1・エラーなし。公開側のチーム生成/移行/設定保存は実行せず旧保存を保持。証跡qa/v511-normal-teams.jpg（ローカル例）、qa/v511-public-front.jpg。未実施は実機スマホ/本番、同期/厳密制限は未対応。保存/計算/認証/sourcesは変更なし。
