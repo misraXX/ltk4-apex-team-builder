@@ -305,3 +305,18 @@ TASK-029〜032完了。変更ファイルと実装内容・設計整合は直前
 公開URL https://misraxx.github.io/ltk4-apex-team-builder/ 。コードdd8befca272873bae70d27b86962b744e7d82f9a、Pagesソースcb65d081f4a377c5dd0257d8cc8920c3f8b821aa built。CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45394036928 とPages45394060021成功。公開3ファイルは改行正規化後一致。公開v5.1/条件欄60/候補60/スクショ60一意・4列各15・画像欠損0・エラーなしを確認。公開で編成・移行・設定保存は実行していない。証跡qa/v51-public-all60.jpg、qa/v51-public-member-conditions.jpg、ローカルチーム例qa/v51-teams-5x4.jpg。
 
 未対応: 同期/厳密な2人制限。未実施: 実機スマホ/ゲーム本番。人間確認: 当日の出欠/知り合い条件と候補。保存キー/形式/配点/計算/認証/公開範囲/外部API/sourcesは変更なし。狭い画面のスクショ用一覧は横スクロールを許容。
+
+## 2026-11-24 v5.1.1 公開前
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "in_progress"
+  humanCheckNeeded: false
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "公開後の通常画面を確認"
+  nextCodexAction: "同URLへ反映し公開を確認"
+```
+
+TASK-033。変更site/styles.css/index.html/package、README/設計/各記録。通常画面のPC5列専用CSSを取り除き、元の3/2/1列とカード表示に復元。スクショ5×4とメンバー条件列は保持、最新本人指示と設計に整合。ブラウザ確認はCYCLE-008参照。データ/保存/計算/外部連携/認証変更なし。実機スマホ/本番は未実施。公開前。
