@@ -1,0 +1,2341 @@
+{
+  "version": "2026-11-24-r1",
+  "checkedAt": "2026-11-24",
+  "ratingScale": 5,
+  "summary": {
+    "searched": 60,
+    "rated": 24,
+    "unrated": 36,
+    "organizationsVerified": 39,
+    "iglVerified": 1
+  },
+  "rubric": {
+    "5": "元APEXプロ・プレデター",
+    "4": "マスター",
+    "3": "ダイヤ",
+    "2": "確認できる一般経験者",
+    "1": "本人が初心者と明示",
+    "unknown": "情報不足・未評価"
+  },
+  "players": [
+    {
+      "id": "tachibana-hinano",
+      "name": "橘ひなの",
+      "rating": 5,
+      "ratingBasis": "非公式ぶいすぽWikiにデビュー前S2プレデターと、その後複数シーズンのマスター到達記録。歴史的実績を基準にした候補値で、2026年の現在ランクを示すものではない。S2は一次投稿リンクを追ったがX本文は取得できず。",
+      "rankLabel": "プレデター（S2・デビュー前）／後年マスター",
+      "rankPeriod": "S2（2019～2020年）、S6～S12のマスター記録",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "ぶいすぽっ！",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://wp.vspo.jp/",
+          "title": "ぶいすぽっ！公式",
+          "note": "公式タレント一覧に橘ひなの掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/vspo/橘ひなの/ゲーム関連",
+          "title": "橘ひなの／ゲーム関連 - ぶいすぽ非公式Wiki",
+          "note": "S2プレデター、複数シーズンマスターを原配信・本人投稿へのリンク付きで整理。非公式整理のため確認候補。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.inside-games.jp/article/2022/02/26/137019.html?pickup_list_click1=true",
+          "title": "橘ひなの・APEXマスター到達関連記事",
+          "note": "シーズン10でのマスター到達を報道。過去実績の補強。",
+          "date": "2022-02-26",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"橘ひなの\" \"APEX\" \"プレデター\"",
+        "\"橘ひなの\" \"APEX\" \"マスター\"",
+        "橘ひなの 公式 プロフィール"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "ariken",
+      "name": "ありけん",
+      "rating": 4,
+      "ratingBasis": "非公式ありけんWikiにマスター3回の記載、本人投稿の転載検索結果で2021-09-10に人生2度目のマスター到達を確認。原投稿本文を直接取得できていないので暫定。",
+      "rankLabel": "マスター（過去到達）",
+      "rankPeriod": "2021-09-10の到達報告を確認",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "RIDDLE",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://riddle.info/members/ariken/",
+          "title": "ARIKEN - RIDDLE ORDER",
+          "note": "現行公式メンバーページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/ariken/",
+          "title": "ありけん非公式Wiki",
+          "note": "APEXマスター3回と記載。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://twfan.net/user/1121683838/new/3",
+          "title": "ありけんのツイートまとめ",
+          "note": "本人アカウント@guraburuslot777の2021-09-10投稿として2回目のマスター到達報告を表示。検索結果で確認、直接本文取得はタイムアウト。",
+          "date": "2021-09-10",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"ありけん\" \"APEX\" \"マスター\"",
+        "ありけん RIDDLE 公式"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "maitake",
+      "name": "まいたけ",
+      "rating": null,
+      "ratingBasis": "本人と一致するAPEXコラボ・大会参加は確認。到達ランク不明。えるの配信説明欄にあるダイヤ3／アリーナマスターは配信者えるの自己紹介なので、まいたけの実績には採用していない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": null,
+      "organizationStatus": "former",
+      "organizationsEvidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=-fsEjqUwecU",
+          "title": "ちょこらび無期限活動休止について",
+          "note": "公式説明欄に赤担当まいたけ。2024-08-28時点の所属。"
+        },
+        {
+          "url": "https://www.sponichi.co.jp/entertainment/news/2025/06/07/kiji/20250607s00041000293000c.html",
+          "title": "歌い手グループちょこらび解散発表 - スポニチ",
+          "note": "2025年12月末公演をもって解散との公式告知を報道。現所属としての自動登録は避ける。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=ajiJaBt9FlM",
+          "title": "【APEX】FC CUP w/あきとさん、まいたけさん【にじさんじ/える】",
+          "note": "公式共演者配信で同名本人の大会参加確認。到達ランクは確認できない。",
+          "date": "2022-11-25",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"まいたけ\" \"APEX\" \"ランク\"",
+        "\"まいたけ\" \"APEX\" \"マスター\"",
+        "\"まいたけ\" \"プレデター\"",
+        "\"まいたけ\" \"最高ランク\" APEX",
+        "まいたけ ちょこらび 公式 メンバー 2026",
+        "まいたけ ちょこらび 解散 公式 2025"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "tentei-forte",
+      "name": "天帝フォルテ",
+      "rating": 3,
+      "ratingBasis": "ネオポルテ非公式Wikiのランク一覧が2022-04-04のS12スプリット1ダイヤIV到達を配信時刻付きで記録。本人配信タイトルも確認したが動画内の全プレイは未視聴。",
+      "rankLabel": "ダイヤモンドIV（過去到達）",
+      "rankPeriod": "S12 split1、2022-04-04",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "Neo-Porte",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://neo-porte.jp/member/tentei-forte",
+          "title": "天帝フォルテ - Neo-Porte",
+          "note": "現行公式メンバープロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/neo-porte/ランク一覧/Apex%20Legends",
+          "title": "ランク一覧／Apex Legends - ネオポルテ非公式Wiki",
+          "note": "S12 split1最高ダイヤIV、2022-04-04、原配信1:19:13へのリンクを記載。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=38R_76dcaic",
+          "title": "【APEX】ダイヤいくどおおおおおおお【天帝フォルテ/Neo Porte】",
+          "note": "本人公式配信。タイトル単独は目標表現であり到達の断定根拠ではない。Wikiが到達時刻を整理。",
+          "date": "2022-04-04",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"天帝フォルテ\" \"APEX\" \"ランク\"",
+        "\"天帝フォルテ\" \"ダイヤ\"",
+        "天帝フォルテ Neo-Porte 公式"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "shirona-shizuku",
+      "name": "白那しずく",
+      "rating": 3,
+      "ratingBasis": "ネオポルテ非公式WikiがS21～S23のダイヤIV到達を原配信時刻付きで記録。配信タイトルの目標表現だけでは評価していない。",
+      "rankLabel": "ダイヤモンドIV（過去到達）",
+      "rankPeriod": "S21 split2：2024-07-31、S22 split2：2024-11-05、S23 split1：2024-12-13",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "Neo-Porte",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://neo-porte.jp/member/shirona-shizuku",
+          "title": "白那しずく - Neo-Porte",
+          "note": "現行公式メンバープロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/neo-porte/ランク一覧/Apex%20Legends",
+          "title": "ランク一覧／Apex Legends - ネオポルテ非公式Wiki",
+          "note": "S21～S23でダイヤIVを記録。Twitch過去配信と2024-12-13のYouTube配信へ時刻付きリンク。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dpORBaEkXs8",
+          "title": "【APEX】▼ダイヤがこちらを見ている！【白那しずく / ネオポルテ】",
+          "note": "本人配信タイトルを確認。タイトルは到達前の目標表現で、到達はWiki記録を根拠にした暫定値。",
+          "date": "2024-11-03",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"白那しずく\" \"APEX\" \"ランク\"",
+        "\"白那しずく\" \"ダイヤ\"",
+        "白那しずく Neo-Porte 公式"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "mittiii",
+      "name": "mittiii",
+      "rating": null,
+      "ratingBasis": "公開情報を検索したが、同一人物のAPEX到達ランクを評価の根拠として確認できず。未評価は初心者を意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "FENNEL（Agent）",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://fennel-esports.com/news/corporate/2966/",
+          "title": "mittiiiに関するお知らせ - FENNEL",
+          "note": "2025-10-01にストリーマー部門卒業とAgent契約への移行を告知。ストリーマー所属と混同しない。"
+        },
+        {
+          "url": "https://fennel-esports.com/members/agent/2731/",
+          "title": "mittiii - FENNEL Agent",
+          "note": "現行公式Agent一覧の個別ページ。"
+        }
+      ],
+      "evidence": [],
+      "queries": [
+        "\"mittiii\" \"APEX\" \"プレデター\"",
+        "\"mittiii\" \"APEX\" \"ランク\"",
+        "\"mittiii\" \"APEX\" site:youtube.com",
+        "mittiii FENNEL Agent 公式"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "alphaazur",
+      "name": "AlphaAzur",
+      "rating": 5,
+      "ratingBasis": "複数の二次プロフィールがプレデター到達経験を記載。一次の到達報告・達成期は未確認のため要確認の候補値。元プロ経歴はPUBGで、APEX元プロとは扱わない。",
+      "rankLabel": "プレデター（到達経験・二次情報）",
+      "rankPeriod": "達成時期未確認",
+      "confidence": "low",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "UltraLMTM",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://ultralmtm.com/creators/alpha-azur/",
+          "title": "Alpha Azur - UltraLMTM",
+          "note": "現行公式クリエータープロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://better-buy.jp/alphaazur-device/",
+          "title": "AlphaAzur デバイス・プロフィール",
+          "note": "プレデター到達経験を記載する二次プロフィール。一次到達配信の追跡は未了。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.mm-pj.jp/alphaazur/",
+          "title": "AlphaAzur プロフィール紹介",
+          "note": "プレデター経験を記載。達成期と原報告の確認は未了。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://streamerjournal.com/?p=331",
+          "title": "CRカップApex Legends 出場者紹介 後編",
+          "note": "2020年時点のランク区分はマスター10pt。後年最高ランクの上書きと区別。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"AlphaAzur\" \"APEX\" \"プレデター\"",
+        "\"AlphaAzur\" \"プレデターランク\" \"cheeky\"",
+        "\"AlphaAzur\" \"プレデター\" \"達成\"",
+        "\"AlphaAzur\" \"プレデター\" \"最高ランク\"",
+        "AlphaAzur UltraLMTM 公式"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "takaya-special",
+      "name": "たかやスペシャル",
+      "rating": null,
+      "ratingBasis": "APEX配信・イベント参加は確認したが、APEX到達ランクを確認できず。一般プロフィールのLoLマスター情報はAPEX評価に流用していない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://twitracker.com/streamers/takayaspecial/games",
+          "title": "たかやスペシャル ゲーム配信履歴",
+          "note": "APEX配信履歴があることのみ確認。配信時間や配信者ランキングはAPEXの競技ランクではない。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://streamervitals.com/takayaspecial",
+          "title": "たかやスペシャル 配信記録",
+          "note": "本人のAPEXカスタム配信タイトルを収録。ランク不明。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"たかやスペシャル\" \"APEX\" \"ランク\"",
+        "\"たかやスペシャル\" \"APEX\" \"マスター\"",
+        "たかやスペシャル 所属 公式"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "gonkane",
+      "name": "ごんかね",
+      "rating": null,
+      "ratingBasis": "本人公式YouTubeにLTK APEXカスタム・フルパ動画を確認。到達ランク不明。非公式プロフィールのLoL／VALORANT実績はAPEX評価に流用していない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [
+        {
+          "url": "https://wikiwiki.jp/genkai/gonkane",
+          "title": "ごんかね - 限界非公式Wiki",
+          "note": "事務所無所属、限界・健康鯖の一員と記載。限界公式サイトは403で本文取得できず、公式プロフィール確認未了なので現所属を確定していない。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=WEug65d7B2c",
+          "title": "LTK APEXで濃すぎるパーティに混ざってしまったごんかね【Apex Legends】",
+          "note": "本人公式動画で2026-07-04 LTK APEXカスタム参加を確認。到達ランクは記載なし。",
+          "date": "2026-07-07",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4ym8yhT4v20",
+          "title": "守り硬めの構成でガン詰めしようとするごんかね達【Apex Legends】",
+          "note": "本人公式動画でAPEXフルパ経験を確認。",
+          "date": "2026-07-16",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"ごんかね\" \"APEX\" \"ランク\"",
+        "\"ごんかね\" \"APEX\" \"マスター\"",
+        "\"ごんかね\" \"限界\" 公式"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "regrush-lionheart",
+      "name": "レグルシュ・ライオンハート",
+      "rating": null,
+      "ratingBasis": "公開情報を検索したが、同一人物のAPEX到達ランクを評価の根拠として確認できず。未評価は初心者を意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "のりプロ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://noripro.jp/talent-reglush/",
+          "title": "レグルシュ・ライオンハート - のりプロ",
+          "note": "現行公式タレントプロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=FfOfliKzoN8",
+          "title": "【APEX】リハビリAPEXランク～ガバエイムを添えて～【#レグライブ/のりプロ所属】",
+          "note": "本人公式配信タイトルでランクプレイ経験を確認。到達ランクは未確認。",
+          "date": "2022-03-13",
+          "kind": "primary"
+        },
+        {
+          "url": "https://panora.tokyo/archives/42283",
+          "title": "のりプロ新人関連紹介 - PANORA",
+          "note": "初期配信でAPEX・LoLを扱った旨。到達ランクの根拠にはならない。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"レグルシュ・ライオンハート\" \"APEX\" \"ランク\"",
+        "\"レグルシュ\" \"APEX\" \"プラチナ\"",
+        "レグルシュ ライオンハート 公式 プロフィール"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "raizin",
+      "name": "らいじん",
+      "rating": null,
+      "ratingBasis": "ハセシンの公式配信で1tappy・らいじんとのAPEX大会参加を確認。APEX到達ランク不明。元LoLプロ歴はAPEX評価に流用していない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "げまげま（配信者グループ）",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://tokyoesportsfesta.jp/wp-content/uploads/2026/04/pe_prizewinner_2026_v1.pdf",
+          "title": "東京eスポーツフェスタ2026 公式資料",
+          "note": "出演者をらいじん・しゃるる・たぬき忍者（以上げまげま）と表記。事務所所属ではなく配信者グループの関係として扱う。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=QJVo29SzQa0",
+          "title": "【初対面】遂にらいじんと出会う。APEX大会本番で1位【ハセシン/1tappy/らいじん】",
+          "note": "公式共演者動画でAPEX大会参加を確認。チーム成績から個人ランクは推定しない。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"らいじん\" \"APEX\" \"ランク\"",
+        "\"らいじん\" \"APEX\" \"マスター\"",
+        "らいじん 所属 げまげま 公式"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "yunika",
+      "name": "Yunika",
+      "rating": null,
+      "ratingBasis": "LoLプレイヤーYunikaと一致するAPEX到達ランク資料を確認できず。同名ゲームアカウントとの人物一致も未確認。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [
+        {
+          "url": "https://liquipedia.net/leagueoflegends/Yunika",
+          "title": "Yunika - Liquipedia League of Legends",
+          "note": "FENNEL Academyの2023年在籍履歴を確認する二次情報。現所属としては未確認。"
+        },
+        {
+          "url": "https://lol.fandom.com/wiki/Yunika",
+          "title": "Yunika - Leaguepedia",
+          "note": "過去FENNEL歴を掲載。現在の所属を確定できる公式プロフィールは見つからず。"
+        }
+      ],
+      "evidence": [],
+      "queries": [
+        "\"Yunika\" \"Apex\" rank",
+        "\"ゆにか\" \"APEX\" 初心者",
+        "Yunika FENNEL 公式"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "eugeo",
+      "name": "Eugeo",
+      "rating": null,
+      "ratingBasis": "元LoLプロEugeo本人と一致するAPEX到達ランクは確認できず。検索に出るPlayStation名Eugeo-on-top-_-のプレデター成績は人物一致がないため除外。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [
+        {
+          "url": "https://liquipedia.net/leagueoflegends/Eugeo",
+          "title": "Eugeo - Liquipedia League of Legends",
+          "note": "過去AXIZ CREST在籍履歴の二次情報。2024年までの履歴を現在所属としては使わない。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=OJMU0T2GoKg",
+          "title": "ゆきお×Eugeo 元APEXプロ×元LoLプロ 対談",
+          "note": "本人一致確認の補助。元APEXプロはゆきお、元LoLプロがEugeoであり、APEXプロ歴を取り違えない。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"Eugeo\" \"APEX\" \"ランク\"",
+        "\"Eugeo\" \"APEX\" \"プレデター\"",
+        "Eugeo AXIZ 公式 所属"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "zerost",
+      "name": "Zerost",
+      "rating": null,
+      "ratingBasis": "APEXカスタムの配信履歴を確認したが到達ランク不明。検索で見つかるSF6・OW等のマスター歴はAPEXの根拠から除外。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "REJECT",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://reject.jp/member/zerost/",
+          "title": "Zerost - REJECT",
+          "note": "現行公式メンバープロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://stream-log.com/streamer/zerost_s?from=streamers",
+          "title": "Zerost 配信アーカイブ一覧",
+          "note": "2026-07-04のLTK APEXカスタムなどAPEX配信タイトルを確認。到達ランクは確認できない。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"Zerost\" \"APEX\" \"ランク\"",
+        "\"Zerost\" \"APEX\" \"マスター\"",
+        "Zerost REJECT 公式"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "enty",
+      "name": "Enty",
+      "rating": null,
+      "ratingBasis": "公式共演者配信でAPEXぶいすぽGG参加を確認。ファン記事の『APEX4日目？』は推測表現のため初心者評価の根拠にせず、到達ランク未確認とした。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "DetonatioN FocusMe",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://team-detonation.net/news/51272",
+          "title": "Enty加入のお知らせ - DetonatioN FocusMe",
+          "note": "2026-05-09の公式加入告知。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=Vta21DUn4Dk",
+          "title": "【APEX】ぶいすぽGG本番！w/ちーたま、えんてぃさん【昏昏アリア/ネオポルテ】",
+          "note": "公式共演者配信に参加。到達ランクの根拠にはならない。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"Enty\" \"APEX\" \"ランク\"",
+        "\"えんてぃ\" \"APEX\" 初心者",
+        "Enty DFM 公式 2026"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "kanae",
+      "name": "叶",
+      "rating": 3,
+      "ratingBasis": "にじさんじ非公式Wikiの全シーズン通算表にダイヤIII（2020-05-10）と記載。マスター到達の一次根拠は確認できず。非常に古い到達記録のため現在の実力は手動確認を推奨。",
+      "rankLabel": "ダイヤモンドIII（過去到達）",
+      "rankPeriod": "2020-05-10",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "にじさんじ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://www.nijisanji.jp/talents/l/kanae",
+          "title": "叶 - にじさんじ",
+          "note": "現行公式タレントプロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/nijisanji/Apex%20Legendsまとめ/ランクまとめ/全シーズン通算",
+          "title": "全シーズン通算 - にじさんじ非公式Wiki APEXランクまとめ",
+          "note": "叶をダイヤIII、2020-05-10と記録。公式ランク統計ではない。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"叶\" \"APEX\" \"最高ランク\"",
+        "\"叶\" \"APEX\" \"ダイヤ\"",
+        "叶 にじさんじ 公式"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "yufuna",
+      "name": "ゆふな",
+      "rating": 5,
+      "ratingBasis": "ユーザーがプレデターとして5を指定。本人公式YouTubeのプレデター昇格動画タイトルでも到達経験を確認。現在のランクではなく過去実績。",
+      "rankLabel": "プレデター（過去到達）",
+      "rankPeriod": "2022年頃の本人到達動画。正確な達成日・シーズンは未確認",
+      "confidence": "high",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "JOZ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://www.beefreee.jp/",
+          "title": "JOZ公式 Streamers & Players",
+          "note": "現行公式サイトのStreamer欄にゆふなを掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=Xme31TKaIiQ",
+          "title": "【APEX】ゆふな、APEX史上過去最高難度のランクで見事プレデターに昇格‼",
+          "note": "本人公式動画タイトルからプレデター昇格を確認。達成日・シーズンは動画本文未取得のため未確定。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"ゆふな\" \"プレデター\" site:youtube.com/watch",
+        "ゆふな JOZ 公式 プロフィール"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "user"
+    },
+    {
+      "id": "asumi-sena",
+      "name": "空澄セナ",
+      "rating": 4,
+      "ratingBasis": "本人の2023-06-29初マスター報告をReal Soundの記事内埋め込みで確認。S17という達成条件を残し、現在ランクとしては扱わない。",
+      "rankLabel": "マスター（S17・初到達）",
+      "rankPeriod": "2023-06-29、S17",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "ぶいすぽっ！",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://wp.vspo.jp/",
+          "title": "ぶいすぽっ！公式",
+          "note": "公式タレント一覧に空澄セナ掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://realsound.jp/tech/2024/06/post-1690875_4.html",
+          "title": "空澄セナ紹介 - Real Soundテック",
+          "note": "本人の2023-06-29初マスター到達投稿を埋め込み。元X本文の直接取得は403。",
+          "date": "2024-06-15",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"空澄セナ\" \"APEX\" \"マスター\"",
+        "空澄セナ 公式 プロフィール"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "shishido-akari",
+      "name": "獅子堂あかり",
+      "rating": 3,
+      "ratingBasis": "にじさんじ非公式Wikiの通算表の注釈にデビュー前最高ダイヤIVと記載。デビュー後確認ランクのゴールドIと分けて扱う。デビュー前実績の一次発言確認は未了なので暫定。",
+      "rankLabel": "ダイヤモンドIV（デビュー前・非公式記録）",
+      "rankPeriod": "デビュー前（2023-01-16より前）。デビュー後確認：2025-06-17ゴールドI",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "にじさんじ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://www.nijisanji.jp/talents/l/akari-shishido",
+          "title": "獅子堂あかり - にじさんじ",
+          "note": "現行公式タレントプロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/nijisanji/Apex%20Legendsまとめ/ランクまとめ/全シーズン通算",
+          "title": "全シーズン通算 - にじさんじ非公式Wiki APEXランクまとめ",
+          "note": "注釈にライバーになる以前は最高ダイヤIV。表内のデビュー後ゴールドIとは別記録。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"獅子堂あかり\" \"APEX\" \"最高ランク\"",
+        "\"獅子堂あかり\" \"APEX\" \"ダイヤ\"",
+        "獅子堂あかり にじさんじ 公式"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "takamiya-rion",
+      "name": "鷹宮リオン",
+      "rating": 1,
+      "ratingBasis": "2023-06-16の本人公式配信タイトルで初心者と自己表現。古い自己表現であり2026年の現在能力は未確認。新しい実績があれば手動修正する前提の候補値。",
+      "rankLabel": "初心者（本人配信タイトルでの自己表現）",
+      "rankPeriod": "2023-06-16",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXでIGLを担当したと明示する根拠は今回確認できず。ランクからは推定していない。",
+      "organization": "にじさんじ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://www.nijisanji.jp/talents/l/rion-takamiya",
+          "title": "鷹宮リオン - にじさんじ",
+          "note": "現行公式タレントプロフィール。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=4ohPwoNN0wU",
+          "title": "【#apex】永遠の初心者～反射神経おばあちゃんえぺ～【にじさんじ/鷹宮リオン】",
+          "note": "本人公式配信タイトルが初心者と明示。古い自己表現であり、現能力の断定ではない。",
+          "date": "2023-06-16",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"鷹宮リオン\" \"APEX\" 初心者",
+        "\"鷹宮リオン\" \"永遠の初心者\" \"2023\"",
+        "鷹宮リオン にじさんじ 公式"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "yukio",
+      "name": "ゆきお",
+      "rating": 5,
+      "ratingBasis": "ユーザー指定5。RIDDLE公式が元APEXプロ・ALGS世界大会複数出場、2024年10月競技引退を明記。",
+      "rankLabel": "元APEXプロ",
+      "rankPeriod": "競技活動は2024-10まで。現在はストリーマー。",
+      "confidence": "high",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "RIDDLE",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://riddle.info/members/yukio/",
+          "title": "YUKIO | RIDDLE",
+          "note": "現行公式メンバーページのSTREAMERとして確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://riddle.info/members/yukio/",
+          "title": "YUKIO | RIDDLE",
+          "note": "元Apex LegendsプロとしてALGSを含む世界大会に複数出場。",
+          "date": null,
+          "kind": "primary"
+        },
+        {
+          "url": "https://riddle.info/news/news60/",
+          "title": "APEX LEGENDS部門 ゆきお 競技活動引退、ストリーマー移行のお知らせ",
+          "note": "2024年10月23日に競技引退・ストリーマーへ移行。",
+          "date": "2024-10-23",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UEud7kHTu74",
+          "title": "【ALGS】APEX競技の本質について、元プロ目線で語るゆきお",
+          "note": "本人チャンネルの元プロ表記を確認。IGL担当の確定根拠としては使用しない。",
+          "date": "2026-05-25",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "ゆきお APEX 元プロ Riddle 公式",
+        "site:youtube.com 日本最高のIGL ゆきお"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "user"
+    },
+    {
+      "id": "k4sen",
+      "name": "k4sen",
+      "rating": 3,
+      "ratingBasis": "2022年ごろの大会紹介の最高ランク・ダイヤ記載を仮評価の根拠にした。一次の到達場面は未確認のため低確度。",
+      "rankLabel": "ダイヤ（大会紹介の記載）",
+      "rankPeriod": "2022年ごろの超滅Apex2紹介。達成時期未確認。",
+      "confidence": "low",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "ZETA DIVISION",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://zetadivision.com/players/k4sen",
+          "title": "k4sen | ZETA DIVISION",
+          "note": "公式CREATORメンバーページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://johotaxi.com/chomets-apex2/",
+          "title": "【超滅Apex2】出場メンバー全83名と試合結果",
+          "note": "k4sen欄の最高ランク：ダイヤを確認。到達場面の一次確認は未了。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://zetadivision.com/players/k4sen",
+          "title": "k4sen | ZETA DIVISION",
+          "note": "公式ページにCRカップAPEX等の出場歴。ランク根拠は別資料。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "k4sen Apex マスター ランク",
+        "\"k4sen\" \"APEX\" \"ダイヤ\"",
+        "site:youtube.com \"k4sen\" \"ダイヤ\" \"APEX\"",
+        "site:zetadivision.com k4sen member"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "kuzuha",
+      "name": "葛葉",
+      "rating": 3,
+      "ratingBasis": "にじさんじ非公式wikiが本人配信を根拠にS12 Split1のダイヤ3を記録。配信原本は取得制限で直接再確認できておらず、歴史的実績に基づく仮評価。",
+      "rankLabel": "ダイヤモンド3",
+      "rankPeriod": "S12 Split1、2022-03-28の記録",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "にじさんじ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://www.nijisanji.jp/talents/l/kuzuha",
+          "title": "葛葉 | にじさんじ",
+          "note": "公式タレントページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/nijisanji/%E8%91%9B%E8%91%89/%E8%A9%B3%E3%81%97%E3%81%8F%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84/%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89",
+          "title": "葛葉：ゲームに関するエピソード / 最高到達ランク",
+          "note": "APEX欄にS12 Split1 D3、2022-03-28、本人動画Cp4EyVjj6Zkへのリンク。LoL/スト6のマスターと混同しない。",
+          "date": "2022-03-28",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "葛葉 Apex マスター プレデター",
+        "\"葛葉\" \"APEX\" \"マスター到達\"",
+        "\"Cp4EyVjj6Zk\""
+      ],
+      "researchStatus": "found",
+      "originalLinks": [
+        {
+          "url": "https://www.youtube.com/watch?v=Cp4EyVjj6Zk",
+          "status": "fetch-failed",
+          "note": "非公式wikiが到達根拠として案内。今回の直接取得は失敗。"
+        }
+      ],
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "tatsumaki-chise",
+      "name": "龍巻ちせ",
+      "rating": null,
+      "ratingBasis": "APEX配信と2026年4月の初心者とする切り抜きは確認。編集者の呼称だけで現在の実力を1と確定せず、到達ランク未確認として未評価。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "ぶいすぽっ！",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://vspo.jp/",
+          "title": "ぶいすぽっ！公式 メンバー一覧",
+          "note": "現行メンバー一覧に龍巻ちせを掲載。"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9Oeis4viExI",
+          "title": "龍巻ちせ本人配信：ゆったりトリオで遊ばせていただきます",
+          "note": "検索・参照元の本人配信タイトルにぶいすぽっ！表記。直接本文取得は制限あり。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://ckworks.jp/vinforadar/video/kirinuki/e2sS7isJnG8",
+          "title": "APEX初心者のちーたまに母性が目覚める先輩たち",
+          "note": "2026-04-01の本人配信へのリンクと初心者とする編集タイトルを確認。現在実力の断定には使わない。",
+          "date": "2026-04-02",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"龍巻ちせ\" \"APEX\" \"ランク\"",
+        "\"龍巻ちせ\" \"APEX\" \"ダイヤ\"",
+        "\"龍巻ちせ\" \"APEX\" \"初心者\"",
+        "site:vspo.jp \"龍巻ちせ\""
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "konkon-aria",
+      "name": "昏昏アリア",
+      "rating": 4,
+      "ratingBasis": "Neo-Porte非公式wikiがS12マスター・後半キーマウソロマスターを記録。本人のマスター耐久配信も存在するが到達瞬間は未確認。歴史的記録による仮評価。",
+      "rankLabel": "マスター（S12の記録）",
+      "rankPeriod": "S12後半。現在ランクではない。",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "Neo-Porte",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://neo-porte.jp/member/konkon-aria",
+          "title": "昏昏アリア | Neo-Porte 公式",
+          "note": "公式メンバーページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/neo-porte/%E6%98%8F%E6%98%8F%E3%82%A2%E3%83%AA%E3%82%A2",
+          "title": "昏昏アリア | Neo-Porte非公式wiki",
+          "note": "APEX最高ランクS12マスター、後半にキーマウでソロマスターとする記載。",
+          "date": null,
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jrHyhQlK0Fo",
+          "title": "【耐久】APEXマスター行くまで終われない枠！【昏昏アリア/ネオポルテ】",
+          "note": "本人チャンネルのマスター耐久タイトルを検索で確認。目標タイトルのみでは達成証明と扱わない。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"昏昏アリア\" \"APEX\" \"マスター\"",
+        "site:neo-porte.jp \"昏昏アリア\""
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "yutapon",
+      "name": "Yutapon",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "DetonatioN FocusMe",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://team-detonation.net/team/member/dfm_yutapon",
+          "title": "DFM Yutapon",
+          "note": "公式メンバーページ。2025-01-04選手活動休止、ストリーマー活動継続。"
+        },
+        {
+          "url": "https://store.team-detonation.net/blogs/news/yutapon-goods-2026",
+          "title": "yutaponグッズ2026販売開始 | DFM STORE",
+          "note": "2026年の公式グッズ取扱も確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=Tsov-foNqMQ",
+          "title": "炊いたら負けｗDFMのCerosさんYutaponさんと煽り合いAPEXランクマッチｗ【APEXシーズン11】",
+          "note": "APEXプレイの存在は確認できるが、この紹介のみでは本人の到達ランク不明。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"Yutapon\" \"APEX\" ランク",
+        "\"Yutapon\" \"APEX\" \"ダイヤ\"",
+        "site:team-detonation.net Yutapon"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "rainbrain",
+      "name": "Rainbrain",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://stream-log.com/streamer/rainbrain",
+          "title": "Rainbrainの配信履歴",
+          "note": "2026-07-15のAPEX配信等の履歴は確認。APEXのランク根拠が不足。LoLのマスター記録は対象外。",
+          "date": "2026-07-15",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"Rainbrain\" \"APEX\" ランク",
+        "\"Rainbrain\" \"APEX\" \"マスター\"",
+        "Rainbrain Apex ダイヤ マスター"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "ceros",
+      "name": "Ceros",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [
+        {
+          "url": "https://game.watch.impress.co.jp/docs/news/1569767.html",
+          "title": "元DFM LoL部門コーチ Ceros氏の活動再開",
+          "note": "過去DFM所属・その後契約終了の報道。現在のDFM所属として初期設定しない。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=Tsov-foNqMQ",
+          "title": "炊いたら負けｗDFMのCerosさんYutaponさんと煽り合いAPEXランクマッチｗ【APEXシーズン11】",
+          "note": "APEXプレイは確認。動画内のランクは今回直接確認できないため未評価。",
+          "date": null,
+          "kind": "primary"
+        },
+        {
+          "url": "https://yutura.net/channel/132291/video/GuW2Tv-MmZQ/",
+          "title": "ピンを炊き続けるCerosに爆笑するZerost【Ceros/Yuhi/APEX】",
+          "note": "本人に一致する2026年のAPEXプレイの手掛かり。ランク判定には使わない。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"Ceros\" \"APEX\" ランク",
+        "\"Ceros\" \"APEX\" \"初心者\"",
+        "Ceros DFM 退団 契約終了"
+      ],
+      "researchStatus": "insufficient",
+      "formerOrganizations": [
+        "DetonatioN FocusMe"
+      ],
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "yuhi",
+      "name": "Yuhi",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://yutura.net/channel/132291/video/GuW2Tv-MmZQ/",
+          "title": "ピンを炊き続けるCerosに爆笑するZerost【Ceros/Yuhi/APEX】",
+          "note": "LoL選手Yuhiと一致するAPEXプレイの手掛かり。夕陽リリと混同せず、ランク不明のため未評価。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"Yuhi\" \"APEX\" ランク LoL",
+        "\"Yuhi\" \"APEX\" \"初心者\"",
+        "Yuhi ストリーマー 所属 公式"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "nemoh",
+      "name": "NEMOH",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://stcolle.com/streamers/nemoh",
+          "title": "Nemohのプロフィール（League The k4senに出演）",
+          "note": "対象人物がLTK Finale CCのNemohであることは確認。APEX実績に結びつく情報なし。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"NEMOH\" \"APEX\" ランク",
+        "\"NEMOH\" Apex 配信"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "shaka",
+      "name": "SHAKA",
+      "rating": 5,
+      "ratingBasis": "本人公式SHAKAchのプレデター到達動画を確認。2020年の過去実績に基づく仮5で、現在ランクは未確認。",
+      "rankLabel": "プレデター",
+      "rankPeriod": "2020-06-30（本人動画公開日）",
+      "confidence": "high",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "ZETA DIVISION",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://zetadivision.com/team/creator",
+          "title": "CREATOR | ZETA DIVISION",
+          "note": "現行公式メンバー一覧でSHAKAを確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=4T3P7G73jaE",
+          "title": "[DTN3BR] 五百皇の釈迦遂に爆誕‼‼APEXプレデターに‼‼ StylishNoob SPYGEA",
+          "note": "本人公式SHAKAchの過去プレデター到達動画。",
+          "date": "2020-06-30",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=59xXaHJIqDg",
+          "title": "超奇抜なChampionでマスター到達！[APEX]",
+          "note": "SHAKA本人チャンネルのマスター到達動画。",
+          "date": "2021-03-27",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"SHAKA\" \"APEX\" \"マスター到達\"",
+        "\"SHAKA\" \"所属\" \"公式\""
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "mother3",
+      "name": "MOTHER3",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": null,
+      "organizationStatus": "former",
+      "organizationsEvidence": [
+        {
+          "url": "https://reject.jp/2025/05/25/%E3%80%90%E3%81%94%E5%A0%B1%E5%91%8A%E3%80%91%E3%81%BE%E3%81%96%E3%83%BC3-%E5%8D%92%E6%A5%AD%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+          "title": "REJECT公式：まざー3 卒業に関するお知らせ",
+          "note": "2025-05-31で卒業。現在の同組織条件には使わない。"
+        },
+        {
+          "url": "https://reject.jp/2024/07/03/%E3%80%90%E5%87%BA%E6%BC%94%E6%83%85%E5%A0%B1%E3%80%91%E3%80%8C%E6%88%91%E3%80%85%E3%81%A0%EF%BC%81%E3%81%AE%E4%BE%B5%E5%A4%9C%E3%83%A9%E3%82%B8%E3%82%AA%E3%80%8D%E3%81%ABmother3%E3%81%8C%E5%87%BA/",
+          "title": "MOTHER3のイベント出演情報 | REJECT",
+          "note": "公式がREJECTからの出演と案内。現行タグページでも本人関連を確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=uYD1tUL6bRw",
+          "title": "【APEX LEGENDS】チャンピオン取るまで寝れまてん!!初心者だけどソロダイヤ居るし余裕っしょｗｗｗ【1/3】",
+          "note": "本人チャンネルのAPEX配信だが、初心者/ソロダイヤが誰を指すかタイトルだけでは判断できないため評価に使用しない。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"MOTHER3\" \"APEX\" \"マスター\"",
+        "\"MOTHER3\" \"APEX\" \"ダイヤ\"",
+        "MOTHER3 Apex 最高ランク",
+        "site:reject.jp MOTHER3 streamer"
+      ],
+      "researchStatus": "insufficient",
+      "formerOrganizations": [
+        "REJECT"
+      ],
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "amanogawa-neru",
+      "name": "天ノ川ねる",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "QT DIG∞",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://qtdig.com/player/%E5%A4%A9%E3%83%8E%E5%B7%9D%E3%81%AD%E3%82%8B/",
+          "title": "天ノ川ねる | QT DIG∞",
+          "note": "公式Streamerメンバーページ。"
+        }
+      ],
+      "evidence": [],
+      "queries": [
+        "\"天ノ川ねる\" \"APEX\" ランク",
+        "\"天ノ川ねる\" \"APEX\" \"ダイヤ\"",
+        "\"天ノ川ねる\" \"APEX\" \"初心者\"",
+        "site:qtdig.com 天ノ川ねる"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "yumeno-akari",
+      "name": "夢野あかり",
+      "rating": 3,
+      "ratingBasis": "ぶいすぽ非公式wikiの最高ランク表に個人時代CS版ダイヤ3の記録と本人配信リンク。現PC実力とは区別した仮評価。元配信の直接取得は制限あり。",
+      "rankLabel": "ダイヤモンド3（CS版）",
+      "rankPeriod": "ぶいすぽ加入前の個人活動時代。正確な達成日未確認。",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "ぶいすぽっ！",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://vspo.jp/",
+          "title": "ぶいすぽっ！公式メンバー一覧",
+          "note": "夢野あかりを確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/vspo/Apex%20Legends/%E3%83%A9%E3%83%B3%E3%82%AF/%E6%9C%80%E9%AB%98%E3%83%A9%E3%83%B3%E3%82%AF",
+          "title": "Apex Legends 最高ランク | ぶいすぽ非公式wiki",
+          "note": "個人時代CS版D3との記録。一次リンク1jlXChfXaVoの6時間13分49秒を案内。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"夢野あかり\" \"APEX\" マスター",
+        "\"夢野あかり\" \"APEX\" \"ダイヤ\"",
+        "\"夢野あかり\" \"APEX\" \"ランク\" -\"前世\" -\"年収\" -\"LoL\""
+      ],
+      "researchStatus": "found",
+      "originalLinks": [
+        {
+          "url": "https://youtu.be/1jlXChfXaVo?t=22429",
+          "status": "fetch-throttled",
+          "note": "非公式wikiの一次参照先。今回は本文直接取得できず。"
+        }
+      ],
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "shiranami-ramune",
+      "name": "白波らむね",
+      "rating": 3,
+      "ratingBasis": "ぶいすぽ非公式wikiの最高ランク表が初配信を参照しS7ソロダイヤ3を記録。2022年以前の実績で現在ランクではない。一次配信直接取得は制限あり。",
+      "rankLabel": "ダイヤモンド3（ソロ）",
+      "rankPeriod": "Season7、2022-08-25初配信で過去実績として紹介",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "ぶいすぽっ！",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://vspo.jp/",
+          "title": "ぶいすぽっ！公式メンバー一覧",
+          "note": "白波らむねを確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://wikiwiki.jp/vspo/Apex%20Legends/%E3%83%A9%E3%83%B3%E3%82%AF/%E6%9C%80%E9%AB%98%E3%83%A9%E3%83%B3%E3%82%AF",
+          "title": "Apex Legends 最高ランク | ぶいすぽ非公式wiki",
+          "note": "S7 D3・初配信mQAhby98UXgの18分53秒を根拠として案内。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"白波らむね\" \"APEX\" マスター",
+        "\"白波らむね\" \"APEX\" \"ダイヤ\"",
+        "\"白波らむね\" \"初配信\" \"APEX\" ダイヤ3"
+      ],
+      "researchStatus": "found",
+      "originalLinks": [
+        {
+          "url": "https://www.youtube.com/live/mQAhby98UXg?t=1133s",
+          "status": "fetch-throttled",
+          "note": "最高ランク表に掲載された本人初配信。今回は直接取得制限あり。"
+        }
+      ],
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "sakayori-soma",
+      "name": "酒寄颯馬",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "にじさんじ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://www.nijisanji.jp/talents/l/soma-sakayori",
+          "title": "酒寄颯馬 | にじさんじ",
+          "note": "公式タレントページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=sbtpWGacxf0",
+          "title": "ITcoreでLOLランク、APEXカスタム【酒寄颯馬/にじさんじ】",
+          "note": "2026年7月4日の本人APEXプレイを確認。APEX到達ランクは未確認で、他FPS実績を換算しない。",
+          "date": "2026-07-04",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=htwpw2Yvcic",
+          "title": "【APEX】じゃあ楓、いこっか【酒寄颯馬/にじさんじ】",
+          "note": "本人APEX配信。タイトル等ではランク不明。",
+          "date": "2026-02-13",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"酒寄颯馬\" \"APEX\" ランク"
+      ],
+      "researchStatus": "insufficient",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "kinako",
+      "name": "きなこ",
+      "rating": 5,
+      "ratingBasis": "Crazy Raccoon公式がAPEXソロプレデター到達を明記。",
+      "rankLabel": "ソロプレデター",
+      "rankPeriod": "公式プロフィールに達成時期の記載なし。現在ランクではない。",
+      "confidence": "high",
+      "igl": "yes",
+      "iglBasis": "Crazy Raccoon公式がゲームIQが高くIGLを務めることも多いと明記。",
+      "organization": "Crazy Raccoon",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://crazyraccoon.jp/member/kinako/",
+          "title": "kinako | Crazy Raccoon",
+          "note": "公式STREAMERメンバーページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://crazyraccoon.jp/member/kinako/",
+          "title": "kinako | Crazy Raccoon",
+          "note": "APEXでソロプレデター到達、IGL経験ありとの公式紹介を確認。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"きなこ\" \"APEX\" \"プレデター\" 公式",
+        "site:crazyraccoon.jp kinako"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "stanmi",
+      "name": "スタンミじゃぱん",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://www.famitsu.com/article/202609/88127",
+          "title": "スタンミとHyperX OMEN 15のインタビュー",
+          "note": "本人がAPEXをソロで遊ぶと回答。本文の2026年7月マスターはLoLの話でありAPEX評価に使用しない。",
+          "date": "2026-09",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"スタンミ\" \"APEX\" \"マスター\"",
+        "\"スタンミ\" \"APEX\" \"ダイヤ\"",
+        "スタンミ Apex ランク プラチナ",
+        "スタンミ 公式 TSUBASA 所属"
+      ],
+      "researchStatus": "insufficient",
+      "organizationNote": "配信組織の現所属を一次資料で確認できず。音楽/マネジメント契約や過去7th heavenを現eSports所属と混同しない。",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "jasper",
+      "name": "じゃすぱー",
+      "rating": 3,
+      "ratingBasis": "本人チャンネルの2021年APEX動画にダイヤ2と明記。少なくともD2の実績に基づく保守的な仮点。後年マスター到達の確証は今回得られず。",
+      "rankLabel": "ダイヤモンド2（少なくとも）",
+      "rankPeriod": "2021年ごろの動画。最高到達の最終確定ではない。",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": "Crazy Raccoon",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://crazyraccoon.jp/member/jasper/",
+          "title": "Jasper | Crazy Raccoon",
+          "note": "公式STREAMERメンバーページ。元プロ歴は他ゲームでありAPEX元プロとは扱わない。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=JgiP7usZbeY",
+          "title": "Apex Legends - This is the Pre-Master rank! Diamond 2 Jasper battling super famous Predator regulars",
+          "note": "本人チャンネルの検索結果タイトルでAPEX D2を確認。原本本文は直接取得失敗。",
+          "date": null,
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lYyMbG-JhB0",
+          "title": "[APEX LEGENDS] Auntie Awakens [Jasper]",
+          "note": "本人動画がブロンズからマスターを目指す企画を参照。目標を達成と混同しない。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"じゃすぱー\" \"APEX\" \"マスター\"",
+        "\"じゃすぱー\" \"APEX\" \"マスター到達\"",
+        "じゃすぱー Apex 最高ランク ダイヤ",
+        "\"Jasper\" \"Apex\" \"Master\" streamer"
+      ],
+      "researchStatus": "found",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "kagura-mea",
+      "name": "神楽めあ",
+      "rating": null,
+      "ratingBasis": "公開検索で本人に一致するAPEX到達ランク・現時点の実力を裏付ける資料が不足したため未評価。未プレイや弱さを意味しない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=RqwX8hZi0AE",
+          "title": "LTKメンバーAPEXカスタム w/Zerost、神楽めあ",
+          "note": "2026年7月4日のAPEXプレイを紹介する切り抜き。APEXランク/本人の初心者宣言の根拠は不足。",
+          "date": "2026-07-12",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qPkJyNrcRfQ",
+          "title": "【前編】初対面の神楽めあと意気投合しすぎるツルギ【APEX】",
+          "note": "APEXコラボ経験の手掛かり。ランク評価には使用しない。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"神楽めあ\" \"APEX\" \"最高ランク\"",
+        "site:youtube.com \"神楽めあ\" \"APEX\" \"初心者\"",
+        "\"神楽めあ\" \"APEX\" \"ランク\" -\"LoL\"",
+        "神楽めあ 個人勢 公式 YouTube"
+      ],
+      "researchStatus": "insufficient",
+      "organizationNote": "個人勢との二次紹介はあるが今回の一次資料での確認が不足。無所属/個人を共通所属グループとして扱わない。",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "washidai",
+      "name": "Washidai",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [
+        {
+          "url": "https://v3esports.com/lol_washidai_-transfer/",
+          "title": "V3 Esports公式：Washidai選手完全移籍",
+          "note": "2024-01-10にAXIZ CRESTへ移籍。現所属の根拠としては使わない。"
+        },
+        {
+          "url": "https://liquipedia.net/leagueoflegends/Washidai",
+          "title": "Liquipedia：Washidai",
+          "note": "QT DIGは2025-11-01までの過去所属。現在を未確認とする。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.komekasegi.com/ch/heteeel/",
+          "title": "へてる配信履歴の転載集計",
+          "note": "2026-06-26のAPEX配信タイトルにWashidaiとの共演。APEX経験の参考のみでランクは不明。",
+          "date": "2026-06-26",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "Washidai APEX ランク マスター",
+        "\"Washidai\" \"APEX\"",
+        "\"Washidai\" 所属 公式",
+        "\"Washidai\" \"APEX\" \"初心者\""
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "sharuru",
+      "name": "しゃるる",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [],
+      "queries": [
+        "しゃるる APEX ランク ダイヤ",
+        "\"しゃるる\" \"APEX\" マスター",
+        "\"しゃるる\" 所属 公式 げまげま"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "communities": [
+        {
+          "name": "げまげま",
+          "evidence": [
+            {
+              "url": "https://happysmile-inc.jp/wp/wp-content/uploads/2024/12/efdc5dbacbafdaed06605d68b05eed6d.pdf",
+              "title": "ハッピースマイル公式プレスリリース：げまげまのファンミーティング",
+              "note": "しゃるる・たぬき忍者を含む5人組コミュニティを記載。雇用先・プロチーム所属とは別。2024年資料。"
+            }
+          ]
+        }
+      ],
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "tanukininja",
+      "name": "たぬき忍者",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://yutura.net/channel/137587/latest/?p=6",
+          "title": "たぬき忍者チャンネルの動画一覧",
+          "note": "本人チャンネルの2026-03-28動画タイトルが久しぶりの手探りAPEXと言及。達成ランクや初心者断定の根拠にはしない。",
+          "date": "2026-03-28",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "たぬき忍者 APEX ランク",
+        "\"たぬき忍者\" \"APEX\"",
+        "\"たぬき忍者\" 所属 公式"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "communities": [
+        {
+          "name": "げまげま",
+          "evidence": [
+            {
+              "url": "https://happysmile-inc.jp/wp/wp-content/uploads/2024/12/efdc5dbacbafdaed06605d68b05eed6d.pdf",
+              "title": "ハッピースマイル公式プレスリリース：げまげまのファンミーティング",
+              "note": "しゃるる・たぬき忍者を含む5人組コミュニティを記載。雇用先・プロチーム所属とは別。2024年資料。"
+            }
+          ]
+        }
+      ],
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "day1",
+      "name": "Day1",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://www.twitchmetrics.net/c/181642473-day1lol",
+          "title": "TwitchMetrics：day1lol",
+          "note": "本人アカウント説明を転載しAPEXアカウント名の記載あり。到達ランクの根拠なし。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "Day1 APEX ランク",
+        "\"Day1\" \"APEX\" \"LoL\"",
+        "\"Day1\" デイワン 所属 公式",
+        "\"Day1\" \"所属\" \"LoL\" 配信"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "hetel",
+      "name": "hetel",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [
+        {
+          "url": "https://liquipedia.net/leagueoflegends/QT_DIG",
+          "title": "Liquipedia：QT DIG",
+          "note": "hetelは2025-11-01にQT DIG LoL部門を離脱。集計サイトの現在QT DIG表記とは不整合があるため、現所属未確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.komekasegi.com/ch/heteeel/",
+          "title": "へてる配信履歴の転載集計",
+          "note": "2026-06-26/28/29のAPEX配信履歴は確認できるが到達ランクは不明。",
+          "date": "2026-06-29",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"hetel\" \"APEX\"",
+        "\"へてる\" 所属 \"公式\"",
+        "site:qt-dig.com \"hetel\"",
+        "\"QT DIG\" \"hetel\" 契約 終了"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "kohaku-uru",
+      "name": "狐白うる",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "UltraLMTM",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://ultralmtm.com/creators/kohaku-uru/",
+          "title": "狐白うる｜UltraLMTM公式",
+          "note": "公式所属クリエイターページ。公式トップの2026-10-06加入発表も確認。"
+        },
+        {
+          "url": "https://ultralmtm.com/",
+          "title": "UltraLMTM公式トップ",
+          "note": "2026-10-06にAlpha Azurと狐白うる加入と掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=Sr0KfyJSNEk",
+          "title": "【Apex Legends】いつめんとえぺらんく！w/史門 大御所にゅん子",
+          "note": "本人APEXランク配信のタイトルを確認。ランク帯を特定できず点数は保留。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"狐白うる\" \"APEX\" ランク",
+        "\"狐白うる\" apex マスター ダイヤ",
+        "site:ultralmtm.com 狐白うる"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "aster-leda",
+      "name": "アステル・レダ",
+      "rating": 4,
+      "ratingBasis": "2021年のソロマスター達成報道と2024年V最協S6のマスター表記を確認。過去実績をもとに今回用の仮4。プレデター到達は信頼できる根拠を確認できず5にはしない。",
+      "rankLabel": "マスター（過去実績）",
+      "rankPeriod": "2021年6月・2024年8月大会時の表記。現在ランク未確認",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "ホロスターズ",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://holostars.hololivepro.com/talent/astel-leda/",
+          "title": "アステル・レダ｜ホロスターズ公式",
+          "note": "所属タレントページ、ホロスターズ2期生。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=lpV42DNHhxE",
+          "title": "【ソロマスター企画】維持が、だ いじ / アステル・APEX・レダ",
+          "note": "本人のシーズン9ソロマスター挑戦配信。達成自体は別記の2021年記事で補助確認。",
+          "date": "2021-05-31",
+          "kind": "primary"
+        },
+        {
+          "url": "https://vtubernews.jp/archives/10175535.html",
+          "title": "アステルがAPEXソロマスターチャレンジ達成",
+          "note": "2021-06-05のソロマスター達成を報じた二次記事。",
+          "date": "2021-06-06",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.esports.net/jp/news/apex/vtuber-saikyo-ketteisen-season6-overview/",
+          "title": "V最S6出場チーム紹介",
+          "note": "2024年大会のアステルをマスターと表記。現在ランクとは区別。",
+          "date": "2024-08",
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"アステル\" \"APEX\" プレデター",
+        "\"アステル\" \"マスター到達\" APEX",
+        "site:youtube.com \"アステル\" \"ソロマスター\"",
+        "\"アステル\" \"マスター\" \"達成\" apex ソロ",
+        "\"アステル・レダ\" \"APEX\" \"マスター\" \"到達\" -site:vtubernews.jp -site:detail.chiebukuro.yahoo.co.jp",
+        "site:holostars.hololivepro.com/talent \"アステル・レダ\""
+      ],
+      "researchStatus": "found",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "haruchya",
+      "name": "春茶",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "REJECT",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://reject.jp/2026/05/23/welcomesharutya/",
+          "title": "クリエイター部門設立および「春茶」が加入｜REJECT公式",
+          "note": "2026-05-23加入発表。"
+        },
+        {
+          "url": "https://reject.jp/teams/",
+          "title": "REJECT公式チーム一覧",
+          "note": "現行一覧に春茶を掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://stcolle.com/streamers/harutya",
+          "title": "春茶のイベント記録",
+          "note": "APEX大会参加の二次記録は見つかるが、最高ランクを特定できず未評価。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"春茶\" \"APEX\" マスター",
+        "\"春茶\" \"APEX\" \"ダイヤ\"",
+        "\"春茶\" apex ランク 最高ランク",
+        "\"春茶\" \"APEX\" \"プラチナ\"",
+        "site:reject.jp \"春茶\""
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "nagisacchi",
+      "name": "なぎさっち",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "QT DIG∞",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://qtdig.com/team/",
+          "title": "QT DIG∞公式チーム一覧",
+          "note": "ストリーマー部門になぎさっちを掲載。"
+        }
+      ],
+      "evidence": [],
+      "queries": [
+        "\"なぎさっち\" \"APEX\" ランク",
+        "\"なぎさっち\" 所属",
+        "QT DIG なぎさっち 公式 メンバー"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "toko",
+      "name": "とおこ",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "REJECT",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://reject.jp/member/toko/",
+          "title": "URS-No.1005（とおこ）｜REJECT公式",
+          "note": "公式メンバーページ。2026-10-05の公式告知にも所属と掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://reject.jp/2024/11/13/%E3%80%90%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%87%BA%E6%BC%94%E3%80%91%E3%81%88%E3%81%BA%E3%81%BE%E3%81%A4%E3%82%8A-%E5%A4%96%E4%BC%9D-feat-%E6%97%A5%E6%9C%AC%E8%B5%A4%E5%8D%81%E5%AD%97%E7%A4%BE/",
+          "title": "えぺまつり外伝出演｜REJECT公式",
+          "note": "大会出場は確認できるが、記事中の幅広い参加ランクはとおこ本人のランクを特定しない。",
+          "date": "2024-11-13",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"とおこ\" \"APEX\" マスター",
+        "\"とおこ\" \"APEX\" ダイヤ",
+        "site:youtube.com \"とおこ\" \"APEX\" \"ランク\"",
+        "\"とおこ\" \"APEX\" \"ゴールド\"",
+        "site:reject.jp \"とおこ\""
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "yakipan",
+      "name": "焼きパン",
+      "rating": 4,
+      "ratingBasis": "本人の2026年APEX動画説明に過去マスターへの言及があるため仮4。ただし達成シーズンと現在の状態は不明で、本人もブランクを示唆する内容。",
+      "rankLabel": "マスター（過去実績への本人言及）",
+      "rankPeriod": "2026-07-09公開動画で過去実績に言及。達成シーズン未確認",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "ZETA DIVISION",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://zetadivision.com/players/%E7%84%BC%E3%81%8D%E3%83%91%E3%83%B3",
+          "title": "焼きパン｜ZETA DIVISION公式",
+          "note": "CREATOR部門の公式メンバーページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=0yxngaPfWyQ",
+          "title": "LTKカスタムAPEXの本人動画",
+          "note": "本人動画説明にマスターの過去実績への言及あり。現在ランクや達成シーズンは示されていない。",
+          "date": "2026-07-09",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"焼きパン\" \"APEX\" ランク"
+      ],
+      "researchStatus": "found",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "killin9hit",
+      "name": "Killin9Hit",
+      "rating": 4,
+      "ratingBasis": "本人インタビューで加藤純一・Eurieceとマスターへ到達した経験を語るため仮4。PUBGの元プロ歴をAPEX元プロと混同しない。",
+      "rankLabel": "マスター（過去実績）",
+      "rankPeriod": "2022-07-22本人インタビューで過去の到達経験を説明。現在ランク未確認",
+      "confidence": "high",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "ZETA DIVISION",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://zetadivision.com/players/killin9hit?PageSpeed=noscript",
+          "title": "Killin9Hit｜ZETA DIVISION公式",
+          "note": "CREATOR部門の公式メンバーページ。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://news.livedoor.com/article/detail/22548693/",
+          "title": "KH本人インタビュー：週刊チャンネルウォッチ",
+          "note": "KH本人が加藤純一・EurieceとのAPEXでマスターまで行った経験を説明。",
+          "date": "2022-07-22",
+          "kind": "primary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ulbQG_a-JOc",
+          "title": "ランク最終日にマスター企画をいきなり始めるKH",
+          "note": "本人の2024年企画動画。企画名だけではそのシーズンの達成とは判断しない。",
+          "date": "2024-11-08",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"Killin9Hit\" \"APEX\" マスター",
+        "\"Killin9Hit\" \"マスター\" \"行きました\"",
+        "site:zetadivision.com/players \"Killin9Hit\""
+      ],
+      "researchStatus": "found",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "inui-shinichiro",
+      "name": "乾伸一郎",
+      "rating": 4,
+      "ratingBasis": "2022年2月4日のマスター到達を元配信リンク付きの二次一覧で確認。本人の直前の最高ダイヤ企画と整合するが、元動画本文は今回取得できず仮4・要確認。",
+      "rankLabel": "マスター（過去実績・二次資料）",
+      "rankPeriod": "2022-02-04。現在ランク未確認",
+      "confidence": "medium",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "REJECT",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://reject.jp/2026/06/13/reject-x-shibuya109-drink-stand-%E5%A4%A9%E9%AC%BC%E3%81%B7%E3%82%8B%E3%82%8B-%E3%81%A8%E3%81%8A%E3%81%93-%E4%B9%BE%E4%BC%B8%E4%B8%80%E9%83%8E-%E3%82%BA%E3%82%BA%E3%81%AE%E3%82%B3/",
+          "title": "REJECT公式：所属VTuberコラボ",
+          "note": "2026年の所属メンバーとして乾伸一郎を掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://w.atwiki.jp/apexstreamer/pages/23.html",
+          "title": "マスター｜apexstreamer wiki",
+          "note": "乾伸一郎の到達日を2022-02-04とし、本人YouTube生配信リンクを付している。",
+          "date": "2022-02-07",
+          "kind": "secondary"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pn7HQT66dOY",
+          "title": "乾伸一郎の元配信リンク（wiki出典）",
+          "note": "上記wikiから辿った原配信URL。今回の取得はthrottledで、動画内容は未確認。",
+          "date": "2022-02-04",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"乾伸一郎\" \"APEX\" マスター",
+        "\"乾伸一郎\" \"最高ダイヤ\"",
+        "site:youtube.com \"乾伸一郎\" \"マスター\" \"最高\"",
+        "\"乾伸一郎\" \"マスター\" \"到達\"",
+        "\"乾伸一郎\" \"APEX\" \"2022/02/04\"",
+        "\"pn7HQT66dOY\""
+      ],
+      "researchStatus": "found",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "ogosho-nyunko",
+      "name": "大御所にゅん子",
+      "rating": 2,
+      "ratingBasis": "2023年の本人インタビューでAPEXを半年ほど遊びゴールドまで上げたと説明。古い経験談のため今回用の仮2、現在の上達やランクは未確認。",
+      "rankLabel": "ゴールド（本人の過去経験談）",
+      "rankPeriod": "2023-08-08インタビュー以前。現在ランク未確認",
+      "confidence": "high",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "QT DIG∞",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://qtdig.com/team/",
+          "title": "QT DIG∞公式チーム一覧",
+          "note": "ストリーマー部門に大御所にゅん子を掲載。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://esportsnewsjapan.jp/streamer-interview-oogosyo/",
+          "title": "Streamer図鑑：大御所にゅん子本人インタビュー",
+          "note": "本人がAPEXを半年ほど遊んでゴールドまで上げた経験を説明。",
+          "date": "2023-08-08",
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"大御所にゅん子\" \"APEX\"",
+        "\"大御所にゅん子\" \"所属\" \"QT\""
+      ],
+      "researchStatus": "found",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "inferred"
+    },
+    {
+      "id": "sendo-yuuhi",
+      "name": "千燈ゆうひ",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "ぶいすぽっ！",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://vspo.jp/",
+          "title": "ぶいすぽっ！公式サイト",
+          "note": "所属メンバー千燈ゆうひのプロフィール。MOBA中心の説明をAPEX実力に換算しない。"
+        }
+      ],
+      "evidence": [],
+      "queries": [
+        "\"千燈ゆうひ\" \"APEX\" ランク",
+        "site:vspo.jp \"千燈ゆうひ\""
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "apamen",
+      "name": "apaMEN",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": "VARREL",
+      "organizationStatus": "verified",
+      "organizationsEvidence": [
+        {
+          "url": "https://ljl.gg/en/ljl2026/team/2XP14VqqHU",
+          "title": "LJL2026公式：VARREL YOUTH",
+          "note": "チームメンバーとしてapaMENを掲載。2026年の組織所属の参考。"
+        }
+      ],
+      "evidence": [],
+      "queries": [
+        "\"apaMEN\" \"APEX\"",
+        "\"apaMEN\" \"VARREL\" 2026"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "nesty",
+      "name": "Nesty",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://streamscharts.com/channels/nesu_kun/streams",
+          "title": "Nesty本人アカウントの配信集計",
+          "note": "nesu_kunのゲームカテゴリにAPEXがあるが、到達ランクを確認できず未評価。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"Nesty\" \"APEX\" \"LoL\"",
+        "\"ねすてぃー\" \"APEX\" ランク",
+        "\"Nesty\" 所属 2026 ストリーマー",
+        "\"Nesty\" \"FENNEL\" 退団",
+        "\"Nesty\" \"ねすてぃー\" 所属"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "recap",
+      "name": "Recap",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [
+        {
+          "url": "https://escharts.com/ja/players/recap",
+          "title": "Esports Charts：Recap",
+          "note": "REJECTは2025年10月までの過去所属という資料。現在REJECTという集計サイトの記載と不一致があるため現所属未確認。"
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://www.twitchmetrics.net/c/256964489-recaplol1/clips?page=3",
+          "title": "Recap本人アカウントのクリップ集計",
+          "note": "recaplol1のAPEXクリップは確認できるが、到達ランクを特定できず未評価。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"Recap\" \"APEX\" \"りきゃっぷ\"",
+        "\"Recap\" 所属 \"2026\"",
+        "\"Recap\" \"脱退\" \"REJECT\"",
+        "site:reject.jp \"Recap\""
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "haretti",
+      "name": "Haretti",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/channel/UCulhH1Et8Yu16SQqauhEAbA",
+          "title": "ハレっちゃんねる本人プロフィール",
+          "note": "元LJL選手の本人であることを確認。記載されるチャレンジャーはLoLのランクで、APEX評価には使わない。",
+          "date": null,
+          "kind": "primary"
+        }
+      ],
+      "queries": [
+        "\"Haretti\" \"APEX\"",
+        "\"ハレっち\" \"APEX\" ランク",
+        "\"Haretti\" 所属 2026",
+        "\"Haretti\" 所属 ストリーマー"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    },
+    {
+      "id": "thinton",
+      "name": "ThintoN",
+      "rating": null,
+      "ratingBasis": "今回の検索ではAPEX到達ランク・実力帯を裏付ける情報を特定できず、未評価。プレイ経験やLoLの実績だけでは点数を付けない。",
+      "rankLabel": null,
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "igl": "unknown",
+      "iglBasis": "IGLを担当する適性を直接裏付ける情報は未確認。ランクだけでは判定しない。",
+      "organization": null,
+      "organizationStatus": "unknown",
+      "organizationsEvidence": [],
+      "evidence": [
+        {
+          "url": "https://www.twitchpulse.com/thintonlol/",
+          "title": "ThintoN本人アカウントの配信集計",
+          "note": "LoL選手thintonlolと同一のアカウントにAPEXカテゴリがあるが、到達ランクを確認できず未評価。",
+          "date": null,
+          "kind": "secondary"
+        }
+      ],
+      "queries": [
+        "\"ThintoN\" \"APEX\"",
+        "\"てぃんとん\" \"APEX\" ランク",
+        "\"ThintoN\" 所属 現在"
+      ],
+      "researchStatus": "insufficient",
+      "checkedAt": "2026-11-24",
+      "ratingSource": "unknown"
+    }
+  ]
+}

@@ -62,3 +62,16 @@ localStorageキー: ltk4-apex-team-builder:v1。JSON入出力も同じ構造。�
 - history: 最大2000件。id/confirmedAt/teams/scores。scoresは確定時のrating/igl/provisional
 
 JSON読込は8MBまで。全体を検証してから確認付きで置換し、Undoに前状態を保持する。簡易パスワードは公開コード内SHA-256照合であり認証基盤ではない。
+
+## アプリ設定データ v2（現在）
+
+保存キー: ltk4-apex-team-builder:v2。v1キーを残し、移行を承認した場合だけv2へ書く。
+
+- version:2。現在ratingはnullまたは1〜5整数。未評価の計算値は3。
+- membersにorganization:string（80文字以内）を追加。旧設定からの初期値は空文字。
+- settingsにpastTeamとsameOrganizationのbooleanを追加。既存sameTeamはLTK4、pastTeamはLTK1〜3。
+- historyにratingScale:5/10を追加。v1履歴は10、現在評価のみceil(value/2)、新規確定履歴は5。過去scoresの値は変えない。
+- 公開調査メタデータはsite/research.js（60人のrating/rankPeriod/confidence/evidence/organizationsEvidence/queries/researchStatus）。ローカル手動設定とは別で、確認付きで未評価・空組織だけ補完し指定2名の5を反映する。
+- site/ltk-relations.jsは60人の各大会正規所属と675ペアの共通履歴。役割や階級、出典URL、取得時ハッシュと母集団件数を保持する。
+
+RIDDLE ORDER/RIDDLEなどの表記は正規化し、個人・無所属・所属不明は共通組織関係にしない。組織の過去情報は現在条件へ採用しない。
