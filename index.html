@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#19364b">
+  <meta name="description" content="LTK4 APEXカスタムの出欠・戦力・IGL・関係性を考慮したチーム編成ツール。">
+  <title>LTK4 | APEX Team Builder</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <script defer src="roster.js"></script><script defer src="core.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m1 4a5 5 0 0 1 4 5"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="m10 13 4-4m-5 7-2 2a4.2 4.2 0 0 1-6-6l4-4a4.2 4.2 0 0 1 6 0m2 0 2-2a4.2 4.2 0 0 1 6 6l-4 4a4.2 4.2 0 0 1-6 0" transform="translate(1 0)"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 4v6h6M3 10a9 9 0 1 1 0 5m9-9v6l4 2"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M3 6h3c5 0 6 12 11 12h4m-4-4 4 4-4 4M3 18h3c2 0 4-3 6-6s3-6 5-6h4m-4-4 4 4-4 4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L20 5"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 6 5 4 4-7 4 7 5-4-2 12H5L3 6zm2 15h14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="8" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="12" rx="3"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 5v3"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M4 4v7h7M4 11c2-8 16-8 16 2 0 6-5 8-10 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+  </defs></svg>
+  <section id="gate" class="gate">
+    <div class="gate-art" aria-hidden="true"><div class="gate-wordmark">LTK<span>4</span></div><div class="gate-lines"></div><p>GOOD TEAMS.<br>GREAT GAMES.</p><span class="gate-caption">APEX CUSTOM / TEAM BUILDER</span></div>
+    <div class="gate-panel"><div class="gate-form"><img src="assets/mark.svg" width="48" height="48" alt="LTK4"><span class="eyebrow">LTK4 EVENT TOOLS</span><h1>いいチームで、<br>いいゲームを。</h1><p class="muted">APEXカスタム チーム編成ツール</p>
+      <form id="login-form"><label for="password">パスワード</label><div class="password-wrap"><input id="password" type="password" required autocomplete="current-password" placeholder="運営用パスワードを入力"><button type="button" id="show-password" class="plain">表示</button></div><p id="login-error" class="error-text" role="alert"></p><button class="primary full" type="submit">ツールを開く</button></form>
+      <p class="gate-note">設定はこのブラウザに保存されます。<br>別の端末への受け渡しは設定ファイルで行えます。</p></div><span class="gate-footer">LTK4 · APEX TEAM BUILDER</span></div>
+  </section>
+  <div id="app" hidden>
+    <aside class="sidebar"><a class="brand" href="#teams" aria-label="LTK4 チーム編成"><img src="assets/mark.svg" width="38" height="38" alt=""><span>LTK<span class="brand-four">4</span><small>EVENT TOOLS</small></span></a><div class="side-event"><span class="live-label">APEX CUSTOM</span><strong>チーム編成</strong><span>集まる。組む。楽しむ。</span></div>
+      <nav aria-label="メインメニュー"><button data-view="teams" class="nav active"><svg class="icon"><use href="#i-grid"/></svg>チーム編成</button><button data-view="members" class="nav"><svg class="icon"><use href="#i-users"/></svg>メンバー管理<span class="nav-count">60</span></button><button data-view="relations" class="nav"><svg class="icon"><use href="#i-link"/></svg>関係性の設定</button><button data-view="history" class="nav"><svg class="icon"><use href="#i-history"/></svg>マッチ履歴<span id="history-count" class="nav-count">0</span></button></nav>
+      <div class="side-bottom"><div class="storage-info"><svg class="icon"><use href="#i-check"/></svg><span id="save-state">ブラウザに保存</span></div><p>他の人・端末とは自動同期しません。<br>設定ファイルで受け渡せます。</p><button id="help-open" class="text-button">使い方・受け渡し</button><button id="lock" class="text-button"><svg class="icon"><use href="#i-lock"/></svg>画面をロック</button><span class="version">LTK4 APEX TEAM BUILDER · v1.0</span></div>
+    </aside>
+    <div class="workspace"><header class="topbar"><span id="breadcrumb">WORKSPACE <span>/</span> チーム編成</span><div class="top-actions"><button id="export"><svg class="icon"><use href="#i-download"/></svg><span>設定を書き出す</span></button><button id="import"><svg class="icon"><use href="#i-upload"/></svg><span>読み込む</span></button><button id="help-top" aria-label="使い方・受け渡し">?</button><button id="lock-top" aria-label="画面をロック"><svg class="icon"><use href="#i-lock"/></svg></button><input id="import-file" type="file" accept=".json,application/json" hidden></div></header>
+      <main><div class="page-heading"><div><span class="eyebrow">LTK4 / APEX LEGENDS</span><h1 id="page-title">本日のチーム編成</h1><p id="page-subtitle">戦力と関係性を見ながら、ちょうどいい組み合わせに。</p></div><div class="heading-decoration" aria-hidden="true">APEX<span>CUSTOM</span></div></div>
+      <div id="save-warning" class="notice danger" hidden></div><section id="summary" class="summary" aria-label="参加状況"></section>
+      <section id="view-content"></section></main>
+      <footer class="page-footer"><span>LTK4 APEX TEAM BUILDER</span><span>主催者の判断をサポートする編成ツール</span></footer>
+    </div>
+  </div>
+  <dialog id="editor"><form id="editor-form"><header class="dialog-header"><div id="editor-profile"></div><button type="button" data-close="editor" class="icon-button" aria-label="閉じる"><svg class="icon"><use href="#i-close"/></svg></button></header><div class="dialog-body"><div class="edit-fields"><label>戦力評価<select id="edit-rating"></select></label><label>IGL適性<select id="edit-igl"><option value="unknown">未確認</option><option value="yes">あり</option><option value="no">なし</option></select></label><label>知り合いとの編成<select id="edit-social"><option value="none">特に指定なし</option><option value="prefer">できれば一緒</option><option value="required">最低1人は必要</option></select></label></div><div class="friend-heading"><div><h3>同じチームなら安心できる相手</h3><p>複数選べます。選んだ相手のうち1人と組む条件です。</p></div><button type="button" id="add-affiliation">同じ所属を追加</button></div><label class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="friend-search" type="search" placeholder="知り合い候補を検索" aria-label="知り合い候補を検索"></label><div id="friend-list" class="friend-list"></div><label class="note-label">参考メモ<textarea id="edit-note" rows="2" maxlength="500" placeholder="評価の根拠や参考URLなど"></textarea></label></div><footer class="dialog-footer"><span id="friend-count"></span><div><button type="button" data-close="editor">キャンセル</button><button class="primary" type="submit">設定を保存</button></div></footer></form></dialog>
+  <dialog id="message-dialog"><div class="dialog-header"><h2 id="message-title"></h2><button data-close="message-dialog" class="icon-button" aria-label="閉じる"><svg class="icon"><use href="#i-close"/></svg></button></div><div id="message-body" class="dialog-body"></div><div class="dialog-footer"><span></span><button class="primary" data-close="message-dialog">閉じる</button></div></dialog>
+  <dialog id="confirm-dialog"><div class="dialog-header"><h2 id="confirm-title"></h2></div><div id="confirm-body" class="dialog-body"></div><div class="dialog-footer"><span></span><div><button id="confirm-cancel">キャンセル</button><button id="confirm-yes" class="primary">実行する</button></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
