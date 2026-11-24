@@ -214,3 +214,22 @@ TASK-021追加調査は37名/143検索/新規1、022〜023実装・確認済み�
 51テスト・構文・別担当レビュー・ブラウザ/実JSON成功。移行で不要なIGL/空組織補完を検出して除去、再書出しで非rank設定と旧historyの完全一致を確認。元プロ10/Pred8/未確認仮5の合計、全20チーム合算一致、新履歴、旧14点/旧基準、手動変更と新JSON往復、モバイル表示とconsole errorなしを確認。
 
 残る限界: 36人は追加調査済みでも本人到達帯不明。鷹宮追加は古い二次記録で現在最高ではない。映像全件/実ゲーム/実機スマホは未実施。同期・厳密アクセス制限は未対応、Cloudflare/DB/外部認証/相手への連絡は追加なし。公開完了は後続追記を参照。
+
+## 2026-11-24 v4 公開完了
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "completed"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "旧設定は移行確認。未確認36人のランクとIGL・当日設定を手動補正"
+  nextCodexAction: "運営者の追加情報と改善要望に対応"
+```
+
+TASK-021〜024完了。変更ファイル・内容・設計整合・51テスト・UI/JSON比較は公開前記録とCYCLE-005に記載。37名143追加検索で鷹宮BronzeIのみ追加、現在24名確認/36未確認。元プロ10/Pred8/未確認仮5の固定点で合計を表示する。旧履歴と非rank設定は保持。
+
+公開URL https://misraxx.github.io/ltk4-apex-team-builder/ 。コード8a0f0ed54d05a5ae798cf72dd57c1477981a9849、Pagesソース63f09f699a131ab5c90592fc9b380bd1085da972 built。CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45387113718 success。公開版60人/24ランク/10選択肢/元プロ10・Pred8・鷹宮Bronze2/表示画像欠損0/console errorなしを確認。公開QAでは旧設定を上書きせず、移行見送りで新初期値を参照した。
+
+未対応: 自動同期・厳密な2人限定。未実施: 現在ランク・全配信映像・実ゲーム・実機スマホ。人間確認: 未確認36名の補正と当日設定。sources/他アプリ/他サイト/認証基盤は変更なし。証跡qa/v4-team-points.jpg、qa/v4-public-former-pro.jpg。
