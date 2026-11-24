@@ -5,13 +5,14 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
   const clone = x => JSON.parse(JSON.stringify(x));
-  const ranks = {unknown:'未確認',rookie:'ルーキー',bronze:'ブロンズ',silver:'シルバー',gold:'ゴールド',platinum:'プラチナ',diamond:'ダイヤモンド',master:'マスター',predator:'プレデター','former-pro':'元プロ'};
-  const rankPoints = {unknown:null,rookie:1,bronze:2,silver:3,gold:4,platinum:5,diamond:6,master:7,predator:8,'former-pro':10};
+  const ranks = {unknown:'実績未確認',rookie:'ルーキー',bronze:'ブロンズ',silver:'シルバー',gold:'ゴールド',platinum:'プラチナ',diamond:'ダイヤモンド',master:'マスター',predator:'プレデター','former-pro':'元APEXプロ','other-fps-pro':'他FPS元プロ','other-fps-top':'他FPS最高帯','other-fps-master':'他FPSマスター相当','other-fps-diamond':'他FPSダイヤ相当'};
+  const legacyRankPoints = {unknown:5,rookie:1,bronze:2,silver:3,gold:4,platinum:5,diamond:6,master:7,predator:8,'former-pro':10};
+  const rankPoints = {...legacyRankPoints,unknown:2,'other-fps-pro':7,'other-fps-top':6,'other-fps-master':5,'other-fps-diamond':4};
   function rankRating(rank) {return rankPoints[rank];}
-  const effectiveRating = m => m._snapshot ? m.rating : (rankRating(m.rank)??5);
+  const effectiveRating = m => m._snapshot ? m.rating : (rankRating(m.rank)??2);
   const pairKey = (a,b) => [a,b].sort().join('|');
   function createState(roster, research={}) {
-    return { version:4, eventName:'LTK4 APEX CUSTOM', members:Object.fromEntries(roster.map(p=>{const r=research[p.id]||{},rank=r.rank||'unknown';return [p.id,{attending:true,rank,rating:rankRating(rank),igl:r.igl||'unknown',social:'none',friends:[],note:'',organization:r.organizationStatus==='verified'?(r.organization||''):''}];})), settings:{sameTeam:true,pastTeam:true,sameOrganization:true,repeat:true}, draft:null, history:[] };
+    return { version:5, eventName:'LTK4 APEX CUSTOM', members:Object.fromEntries(roster.map(p=>{const r=research[p.id]||{},rank=r.rank||'unknown';return [p.id,{attending:true,rank,rating:rankRating(rank),igl:r.igl||'unknown',social:'none',friends:[],note:'',organization:r.organizationStatus==='verified'?(r.organization||''):''}];})), settings:{sameTeam:true,pastTeam:true,sameOrganization:true,repeat:true}, draft:null, history:[] };
   }
   function capacities(n) {
     if (!Number.isInteger(n) || n < 2 || n > 60) throw Error('出席者を2〜60人にしてください。');
@@ -29,8 +30,8 @@
   }
   function validateState(raw, roster, migration=false) {
     const fail = s => { throw Error('設定ファイルを読み込めません：'+s); };
-    const legacy=migration&&raw?.version===1, fivePoint=migration&&raw?.version===2, rankV3=migration&&raw?.version===3, oldVersion=legacy||fivePoint||rankV3;
-    if (!raw || (raw.version!==4&&!oldVersion) || !raw.members || !Array.isArray(raw.history)) fail('対応していない形式です。');
+    const legacy=migration&&raw?.version===1, fivePoint=migration&&raw?.version===2, rankV3=migration&&raw?.version===3, rankV4=migration&&raw?.version===4, oldVersion=legacy||fivePoint||rankV3||rankV4;
+    if (!raw || (raw.version!==5&&!oldVersion) || !raw.members || !Array.isArray(raw.history)) fail('対応していない形式です。');
     const ids=new Set(roster.map(p=>p.id)), state=createState(roster);
     if (Object.keys(raw.members).length!==60 || Object.keys(raw.members).some(id=>!ids.has(id))) fail('60人の名簿が一致しません。');
     if (typeof raw.eventName!=='string' || raw.eventName.length>80) fail('イベント名が不正です。');
@@ -45,6 +46,8 @@
       if(typeof organization!=='string'||organization.length>80)fail('所属組織が不正です。');
       const rank=legacy||fivePoint?'unknown':m.rank;
       if(typeof rank!=='string'||!Object.hasOwn(ranks,rank))fail('ランクが不正です。');
+      if((rankV3||rankV4)&&!Object.hasOwn(legacyRankPoints,rank))fail('旧設定のランクが不正です。');
+      if(rankV4&&m.rating!==(rank==='unknown'?null:legacyRankPoints[rank]))fail('旧ランクとポイントが一致しません。');
       if(!oldVersion&&m.rating!==rankRating(rank))fail('ランクとポイントが一致しません。');
       state.members[id]={attending:m.attending,rank,rating:rankRating(rank),igl:m.igl,social:m.social,friends:[...m.friends],note:m.note,organization};
     }
@@ -64,15 +67,16 @@
       const teams=checkTeams(h.teams,'履歴'); matchIds.add(h.id);
       const ratingScale=legacy?10:h.ratingScale;
       if(![5,10].includes(ratingScale))fail('履歴の評価段階が不正です。');
-      if(h.pointSystem!==undefined&&h.pointSystem!=='rank-fixed-v1')fail('履歴のポイント基準が不正です。');
-      if(h.pointSystem==='rank-fixed-v1'&&ratingScale!==10)fail('履歴のポイント基準が不正です。');
+      if(h.pointSystem!==undefined&&!['rank-fixed-v1','fps-evidence-v1'].includes(h.pointSystem))fail('履歴のポイント基準が不正です。');
+      if(h.pointSystem&&ratingScale!==10)fail('履歴のポイント基準が不正です。');
       const scores={};
       if(!h.scores||typeof h.scores!=='object') fail('履歴の評価がありません。');
       for(const id of teams.flat()) {
         const score=h.scores[id];
         if(!score||!Number.isInteger(score.rating)||score.rating<1||score.rating>ratingScale||!['yes','no','unknown'].includes(score.igl)||typeof score.provisional!=='boolean') fail('履歴の評価が不正です。');
         const rank=score.rank===undefined?'unknown':score.rank;if(typeof rank!=='string'||!Object.hasOwn(ranks,rank))fail('履歴のランクが不正です。');
-        if(h.pointSystem==='rank-fixed-v1'&&(score.rating!==(rankRating(rank)??5)||score.provisional!==(rank==='unknown')))fail('履歴のランクとポイントが一致しません。');
+        const table=h.pointSystem==='rank-fixed-v1'?legacyRankPoints:rankPoints;
+        if(h.pointSystem&&(!Object.hasOwn(table,rank)||score.rating!==table[rank]||score.provisional!==(rank==='unknown')))fail('履歴のランクとポイントが一致しません。');
         scores[id]={rating:score.rating,igl:score.igl,provisional:score.provisional,rank};
       }
       state.history.push({id:h.id,confirmedAt:h.confirmedAt,teams,scores,ratingScale,...(h.pointSystem?{pointSystem:h.pointSystem}:{})});
@@ -87,6 +91,7 @@
   function migrateV1(raw,roster){if(raw?.version!==1)throw Error('旧設定ではありません。');return validateState(raw,roster,true);}
   function migrateV2(raw,roster){if(raw?.version!==2)throw Error('旧5段階設定ではありません。');return validateState(raw,roster,true);}
   function migrateV3(raw,roster){if(raw?.version!==3)throw Error('旧ランク設定ではありません。');return validateState(raw,roster,true);}
+  function migrateV4(raw,roster){if(raw?.version!==4)throw Error('旧固定ポイント設定ではありません。');return validateState(raw,roster,true);}
   function pastTeamSeasons(a,b){return (a.ltkHistory||[]).filter(x=>[1,2,3].includes(x.season)&&(b.ltkHistory||[]).some(y=>x.season===y.season&&x.team===y.team)).map(x=>x.season);}
   function sameOrganization(a,b){
     const normalize=value=>{const s=(value||'').normalize('NFKC').toLocaleLowerCase().replace(/\s+/g,'').trim();const aliases={'riddleorder':'riddle','cr':'crazyraccoon','zeta':'zetadivision','dfm':'detonationfocusme','ネオポルテ':'neo-porte','neoporte':'neo-porte','ぶいすぽ':'ぶいすぽっ!','ぶいすぽっ':'ぶいすぽっ!','vspo':'ぶいすぽっ!'};return aliases[s]||s;};
@@ -174,7 +179,7 @@
     if(!report.valid)throw Error(report.issues.join('\n'));
     const next=clone(state),scores={};
     for(const id of state.draft.teams.flat())scores[id]={rating:effectiveRating(state.members[id]),igl:state.members[id].igl,provisional:state.members[id].rank==='unknown',rank:state.members[id].rank};
-    next.history.push({id:state.draft.id,confirmedAt:new Date().toISOString(),teams:clone(state.draft.teams),scores,ratingScale:10,pointSystem:'rank-fixed-v1'});
+    next.history.push({id:state.draft.id,confirmedAt:new Date().toISOString(),teams:clone(state.draft.teams),scores,ratingScale:10,pointSystem:'fps-evidence-v1'});
     return next;
   }
   function swap(teams,a,b) {
@@ -183,5 +188,5 @@
     if(!pa||!pb||pa[0]===pb[0])throw Error('別のチームのメンバーを選択してください。');
     [next[pa[0]][pa[1]],next[pb[0]][pb[1]]]=[next[pb[0]][pb[1]],next[pa[0]][pa[1]]];return next;
   }
-  return {createState,validateState,migrateV1,migrateV2,migrateV3,capacities,analyze,generate,confirmMatch,swap,pairCounts,pairKey,effectiveRating,pastTeamSeasons,sameOrganization,ranks,rankPoints,rankRating,clone};
+  return {createState,validateState,migrateV1,migrateV2,migrateV3,migrateV4,capacities,analyze,generate,confirmMatch,swap,pairCounts,pairKey,effectiveRating,pastTeamSeasons,sameOrganization,ranks,rankPoints,rankRating,clone};
 });
