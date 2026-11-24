@@ -1,0 +1,532 @@
+{
+  "checkedAt": "2026-11-24",
+  "players": [
+    {
+      "id": "maitake",
+      "name": "まいたけ",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"まいたけー\" \"APEX\" ランク",
+        "\"まいたけ\" \"APEX\" \"プラチナ\"",
+        "\"まいたけ\" \"ハセまつり\" ランク",
+        "\"_kinotake_\" \"APEX\"",
+        "\"kinotake00\" \"マスター\"",
+        "\"まいたけ\" \"kinotake\" \"ダイヤ\"",
+        "\"kinotake00\" \"プレデター\"",
+        "\"kinotake00\" \"APEX\" \"diamond\"",
+        "\"まいたけ\" \"APEX\" \"ダイヤ帯\"",
+        "site:youtube.com/watch \"ちょこらび\" \"_kinotake_\"",
+        "\"まいたけ\" \"kinotake00\" \"ちょこらび\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "ハセまつり 参加メンバー・チーム一覧",
+          "url": "https://cf-room.com/hasematsuri-apex/",
+          "date": null,
+          "note": "2025-08-23のAPEXイベントで、まいたけのXが@_kinotake_と掲載。個人ランクの記載はない。"
+        },
+        {
+          "kind": "primary",
+          "title": "【APEX】FC CUP w/あきとさん、まいたけさん【にじさんじ/える】",
+          "url": "https://www.youtube.com/watch?v=ajiJaBt9FlM",
+          "date": "2022-11-25",
+          "note": "共演者公式配信。説明の大会ポイント表は一般規定で、える自身のFAQにある最高ランクをまいたけへ転用できない。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "スト6初心者対戦会・まいたけマスターおめでとう会",
+          "url": "https://ckworks.jp/vinforadar/video/zyls3XOFxJ0",
+          "date": "2025-05-29",
+          "note": "本人アカウントの一致は確認できるが、マスターはStreet Fighter 6の実績。APEX到達としては不採用。"
+        }
+      ],
+      "identityVerification": {
+        "status": "matched",
+        "note": "LTKのゲーム配信者まいたけと元ちょこらび歌い手まいたけは、@_kinotake_・kinotake00・YouTube @-maitake-2134の相互参照から同一人物と確認。調査途中の別人疑いは撤回。既存の旧所属注記・FC CUP出典を誤人物として削除する根拠はない。現在所属nullは維持。",
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "黒燿リラ公式配信説明の参加者リンク",
+            "url": "https://ckworks.jp/vinforadar/video/I4VGAy7Wcuo",
+            "date": "2025-05-29",
+            "note": "まいたけ本人のYouTube @-maitake-2134、Twitch kinotake00、X @_kinotake_を一組として明示。"
+          },
+          {
+            "kind": "secondary",
+            "title": "まいたけ -Maitake- 本人動画説明",
+            "url": "https://yutura.net/channel/40863/video/MLcAcm6iG0w/",
+            "date": "2024-06-04",
+            "note": "Twitch kinotake00と、ちょこらび赤色担当の表記を同じ説明内で確認。"
+          },
+          {
+            "kind": "primary",
+            "title": "【MV】さぷらいずっ／ちょこらび",
+            "url": "https://www.youtube.com/watch?v=IAtQzoxDVFs",
+            "date": null,
+            "note": "公式グループ動画説明がまいたけのX @_kinotake_へリンク。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mittiii",
+      "name": "mittiii",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"im_mittiii\" \"Apex\" rank",
+        "\"mittiii\" \"エーペックス\" マスター",
+        "\"みっちー\" \"APEX\" \"最高ランク\"",
+        "\"mittiii\" \"APEX\" \"プラチナ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "mittiii本人インタビュー・O-HYPE CS2",
+          "url": "https://www.negitaku.org/news/n-27008",
+          "date": null,
+          "note": "APEX実績の検索で見つかったが、本文のMaster Guardian EliteはCS:GO、ゴールド／プラチナはVALORANTへの換算例。apEXはCS選手名。APEXゲーム内ランクの証拠ではない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "mittiii紹介",
+          "url": "https://streamer-reviewer.com/mittiii%E3%80%80-%E3%81%BF%E3%81%A3%E3%81%A1%E3%83%BC/",
+          "date": null,
+          "note": "マスター到達の記述はスト6。APEXの個人到達帯は掲載していない。"
+        }
+      ]
+    },
+    {
+      "id": "takaya-special",
+      "name": "たかやスペシャル",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"たかや\" \"Apex Legends\" \"ゴールド\"",
+        "\"takayaspecial\" \"APEX\" \"diamond\"",
+        "\"たかやスペシャル\" \"えぺまつり\" \"ランク\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "APEX配信一覧・たかやスペシャル",
+          "url": "https://funnoy.com/games/apex-legends",
+          "date": null,
+          "note": "2026-11-23の本人配信タイトル『kamitoと乾とぶいすぽGG』を確認。順位は配信視聴者順位でありゲーム内ランクではない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "えぺまつり NEON NIGHT 出演者とアーカイブ",
+          "url": "https://daredeeru.com/events/apex-matsuri-neon-night",
+          "date": null,
+          "note": "Yutapon・AlphaAzurとの同チーム参加を確認。個人の到達ランクは確認できない。"
+        }
+      ],
+      "rejectedEvidence": []
+    },
+    {
+      "id": "gonkane",
+      "name": "ごんかね",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"ごんかね\" \"APEX\" \"最高到達\"",
+        "\"kanegon1\" \"APEX\" ランク"
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "ごんかね - 限界非公式Wiki",
+          "url": "https://wikiwiki.jp/genkai/gonkane",
+          "date": null,
+          "note": "本人のTwitch kanegon1・YouTube qonkaneを照合してゲーム・プロフィール欄も確認。APEXの到達帯は特定できない。"
+        },
+        {
+          "kind": "primary",
+          "title": "守り硬めの構成でガン詰めしようとするごんかね達",
+          "url": "https://www.youtube.com/watch?v=4ym8yhT4v20",
+          "date": "2026-07-16",
+          "note": "本人説明で2026-07-06のKH・焼きパンとのAPEXフルパと確認。個人ランクなし。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "んそめ - 限界非公式Wiki",
+          "url": "https://wikiwiki.jp/genkai/nsome",
+          "date": null,
+          "note": "ごんかね検索で出るAPEXダイヤモンド表はんそめの実績。本人相違で不採用。"
+        }
+      ]
+    },
+    {
+      "id": "regrush-lionheart",
+      "name": "レグルシュ・ライオンハート",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"レグルシュ\" \"APEX\" \"ゴールド\"",
+        "\"Reglush Lionheart\" Apex rank"
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "リハビリAPEXランク～ガバエイムを添えて～",
+          "url": "https://ckworks.jp/vinforadar/video/FfOfliKzoN8",
+          "date": "2022-03-13",
+          "note": "本人配信の概要まで参照。ランクを遊ぶことはわかるが到達帯は不明。元YouTube本文の直接取得は制限され、プレイ画面は未視聴。"
+        },
+        {
+          "kind": "secondary",
+          "title": "レグルシュ・ライオンハート大会記録",
+          "url": "https://stcolle.com/streamers/reglush-lionheart",
+          "date": null,
+          "note": "人物・活動歴とイベント一覧を確認。APEXの個人到達ランク記載は見つからず。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Reglush Lionheart - TAIYORO",
+          "url": "https://taiyoro.gg/en/player/4AUUjMgMdy",
+          "date": null,
+          "note": "Rank/順位表はLoL等の大会結果でありAPEXランクではない。"
+        }
+      ]
+    },
+    {
+      "id": "raizin",
+      "name": "らいじん",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"alfrea\" \"APEX\" ランク",
+        "\"らいじん\" \"楽天\" \"APEX\" ランク",
+        "らいじん ソロダイア",
+        "らいじん APEX ダイヤ 2022",
+        "alfrea ダイヤ APEX",
+        "らいじん APEX ソロダイヤ",
+        "Eclair08 apex ダイヤ",
+        "Eclair08 ダイア",
+        "らいじん APEX ダイヤ到達",
+        "alfrea ダイヤ 2022",
+        "Eclair08 Apex",
+        "らいじん エーペックス ダイヤ",
+        "らいじん APEX ソロ ダイヤ4",
+        "しゃるる らいじん APEX 2022",
+        "Eclair08 プレデター",
+        "Eclair08 ダイヤモンド",
+        "alfrea APEX 2022-03"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "Rakuten esports cup 大争奪戦〜感謝の狂宴〜",
+          "url": "https://www.youtube.com/watch?v=S7CtplXYNxg",
+          "date": null,
+          "note": "大会公式説明にらいじんを掲載。参加そのものは個人到達ランクの証拠ではない。"
+        },
+        {
+          "kind": "primary",
+          "title": "ハセシン・1tappy・らいじん APEX大会動画",
+          "url": "https://www.youtube.com/watch?v=QJVo29SzQa0",
+          "date": null,
+          "note": "同一人物のAPEXプレイを確認。大会順位から個人ランクを逆算しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "2022-03-19のげまげま配信の紹介",
+          "url": "https://loluwasa.blogspot.com/2022/03/syaruru-rainergaue-jghasita.html",
+          "date": "2022-03-19",
+          "note": "朝にらいじん・しゃるるがAPEXを遊んだと記載。原Twitch VODリンクはあるが到達ランクへの言及なし。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "2022年3月の匿名掲示板にあるソロダイヤ言及",
+          "url": "https://lavender.5ch.io/test/read.cgi/net/1647061813/92-n",
+          "date": "2022-03-23",
+          "note": "らいじんのソロダイヤを示唆するが匿名の伝聞だけ。本人Eclair08／alfreaの到達報告、原配信画面へつながらず採用しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "らいじんマスター到達・KRサーバー記事",
+          "url": "https://yuumi-sokuhou.com/2024/11/18/post-5525/",
+          "date": "2024-11-18",
+          "note": "本人昇格投稿を引用するがKRサーバーLoLの実績。APEXのマスターには使わない。"
+        }
+      ]
+    },
+    {
+      "id": "yunika",
+      "name": "Yunika",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"ゆにかちゃんねる\" \"APEX\" ランク",
+        "\"yunika1\" \"Apex\" ランク"
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "ゆにかちゃんねる／yunika1",
+          "url": "https://www.twitchpulse.com/yunika1/",
+          "date": null,
+          "note": "本人アカウント説明・配信カテゴリ・クリップ欄まで確認。APEXカテゴリはあるが到達ランクは不明。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Yunikaクリップ・本人説明の転載",
+          "url": "https://www.twitchpulse.com/yunika1/",
+          "date": null,
+          "note": "Master↑の配信タイトルはJG等の文脈からLoL。『ゆふなさんダイヤモンド余裕』も別人かつLoLの文脈で、YunikaのAPEX実績には使えない。"
+        }
+      ]
+    },
+    {
+      "id": "eugeo",
+      "name": "Eugeo",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"ゆーじお\" \"APEX\" \"最高\"",
+        "\"eugeoja\" \"Apex\" ランク"
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "ゆーじお／eugeoja 配信ゲーム一覧",
+          "url": "https://streamscharts.com/channels/eugeoja/subscribers",
+          "date": null,
+          "note": "APEXカテゴリは確認。元LoLプロと一致するアカウントだがAPEX実到達ランク記載なし。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "title": "Eugeoという同名アカウントのプレデター検索結果",
+          "url": null,
+          "date": null,
+          "kind": "secondary",
+          "note": "元LoLプロEugeo／eugeojaと同一人物という裏付けがないため既存調査同様採用しない。"
+        }
+      ]
+    },
+    {
+      "id": "zerost",
+      "name": "Zerost",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"zerost_s\" \"APEX\" \"ランク\"",
+        "\"ゼロスト\" \"APEX\" \"プラチナ\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "Zerost本人アカウント配信履歴",
+          "url": "https://stream-log.com/streamer/zerost_s?from=streamers",
+          "date": null,
+          "note": "2026-07-04のLTK APEXカスタム等、一覧とゲーム区分を確認。APEX実到達帯なし。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "はじめての5vs5ランク ロル",
+          "url": "https://stream-log.com/stream/twitch/89969094?peak_at=2026-07-10T13%3A00%3A43.747Z",
+          "date": "2026-07-10",
+          "note": "ランクという語はLoL配信。APEX Pro TKLはキーボード名でありAPEX元プロの意味ではない。"
+        }
+      ]
+    },
+    {
+      "id": "enty",
+      "name": "Enty",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"えんてぃ\" \"APEX\" \"ゴールド\"",
+        "\"Enty\" \"Apex Legends\" \"rank\"",
+        "\"Enty\" \"APEX\" \"シルバー\""
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "ぶいすぽGG本番／昏昏アリア・ちーたま・えんてぃ",
+          "url": "https://www.youtube.com/watch?v=Vta21DUn4Dk",
+          "date": null,
+          "note": "共演者公式配信での人物一致・APEX参加のみ確認。到達ランクを示さない。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "初心者／APEX4日目というファン表現",
+          "url": null,
+          "date": null,
+          "note": "初心者・プレイ日数は特定のゲーム内ランク到達を証明しない。Rookieへ変換せずunknownを維持。"
+        }
+      ]
+    },
+    {
+      "id": "takamiya-rion",
+      "name": "鷹宮リオン",
+      "rank": "bronze",
+      "rankLabel": "ブロンズI（2021年S8 split2の確認到達・非公式記録）",
+      "rankPeriod": "2021-05-01、S8 split2。現在ランク・現在の最高到達ではない",
+      "confidence": "medium",
+      "researchStatus": "found",
+      "queries": [
+        "\"鷹宮リオン\" \"APEX\" \"ブロンズ\"",
+        "\"鷹宮リオン\" \"APEX\" \"シルバー\"",
+        "\"鷹宮リオン\" \"2021/05/01\" APEX",
+        "site:youtube.com/watch \"鷹宮リオン\" \"2021-05-01\"",
+        "\"鷹宮リオン\" \"三半規管を鍛える\" youtube",
+        "\"三半規管を鍛える超新人Apex\" \"youtube.com/watch\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "にじさんじ非公式Wiki／シーズン8：メイヘム",
+          "url": "https://wikiwiki.jp/nijisanji/Apex%20Legendsまとめ/ランクまとめ/シーズン8：メイヘム",
+          "date": "2021-05-01",
+          "note": "原表の鷹宮リオン行にsplit2ブロンズI・2021-05-01と明記。初心者という言葉からの推定ではない。原配信のランク画面は未視聴。"
+        },
+        {
+          "kind": "secondary",
+          "title": "にじさんじ非公式Wiki／全シーズン通算",
+          "url": "https://wikiwiki.jp/nijisanji/Apex%20Legendsまとめ/ランクまとめ/全シーズン通算",
+          "date": "2021-05-01",
+          "note": "同人物のブロンズI・2021-05-01記録と整合。複製表なので独立した二つ目の証拠とは数えない。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "永遠の初心者～反射神経おばあちゃんえぺ～",
+          "url": "https://www.youtube.com/watch?v=4ohPwoNN0wU",
+          "date": "2023-06-16",
+          "note": "本人の初心者表現からルーキーというゲーム内ランクは断定できない。このタイトルは今回のブロンズ採用根拠ではない。"
+        }
+      ]
+    },
+    {
+      "id": "tatsumaki-chise",
+      "name": "龍巻ちせ",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"龍巻ちせ\" \"APEX\" \"ゴールド\"",
+        "\"ちーたま\" \"APEX\" \"シルバー\"",
+        "\"龍巻ちせ\" \"APEX\" \"プラチナ\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "龍巻ちせ／ゲーム関連 - ぶいすぽ非公式Wiki",
+          "url": "https://wikiwiki.jp/vspo/龍巻ちせ/ゲーム関連",
+          "date": null,
+          "note": "ゲーム最高ランク欄はLoLとTFTだけ。本人のLoLグランドマスターをAPEXへ流用しない。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "銀城サイネと龍巻ちせデビュー紹介",
+          "url": "https://kai-you.net/article/94371",
+          "date": null,
+          "note": "APEX最高プラチナ4の記載は前段の銀城サイネの紹介。龍巻ちせのランクには使えない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "APEX初心者のちーたまを扱う切り抜き",
+          "url": "https://ckworks.jp/vinforadar/video/kirinuki/e2sS7isJnG8",
+          "date": null,
+          "note": "初心者表現のみではRookieを含む実到達ランクを特定できない。"
+        }
+      ]
+    },
+    {
+      "id": "yutapon",
+      "name": "Yutapon",
+      "rank": "unknown",
+      "rankLabel": "APEX到達ランク未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"ゆたぽん\" \"APEX\" \"ランク\"",
+        "\"yutapongo\" \"APEX\" \"master\"",
+        "Yutapon APEX マスター プラチナ",
+        "\"ゆたぽん\" \"エーペックス\" ランク",
+        "\"Yutapon\" \"APEX\" \"プラチナ\""
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "Ceros・YutaponとAPEXランクマッチ／シーズン11",
+          "url": "https://www.youtube.com/watch?v=Tsov-foNqMQ",
+          "date": null,
+          "note": "APEX本人プレイの原動画候補。今回本文取得がthrottledとなり画面のランクは確認していない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "えぺまつり NEON NIGHT",
+          "url": "https://daredeeru.com/events/apex-matsuri-neon-night",
+          "date": null,
+          "note": "AlphaAzur・たかやスペシャルとの参加は確認。各人の実到達ランクなし。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "LJL yutapon - OP.GG",
+          "url": "https://op.gg/ja/lol/summoners/jp/LJL%20yutapon-JP1?queue_type=URF",
+          "date": null,
+          "note": "検索で出るマスター／プラチナはLoLのランク。人物一致もゲーム内ID名だけでは確定しないためAPEX根拠にしない。"
+        }
+      ]
+    }
+  ]
+}

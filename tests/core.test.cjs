@@ -1,7 +1,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const C=require('../site/core.js');const ctx={window:{}};vm.runInNewContext(fs.readFileSync(require('node:path').resolve(__dirname,'../site/roster.js'),'utf8'),ctx);
 const roster=JSON.parse(JSON.stringify(ctx.window.LTK_ROSTER.players));
-function fixture(n=60){const s=C.createState(roster);roster.forEach((p,i)=>{s.members[p.id].attending=i<n;s.members[p.id].rating=i%10+1;});return s;}
+function fixture(n=60){const s=C.createState(roster),ranks=['rookie','bronze','silver','gold','platinum','diamond','master','predator','former-pro'];roster.forEach((p,i)=>{s.members[p.id].attending=i<n;s.members[p.id].rank=ranks[i%ranks.length];s.members[p.id].rating=C.rankRating(s.members[p.id].rank);});return s;}
 const quick={seed:420,iterations:6000,restarts:3};
 test('public roster has exactly 60 unique IDs, four affiliations and valid local portraits',()=>{
  assert.equal(roster.length,60);assert.equal(new Set(roster.map(p=>p.id)).size,60);assert.equal(new Set(roster.map(p=>p.team)).size,4);
@@ -32,9 +32,9 @@ test('IGLs are distributed when one per team is possible',()=>{
  const d=C.generate(roster,s,quick),r=C.analyze(d.teams,roster,s);assert.equal(r.iglTeams,4);
 });
 test('a required friend pair can move together into a duo to balance the totals',()=>{
- const s=fixture(59);for(const m of Object.values(s.members))m.rating=5;
+ const s=fixture(59);for(const m of Object.values(s.members)){m.rank='platinum';m.rating=5;}
  const a=roster.find(p=>p.id==='yufuna').id,b=roster.find(p=>p.id==='kanae').id;
- s.members[a].rating=9;s.members[a].social='required';s.members[a].friends=[b];
+ s.members[a].rank='former-pro';s.members[a].rating=10;s.members[a].social='required';s.members[a].friends=[b];
  const d=C.generate(roster,s,{...quick,iterations:9000});const r=C.analyze(d.teams,roster,s);
  assert.ok(r.valid);assert.ok(r.range<=1,'point spread '+r.range);
  assert.ok(d.teams.some(t=>t.length===2&&t.includes(a)&&t.includes(b)));
@@ -49,11 +49,11 @@ test('attendance edits invalidate an existing draft instead of silently omitting
 });
 test('confirmation creates one immutable snapshot, rejects duplicates and unfulfilled conditions',()=>{
  const s=fixture(6);s.draft=C.generate(roster,s,quick);const next=C.confirmMatch(s,roster);assert.equal(s.history.length,0);assert.equal(next.history.length,1);assert.throws(()=>C.confirmMatch(next,roster),/確定済み/);
- const id=roster[0].id,point=next.history[0].scores[id].rating;next.members[id].rating=5;assert.equal(next.history[0].scores[id].rating,point);
+ const id=roster[0].id,point=next.history[0].scores[id].rating;next.members[id].rank='platinum';next.members[id].rating=5;assert.equal(next.history[0].scores[id].rating,point);
  const bad=fixture(6);bad.draft=C.generate(roster,bad,quick);bad.members[id].social='required';bad.members[id].friends=[];assert.throws(()=>C.confirmMatch(bad,roster),/知り合い/);
 });
 test('confirmed history informs the next match and repeated pairs are reduced',()=>{
- let s=fixture(12);for(const m of Object.values(s.members))m.rating=5;s.settings.sameTeam=false;s.draft=C.generate(roster,s,quick);s=C.confirmMatch(s,roster);s.draft=null;
+ let s=fixture(12);for(const m of Object.values(s.members)){m.rank='platinum';m.rating=5;}s.settings.sameTeam=false;s.draft=C.generate(roster,s,quick);s=C.confirmMatch(s,roster);s.draft=null;
  const next=C.generate(roster,s,{...quick,seed:123});assert.equal(C.analyze(next.teams,roster,s).repeats,0);assert.equal(s.history.length,1);
 });
 test('unrated players remain null while provisional 5 points are used in totals',()=>{

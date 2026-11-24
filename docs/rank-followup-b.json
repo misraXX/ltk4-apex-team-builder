@@ -1,0 +1,276 @@
+{
+  "checkedAt": "2026-11-24",
+  "players": [
+    {
+      "id": "rainbrain",
+      "name": "Rainbrain",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"Rainbrain\" \"Apex\" \"ダイヤ\"",
+        "レインブレイン エーペックス ランク 最高",
+        "\"Rainbrain\" \"APEX\" \"ブロンズ\"",
+        "\"fujimako1231\" \"Apex\" \"ランク\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=-1o4BAIJGxw",
+          "reason": "本人の2019年APEX動画だが取得テキストに到達ランクがない。映像内ランク未確認。"
+        },
+        {
+          "url": "https://akiba-pc.watch.impress.co.jp/docs/eswatch/704917.html",
+          "reason": "LoL選手インタビュー。ApeXは対戦チーム名でありAPEX Legendsランクではない。"
+        }
+      ]
+    },
+    {
+      "id": "ceros",
+      "name": "Ceros",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"Ceros\" \"APEX\" \"ダイヤ\"",
+        "\"Ceros\" \"エーペックス\" ランク",
+        "\"Ceros\" \"APEX\" \"ゴールド\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=h&p=%E3%81%86%E3%82%8B%E3%81%8B+or+%E3%81%86%E3%82%8B%E3%83%BC%E3%81%8B+or+uruca+or+%E3%81%86%E3%82%8B%E3%81%97%E3%82%83+%E3%83%A9%E3%83%B3%E3%82%AF&rkf=1",
+          "reason": "Ceros本人の5v5ランクと、別投稿者のAPEXランクが混在。本人APEX到達の証明ではない。"
+        }
+      ]
+    },
+    {
+      "id": "yuhi",
+      "name": "Yuhi",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"Yuhi\" \"Apex\" \"プラチナ\"",
+        "\"Yuhi\" \"エーペックス\" ランク"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=r0slj11TX6Y",
+          "reason": "プラチナ到達表記は夕陽リリ（Yuhi Riri）。LTKのYuhi本人ではない。"
+        }
+      ]
+    },
+    {
+      "id": "nemoh",
+      "name": "NEMOH",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"NEMOH\" \"APEX\" ランク 最高",
+        "\"ねも\" \"NEMOH\" \"APEX\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "reason": "別名・APEX到達帯で追加検索したが本人に一致する到達記録を確認できず。根拠不足を低ランク扱いしない。"
+        }
+      ]
+    },
+    {
+      "id": "mother3",
+      "name": "MOTHER3",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"MOTHER3\" \"Apex\" \"ランク\" -VALORANT -ヴァロラント",
+        "まざー エペ マスター 到達",
+        "\"mother3rd\" \"apex\" \"rank\"",
+        "\"mother3rrd\" \"ダイヤ\" \"APEX\"",
+        "\"MOTHER3\" \"APEX\" \"プラチナ\" -VALORANT -ストリートファイター"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=tnVE7_9hGsE",
+          "reason": "ダイヤ/マスターはストリートファイター6。概要欄のAPEX再生リストと混同しない。"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uYD1tUL6bRw",
+          "reason": "初心者だけどソロダイヤ居るという複数人配信タイトル。本人到達か確定できず、映像も未確認。"
+        },
+        {
+          "url": "https://gamerch.com/apexlegends/569299",
+          "reason": "CRカップ出場と大会ポイントはあるが、本人の実到達ランクがない。大会点から逆算しない。"
+        }
+      ]
+    },
+    {
+      "id": "amanogawa-neru",
+      "name": "天ノ川ねる",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "天ノ川ねる Apex ゴールド プラチナ",
+        "\"天ノ川ねる\" \"APEX\" \"ランク\" -LTK"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://www.ptt.cc/bbs/Vtuber/M.1752575126.A.2FE.html",
+          "reason": "2025-07-15本人APEX配信の転載はあるが、到達帯は掲載なし。自己表現から初心者ランクを割り当てない。"
+        }
+      ]
+    },
+    {
+      "id": "sakayori-soma",
+      "name": "酒寄颯馬",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "酒寄颯馬 Apex ランク ダイヤ",
+        "\"酒寄颯馬\" \"APEX\" \"シルバー\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://wikiwiki.jp/nijisanji/%E9%85%92%E5%AF%84%E9%A2%AF%E9%A6%AC/%E8%A9%B3%E3%81%97%E3%81%8F%E7%9F%A5%E3%82%8A%E3%81%9F%E3%81%84/%E6%9C%AC%E4%BA%BA%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89",
+          "reason": "VALORANT/Overwatch/CSGO/LoLの最高ランクで、APEX到達記録なし。"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sbtpWGacxf0",
+          "reason": "LoLランクとAPEXカスタムの併記であり、APEX到達帯の記載ではない。"
+        }
+      ]
+    },
+    {
+      "id": "stanmi",
+      "name": "スタンミじゃぱん",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"スタンミ\" \"APEX\" \"プラチナ\"",
+        "\"スタンミ\" \"apex\" \"ゴールド\"",
+        "\"スタンミ\" \"エペ\" \"ランク\" -ヴァロ -VALO -スト6"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://note.com/notelolnote/n/n7acb0f8a1246",
+          "reason": "プラチナはVALORANTの話。APEX到達ではない。"
+        }
+      ]
+    },
+    {
+      "id": "kagura-mea",
+      "name": "神楽めあ",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"神楽めあ\" \"apex\" \"プラチナ\"",
+        "\"神楽めあ\" \"APEX\" \"ブロンズ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://twstalker.com/Tokugawa_Chiyo",
+          "reason": "神楽めあのダイヤ到達計画はVALORANT公式企画の転載であり、APEX到達ではない。"
+        }
+      ]
+    },
+    {
+      "id": "washidai",
+      "name": "Washidai",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"Washidai\" \"Apex\" \"ダイヤ\"",
+        "\"わしだい\" \"APEX\" ランク"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://clip-navi.com/clips/SuavePreciousLegHeyGuys-j7pLhnHl9QTYXktO?from=broadcaster%3Awashidai_&period=custom&sort=views",
+          "reason": "本人APEXクリップの存在は確認。テキストにランクなし、映像内は未確認。"
+        }
+      ]
+    },
+    {
+      "id": "sharuru",
+      "name": "しゃるる",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"しゃるる\" \"APEX\" \"ランク\" -LoL -LOL",
+        "\"しゃるる\" \"エペ\" \"ダイヤ\"",
+        "\"syaruruuu\" \"ダイヤ\" \"apex\"",
+        "\"しゃるる\" \"APEX\" \"ダイア\"",
+        "\"しゃるる\" \"エペ\" \"プラチナ\"",
+        "\"しゃるる\" \"APEX\" \"最高\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://lavender.5ch.io/test/read.cgi/net/1647061813/92-n",
+          "reason": "匿名掲示板の達成言及。本人報告と達成帯を確認できず、単独採用しない。"
+        },
+        {
+          "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&p=apex+%E3%83%A9%E3%83%B3%E3%82%AF+%E8%A1%8C%E3%81%91%E3%81%AA%E3%81%84&rkf=1",
+          "reason": "同名APEX51067915はLTKしゃるるのsyaruruuuと一致せず、別人として除外。"
+        }
+      ]
+    },
+    {
+      "id": "tanukininja",
+      "name": "たぬき忍者",
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "queries": [
+        "\"たぬき忍者\" \"APEX\" \"ゴールド\"",
+        "\"たぬき忍者\" \"エーペックス\" \"ランク\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "url": "https://www.kyodemo.net/sdemo/r/s_netgame_16645/1624943755/",
+          "reason": "ゴールドの記述はVALORANTスレッド。他ゲームからAPEXへ換算しない。"
+        }
+      ]
+    }
+  ],
+  "limitations": "検索と取得テキストの確認。配信映像内のランク表示は未確認。一部YouTube取得制限あり。"
+}

@@ -195,3 +195,22 @@ TASK-015/016/018/019/020完了。TASK-017点数表示公開は本人変更で保
 mainコード51492e69bb79b74d60d69e271e22ebe53158d22b、Pagesソース5f5ae874beb8c395868b2c24ba5b39b98a3b03d7がbuilt。CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45384371220 success。公開 https://misraxx.github.io/ltk4-apex-team-builder/ の60人・23ランク・9選択肢・Yukio/HinanoのPred・全ランク画像欠損0・点数表示なし・コンソールエラーなしをブラウザ確認。公開QAは旧設定を上書きせず移行見送りで参照した。
 
 未対応: 自動同期/厳密な2人限定。未実施: 実ゲーム/実機スマホ。次の人間確認: 古い到達実績・ランク不明37人・IGL/知り合い条件の補正。同期・認証基盤の追加や、相手への直接連絡は行っていない。証跡qa/v3-public-ranks.jpg。
+
+## 2026-11-24 固定ランクポイント 公開前
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "in_progress"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "未確認36人のランクと当日設定を手動補正"
+  nextCodexAction: "v4を同じURLへ公開し最終確認"
+```
+
+TASK-021追加調査は37名/143検索/新規1、022〜023実装・確認済み、024公開待ち。site/core/app/index/styles/research、tools/build_research、tests3ファイル、追加調査JSON3件、README/package/AGENTS/運用docsを変更。最新本人要望を設計末尾へ先行反映し、v4固定点と確認移行で整合。
+
+51テスト・構文・別担当レビュー・ブラウザ/実JSON成功。移行で不要なIGL/空組織補完を検出して除去、再書出しで非rank設定と旧historyの完全一致を確認。元プロ10/Pred8/未確認仮5の合計、全20チーム合算一致、新履歴、旧14点/旧基準、手動変更と新JSON往復、モバイル表示とconsole errorなしを確認。
+
+残る限界: 36人は追加調査済みでも本人到達帯不明。鷹宮追加は古い二次記録で現在最高ではない。映像全件/実ゲーム/実機スマホは未実施。同期・厳密アクセス制限は未対応、Cloudflare/DB/外部認証/相手への連絡は追加なし。公開完了は後続追記を参照。

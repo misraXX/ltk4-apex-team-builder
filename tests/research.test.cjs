@@ -17,6 +17,8 @@ const players = new Map(research.players.map(p => [p.id, p]));
 const sorted = values => [...values].sort();
 const pairKey = (a, b) => [a, b].sort().join('|');
 const sharedKey = shared => `${shared.season}|${shared.team}`;
+// These were the unverified ranks before the follow-up research cycle.
+const followupBaseline = ['maitake','mittiii','takaya-special','gonkane','regrush-lionheart','raizin','yunika','eugeo','zerost','enty','takamiya-rion','tatsumaki-chise','yutapon','rainbrain','ceros','yuhi','nemoh','mother3','amanogawa-neru','sakayori-soma','stanmi','kagura-mea','washidai','sharuru','tanukininja','day1','hetel','kohaku-uru','haruchya','nagisacchi','toko','sendo-yuuhi','apamen','nesty','recap','haretti','thinton'];
 const httpSource = source => {
   assert.ok(source && typeof source.url === 'string', 'source must have a URL');
   const url = new URL(source.url);
@@ -36,28 +38,27 @@ test('research covers the exact 60-person roster once each', () => {
   }
 });
 
-test('ten-point calibration separates former competition pros from historical predators', () => {
+test('rank-fixed calibration separates former Apex pros from Predator without personal point adjustments', () => {
   assert.equal(research.ratingScale, 10);
+  assert.equal(research.pointSystem, 'rank-fixed-v1');
+  assert.deepEqual(research.rankPoints, C.rankPoints);
   for (const p of research.players) {
     assert.ok(p.rating === null || (Number.isInteger(p.rating) && p.rating >= 1 && p.rating <= 10), p.id);
+    assert.equal(p.rating, C.rankRating(p.rank), `${p.id}: rating must follow rank`);
     if (p.researchStatus === 'insufficient') assert.equal(p.rating, null, `${p.id}: insufficient is not beginner`);
     if (p.rating !== null) {
       assert.ok(p.ratingBasis.trim(), p.id);
       assert.ok(p.evidence.length > 0, `${p.id}: rated without evidence`);
     }
-    if (p.legacyRating5 === 1) {
-      assert.ok(p.evidence.some(e => e.kind === 'primary'), `${p.id}: beginner needs a primary source`);
-      assert.match(p.ratingBasis, /初心者|未経験/, p.id);
-    }
+    if (p.legacyRating5 === 1 && p.rank === 'unknown') assert.equal(p.rating, null, `${p.id}: a beginner description is not a verified placement`);
   }
   assert.equal(players.get('yukio').rating, 10);
-  assert.equal(players.get('yufuna').rating, 9);
+  assert.equal(players.get('yufuna').rating, 8);
   assert.equal(players.get('tachibana-hinano').rating, 8);
   assert.ok(players.get('yukio').rating > players.get('tachibana-hinano').rating);
-  assert.equal(players.get('yukio').ratingSource, 'inferred');
 });
 
-test('researched ranks preserve distinctions in ability without guessing ranks from subjective points', () => {
+test('researched ranks use fixed points and follow-up findings rather than subjective beginner assumptions', () => {
   for (const p of research.players) {
     assert.equal(typeof p.rank, 'string', `${p.id}: rank missing`);
     assert.ok(Object.hasOwn(C.ranks, p.rank), `${p.id}: invalid rank`);
@@ -66,14 +67,12 @@ test('researched ranks preserve distinctions in ability without guessing ranks f
       assert.ok(p.evidence.length > 0, `${p.id}: rank without evidence`);
     }
   }
-  assert.equal(research.players.filter(p => p.rank !== 'unknown').length, 23);
-  assert.equal(research.players.filter(p => p.rank === 'unknown').length, 37);
-  assert.equal(players.get('yukio').rank, 'predator');
+  assert.equal(players.get('yukio').rank, 'former-pro');
   assert.equal(players.get('yufuna').rank, 'predator');
   assert.equal(players.get('tachibana-hinano').rank, 'predator');
-  assert.deepEqual(['yukio', 'yufuna', 'tachibana-hinano'].map(id => players.get(id).rating), [10, 9, 8]);
+  assert.deepEqual(['yukio', 'yufuna', 'tachibana-hinano'].map(id => players.get(id).rating), [10, 8, 8]);
   const beginner = players.get('takamiya-rion');
-  assert.equal(beginner.rank, 'unknown', 'beginner evidence does not prove a Rookie placement');
+  assert.equal(beginner.rank, 'bronze', 'the follow-up found an actual historical placement');
   assert.equal(beginner.rating, 2);
   const state = C.createState(roster.players, Object.fromEntries(players));
   for (const p of research.players) {
@@ -85,7 +84,7 @@ test('researched ranks preserve distinctions in ability without guessing ranks f
 
 test('all eight delivered rank images match their documented official source crops and SHA256', () => {
   const attribution = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../docs/rank-icon-sources.json'), 'utf8'));
-  const expected = Object.keys(C.ranks).filter(rank => rank !== 'unknown');
+  const expected = Object.keys(C.ranks).filter(rank => !['unknown', 'former-pro'].includes(rank));
   assert.deepEqual(attribution.assets.map(asset => asset.id), expected);
   assert.equal(new URL(attribution.source.pageUrl).hostname, 'help.ea.com');
   assert.equal(new URL(attribution.source.imageUrl).hostname, 'help.ea.com');
@@ -104,6 +103,47 @@ test('all eight delivered rank images match their documented official source cro
     assert.equal(right - left, asset.width, asset.id);
     assert.equal(bottom - top, asset.height, asset.id);
   }
+});
+
+test('follow-up records cover all 37 originally unverified players and consistently reach the delivered research', () => {
+  const documents = ['a', 'b', 'c'].map(group => JSON.parse(fs.readFileSync(path.resolve(__dirname, `../docs/rank-followup-${group}.json`), 'utf8')));
+  const followups = documents.flatMap(document => {
+    assert.ok(Number.isFinite(Date.parse(document.checkedAt)), 'follow-up date required');
+    assert.ok(Array.isArray(document.players));
+    return document.players;
+  });
+  assert.equal(followups.length, followupBaseline.length);
+  assert.equal(new Set(followups.map(p => p.id)).size, followupBaseline.length, 'each person must be checked once');
+  assert.deepEqual(sorted(followups.map(p => p.id)), sorted(followupBaseline));
+  for (const p of followups) {
+    const published = players.get(p.id);
+    assert.equal(p.name, published.name, p.id);
+    assert.equal(typeof p.rank, 'string', p.id);
+    assert.ok(Object.hasOwn(C.ranks, p.rank), p.id);
+    assert.equal(published.rank, p.rank, `${p.id}: follow-up not incorporated`);
+    assert.ok(published.additionalResearch, `${p.id}: published follow-up detail missing`);
+    for (const key of ['rank', 'queries', 'evidence', 'rejectedEvidence']) assert.deepEqual(published.additionalResearch[key], p[key], `${p.id}: follow-up ${key}`);
+    assert.ok(Array.isArray(p.queries) && p.queries.length >= 2, `${p.id}: two or more follow-up searches required`);
+    assert.ok(p.queries.every(query => typeof query === 'string' && query.trim()), p.id);
+    assert.ok(new Set(p.queries).size >= 2, `${p.id}: duplicate queries do not count as additional research`);
+    assert.ok(Array.isArray(p.evidence), p.id);
+    assert.ok(Array.isArray(p.rejectedEvidence), p.id);
+    for (const evidence of p.evidence) httpSource(evidence);
+    for (const evidence of p.rejectedEvidence) if (evidence.url) httpSource(evidence);
+    if (p.rank !== 'unknown') {
+      assert.ok(p.evidence.length > 0, `${p.id}: rank finding requires evidence`);
+      assert.ok(p.rankPeriod, `${p.id}: historical rank period missing`);
+    } else {
+      assert.equal(published.rating, null, `${p.id}: uncertain skill must not produce an invented rank`);
+    }
+    for (const query of p.queries) assert.ok(published.queries.includes(query), `${p.id}: follow-up query absent from distribution`);
+  }
+  const added = followups.filter(p => p.rank !== 'unknown').length;
+  assert.equal(research.summary.followupSearched, followups.length);
+  assert.equal(research.summary.followupAdded, added);
+  assert.equal(research.summary.followupQueries, followups.reduce((total, player) => total + player.queries.length, 0));
+  assert.equal(research.summary.rankUnknown, followups.length - added);
+  assert.equal(research.summary.ranked, research.players.length - followups.length + added);
 });
 
 test('current organizations and positive IGL claims carry inspectable evidence', () => {

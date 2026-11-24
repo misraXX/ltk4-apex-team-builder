@@ -76,7 +76,7 @@ JSON読込は8MBまで。全体を検証してから確認付きで置換し、U
 
 RIDDLE ORDER/RIDDLEなどの表記は正規化し、個人・無所属・所属不明は共通組織関係にしない。組織の過去情報は現在条件へ採用しない。
 
-## アプリ設定データ v3（現在）
+## アプリ設定データ v3（旧版）
 
 保存キーltk4-apex-team-builder:v3、旧v1/v2を保持。確認後に新キーへ保存する。
 
@@ -87,3 +87,13 @@ RIDDLE ORDER/RIDDLEなどの表記は正規化し、個人・無所属・所属�
 - scoresにrank追加、新規確定時にスナップショット保存。省略された旧履歴はunknown。null/配列/未知ランクは拒否。
 - 公開調査にrank/formerApexPro追加。23人ランク確認、37人未確認。内部既定値24人とランク確認人数は別。公開JSONに内部点は含むが、UIとコピー出力に含めない。JSONバックアップにも内部値を保持する。
 - 出欠・組織・IGL・知り合い・ドラフト・確定履歴の基本構造は継続。個人のローカル変更を公開配信へ送信しない。
+
+## アプリ設定データ v4（現在）
+
+- localStorage:ltk4-apex-team-builder:v4。v1/v2/v3は確認して新キーへ移行、旧キーは残す。
+- members.rankにformer-pro追加。固定rating:rookie1/bronze2/silver3/gold4/platinum5/diamond6/master7/predator8/former-pro10/unknown:null。rankとrating不一致は拒否。通常計算はrank由来、不明の実効値5。
+- v3現在値はrankに従い正規化。v1/v2の主観点からrankを逆算せず、unknownから調査実績を付与。v3既知手動rankは保持、Yukio旧Predだけ元プロへ昇格。旧IGL・所属等は補完もせずそのまま保持。
+- 新history.pointSystem:rank-fixed-v1。ratingScale10、scores.ratingはrankの固定値（unknownなら5）、scores.provisionalはrankunknownと一致させ、読み込みで整合検証。
+- pointSystemのない旧historyは旧rating/scaleを保持し旧基準と表示。確定ボードの_snapshot:trueの評価だけは旧ratingを使う。通常の新編成には適用しない。
+- 公開researchにrankPoints/pointSystem追加、ranked24/unknown36、followupSearched37/followupAdded1/followupQueries143。全対象の照会と不採用理由はadditionalResearchとdocs/rank-followup-*.json。
+- 元プロ画像は既存Pred画像を参照、公式ランクではない独自区分。新しい画像ファイルは追加していない。

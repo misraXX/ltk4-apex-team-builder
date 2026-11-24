@@ -1,0 +1,416 @@
+{
+  "checkedAt": "2026-11-24",
+  "players": [
+    {
+      "id": "day1",
+      "name": "Day1",
+      "queries": [
+        "\"day1lol\" \"apex\" \"diamond\"",
+        "\"デイワン\" \"APEX\" \"プラチナ\"",
+        "\"Day1week\" \"Apex\" rank",
+        "\"Day1week\" \"apex\" \"tracker\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人Twitch About",
+          "url": "https://www.twitch.tv/day1lol/about",
+          "date": null,
+          "note": "今回取得できた本文は0行。プロフィール内の到達ランクを確認できない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "TwitchMetrics：Day1本人アカウント",
+          "url": "https://www.twitchmetrics.net/c/181642473-day1lol",
+          "date": null,
+          "note": "自己紹介転載にApexアカウントDay1weekの記載はあるが到達ランクなし。ページ上のrankはTwitch視聴ランキングでありAPEXランクではない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "hetel",
+      "name": "hetel",
+      "queries": [
+        "\"heteeel\" \"apex\" \"マスター\"",
+        "\"へてる\" \"apex\" \"プラチナ\"",
+        "\"へてる\" \"エーペックス\" ランク",
+        "\"heteel\" \"APEX\" ランク"
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人Twitch About",
+          "url": "https://www.twitch.tv/heteeel/about",
+          "date": null,
+          "note": "本文0行で本人説明を確認できない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "へてるの配信集計",
+          "url": "https://www.komekasegi.com/ch/heteeel/",
+          "date": "2026-06-29",
+          "note": "2026-06-28/29のAPEX配信は確認できるが、到達ランクはない。チャレンジャー等の他の配信タイトルはLeague of Legendsなので採用しない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "kohaku-uru",
+      "name": "狐白うる",
+      "queries": [
+        "\"狐白うる\" \"エーペックス\" ランク",
+        "\"kohaku_uru\" \"ダイヤ\"",
+        "\"狐白うる\" \"ランク\" APEX -TFT -League",
+        "site:x.com/kohaku_uru \"APEX\" \"ランク\"",
+        "\"Sr0KfyJSNEk\"",
+        "\"狐白うる\" \"APEX\" \"プラチナ\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "UltraLMTM非公式Wiki：狐白うる",
+          "url": "https://wikiwiki.jp/ultra_lmtm/%E7%8B%90%E7%99%BD%E3%81%86%E3%82%8B",
+          "date": null,
+          "note": "本人アカウントとの一致は確認できるが、ページ本文にAPEX到達ランクの記載がない。"
+        },
+        {
+          "kind": "primary",
+          "title": "本人APEXランク配信",
+          "url": "https://www.youtube.com/watch?v=Sr0KfyJSNEk",
+          "date": null,
+          "note": "今回直接openはfetch throttled。既存の配信題名だけではランク帯を特定できず、映像内の表示も未確認。"
+        },
+        {
+          "kind": "secondary",
+          "title": "FFL APEX BLOCK PARTY名簿と配信一覧",
+          "url": "https://daredeeru.com/events/ffl-apex-block-party-2026",
+          "date": null,
+          "note": "アステル・レダ、Nyanmerryと同チームでの大会参加記録。大会参加や共演者の強さから本人ランクを推測しない。"
+        },
+        {
+          "kind": "primary",
+          "title": "本人TFT配信",
+          "url": "https://www.youtube.com/watch?v=xNVVp_Fk_Po",
+          "date": "2026-09-13",
+          "note": "ランク配信でもタイトルはTFT。APEXランクとして採用しない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "haruchya",
+      "name": "春茶",
+      "queries": [
+        "\"harutya\" \"apex\" \"master\"",
+        "\"春茶\" \"Apex\" \"到達\"",
+        "\"春茶\" \"最高ランク\"",
+        "site:x.com/HARUTYA1226 \"apex\"",
+        "\"HARUTYA1226\" \"Apex\" \"ダイヤ\"",
+        "\"HARUTYA1226\" \"APEX\" \"ランク\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "春茶のデバイス記事・本人ポスト引用",
+          "url": "https://johotaxi.com/harutya-devices/",
+          "date": "2021-05-06",
+          "note": "2021-05-06の本人投稿に基づく最高ランク到達はVALORANTのRadiant。APEXの到達実績ではない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "春茶の大会履歴",
+          "url": "https://stcolle.com/streamers/harutya",
+          "date": "2023-07-22",
+          "note": "2023-07-22 APEX Asia Festival出場などはあるが、本人到達ランクの記載はない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "nagisacchi",
+      "name": "なぎさっち",
+      "queries": [
+        "\"Nagisatty\" \"APEX\" rank",
+        "\"なぎさっち\" \"ダイヤ\" Apex",
+        "site:x.com/Nagiponpoko \"APEX\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Twitch Rivals Apex Legends Japan Showdownの名簿",
+          "url": "https://stcolle.com/events/twitch-rivals-apex-legends-showdown-japan",
+          "date": "2022-03-06",
+          "note": "2022-03-06にnagisatty・Uinyan・じゃすぱーのTeam17として参加。ランクの明記はなく大会順位や共演から換算しない。"
+        },
+        {
+          "kind": "primary",
+          "title": "本人APEX動画",
+          "url": "https://www.youtube.com/watch?v=xUJmo8IDnMU",
+          "date": null,
+          "note": "今回直接openはfetch throttled。以前確認した題名はAPEX動画だが到達ランクは不明、映像内ランクも未確認。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "toko",
+      "name": "とおこ",
+      "queries": [
+        "\"とおこ\" \"えぺまつり\" \"ランク\"",
+        "\"urs_toko\" \"apex\" \"プラチナ\"",
+        "\"とおこ\" \"最高ランク\"",
+        "site:x.com/urs_toko \"ランク\" \"APEX\"",
+        "\"とおこ\" \"APEX\" \"シルバー\"",
+        "\"No.1005\" \"APEX\" \"ランク\"",
+        "\"とおこ\" \"Apex Legends\" \"ブロンズ\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "REJECT公式本人プロフィール",
+          "url": "https://reject.jp/member/toko/",
+          "date": null,
+          "note": "URS-No.1005ととおこの同一人物性は確認。本人のAPEX到達ランクは記載なし。"
+        },
+        {
+          "kind": "secondary",
+          "title": "LoL VTuber最高ランク一覧",
+          "url": "https://johotaxi.com/lol-vtuber-ranked/",
+          "date": null,
+          "note": "とおこのPlatinum4という記載はLeague of Legendsの最高ランク。APEXに流用しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "2024-11-16の配信索引",
+          "url": "https://www.ptt.cc/bbs/Vtuber/M.1731737169.A.5B9.html",
+          "date": "2024-11-16",
+          "note": "本人Twitchの『はじめてのえぺまつり』出場配信へリンクしているが、初大会という文言はゲーム初心者やランクを意味しない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "sendo-yuuhi",
+      "name": "千燈ゆうひ",
+      "queries": [
+        "\"千燈ゆうひ\" \"Apex Legends\" \"ゴールド\"",
+        "\"sendo_yuuhi\" \"apex\" \"silver\"",
+        "\"千燈ゆうひ\" \"APEX\" \"シルバー\"",
+        "\"LK098gl6iZo\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "ぶいすぽ非公式Wiki：千燈ゆうひのゲーム関連",
+          "url": "https://wikiwiki.jp/vspo/%E5%8D%83%E7%87%88%E3%82%86%E3%81%86%E3%81%B2/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%A2%E9%80%A3",
+          "date": null,
+          "note": "MASTERはLoL、EmeraldはTFT、Platinum3はスト6、Silver?はVALORANTの項目。本人APEXランクの記載はない。"
+        },
+        {
+          "kind": "primary",
+          "title": "朝にやることと言えば…／本人APEX配信",
+          "url": "https://www.youtube.com/watch?v=LK098gl6iZo",
+          "date": "2025-05-31",
+          "note": "今回直接取得はthrottle。以前検索で確認した概要の『マスター踏んだことある』の主語は共演者ノリさんで、千燈本人ではないため除外。本人のランク帯は未確認。"
+        },
+        {
+          "kind": "secondary",
+          "title": "公式切り抜き内容の索引",
+          "url": "https://ckworks.jp/vinforadar/video/SRbX0-nnYSQ",
+          "date": "2025-06-01",
+          "note": "本人チャンネルの『ロボになったノリさんとAPEXで楽しく遊びました』から元配信と鈴木ノリアキ共演を確認できるが、千燈本人の到達ランクはない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "apamen",
+      "name": "apaMEN",
+      "queries": [
+        "\"apamelol\" \"apex\" ランク",
+        "\"apaMEN\" \"Apex Legends\" \"ダイヤ\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人Twitch About",
+          "url": "https://www.twitch.tv/apamenlol/about",
+          "date": null,
+          "note": "本文0行でプロフィールのAPEX到達ランクは確認できない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "本人プロフィールの転載",
+          "url": "https://www.twstalker.com/cafeter1asan",
+          "date": null,
+          "note": "引用プロフィールの元プロ歴はLoL。APEX競技プロ歴やランクの根拠に使わない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "nesty",
+      "name": "Nesty",
+      "queries": [
+        "\"nesu_kun\" \"apex\" \"ダイヤ\"",
+        "\"nesu_lol\" \"APEX\" \"マスター\"",
+        "\"ねすてぃー\" \"エーペックス\" \"ランク\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人Twitch About",
+          "url": "https://www.twitch.tv/nesu_kun/about",
+          "date": null,
+          "note": "今回ツールでアクセス不可。APEX到達ランクを確認できず。"
+        },
+        {
+          "kind": "secondary",
+          "title": "LoL編成・選手記録を含む記事",
+          "url": "https://lolsyoshinsya.hatenablog.com/?page=5",
+          "date": null,
+          "note": "Nestyの名前とMaster/Diamondという語が同一ページにあるがLoLの記事であり、本人APEX実績を示さない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "recap",
+      "name": "Recap",
+      "queries": [
+        "\"recaplol1\" \"APEX\" \"ダイヤ\"",
+        "\"りきゃっぷ\" \"エーペックス\" ランク",
+        "\"Recaplol1\" \"APEX\" \"マスター\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人Twitch About",
+          "url": "https://www.twitch.tv/recaplol1/about",
+          "date": null,
+          "note": "本文0行でプロフィールのAPEXランクを確認できない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "本人Twitchクリップの集計",
+          "url": "https://www.twitchmetrics.net/c/256964489-recaplol1/clips?page=3",
+          "date": null,
+          "note": "『マイペースなRecapさん』はAPEXカテゴリだがランク明示はない。同ページの『CCマスターたち』等はLoLカテゴリでAPEX根拠に使わない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "haretti",
+      "name": "Haretti",
+      "queries": [
+        "\"harehare215\" \"apex\" \"ダイヤ\"",
+        "\"ハレっち\" \"APEX\" \"プラチナ\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "ハレっちゃんねる",
+          "url": "https://www.youtube.com/channel/UCulhH1Et8Yu16SQqauhEAbA",
+          "date": null,
+          "note": "今回取得できたのはYouTubeフッターのみ。本人プロフィールやAPEX到達ランクを確認できない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "本人プロフィールの転載",
+          "url": "https://ngntipkolamrenang.twstalker.com/ponta_card_valo",
+          "date": null,
+          "note": "ハレっちの本人説明にあるLJLで3年間プロ活動はLoL。ページ内の他者APEX実績と混同しない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    },
+    {
+      "id": "thinton",
+      "name": "ThintoN",
+      "queries": [
+        "\"thintonlol\" \"apex\" rank",
+        "\"てぃんとん\" \"APEX\" \"ダイヤ\""
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人Twitch About",
+          "url": "https://www.twitch.tv/thintonlol/about",
+          "date": null,
+          "note": "今回ツールでアクセス不可。本人APEXランク未確認。"
+        },
+        {
+          "kind": "secondary",
+          "title": "ThintoNの配信集計",
+          "url": "https://www.twitchpulse.com/thintonlol/",
+          "date": null,
+          "note": "APEXカテゴリはあるが到達ランクの明示なし。直近LoL配信やLoLクリップのエメ等の文言をAPEXに使わない。"
+        }
+      ],
+      "rank": "unknown",
+      "rankLabel": "未確認",
+      "rankPeriod": null,
+      "confidence": "unknown",
+      "researchStatus": "insufficient",
+      "evidence": []
+    }
+  ]
+}
+
