@@ -5,10 +5,12 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
   const clone = x => JSON.parse(JSON.stringify(x));
-  const effectiveRating = m => m.rating == null ? 3 : m.rating;
+  const effectiveRating = m => m.rating == null ? 5 : m.rating;
+  const ranks = {unknown:'未確認',rookie:'ルーキー',bronze:'ブロンズ',silver:'シルバー',gold:'ゴールド',platinum:'プラチナ',diamond:'ダイヤモンド',master:'マスター',predator:'プレデター'};
+  function rankRating(rank, research={}) {return rank===research.rank&&research.rating!=null?research.rating:({unknown:null,rookie:1,bronze:2,silver:3,gold:4,platinum:5,diamond:6,master:7,predator:9})[rank];}
   const pairKey = (a,b) => [a,b].sort().join('|');
   function createState(roster, research={}) {
-    return { version:2, eventName:'LTK4 APEX CUSTOM', members:Object.fromEntries(roster.map(p=>{const r=research[p.id]||{};return [p.id,{attending:true,rating:r.rating??null,igl:r.igl||'unknown',social:'none',friends:[],note:'',organization:r.organizationStatus==='verified'?(r.organization||''):''}];})), settings:{sameTeam:true,pastTeam:true,sameOrganization:true,repeat:true}, draft:null, history:[] };
+    return { version:3, eventName:'LTK4 APEX CUSTOM', members:Object.fromEntries(roster.map(p=>{const r=research[p.id]||{};return [p.id,{attending:true,rank:r.rank||'unknown',rating:r.rating??null,igl:r.igl||'unknown',social:'none',friends:[],note:'',organization:r.organizationStatus==='verified'?(r.organization||''):''}];})), settings:{sameTeam:true,pastTeam:true,sameOrganization:true,repeat:true}, draft:null, history:[] };
   }
   function capacities(n) {
     if (!Number.isInteger(n) || n < 2 || n > 60) throw Error('出席者を2〜60人にしてください。');
@@ -26,21 +28,23 @@
   }
   function validateState(raw, roster, migration=false) {
     const fail = s => { throw Error('設定ファイルを読み込めません：'+s); };
-    const legacy=migration&&raw?.version===1;
-    if (!raw || (raw.version!==2&&!legacy) || !raw.members || !Array.isArray(raw.history)) fail('対応していない形式です。');
+    const legacy=migration&&raw?.version===1, fivePoint=migration&&raw?.version===2;
+    if (!raw || (raw.version!==3&&!legacy&&!fivePoint) || !raw.members || !Array.isArray(raw.history)) fail('対応していない形式です。');
     const ids=new Set(roster.map(p=>p.id)), state=createState(roster);
     if (Object.keys(raw.members).length!==60 || Object.keys(raw.members).some(id=>!ids.has(id))) fail('60人の名簿が一致しません。');
     if (typeof raw.eventName!=='string' || raw.eventName.length>80) fail('イベント名が不正です。');
     state.eventName=raw.eventName;
     for (const id of ids) {
       const m=raw.members[id];
-      if (!m || typeof m.attending!=='boolean' || !(m.rating===null || Number.isInteger(m.rating)&&m.rating>=1&&m.rating<=(legacy?10:5))) fail('戦力点・出欠が不正です。');
+      if (!m || typeof m.attending!=='boolean' || !(m.rating===null || Number.isInteger(m.rating)&&m.rating>=1&&m.rating<=(fivePoint?5:10))) fail('戦力点・出欠が不正です。');
       if (!['yes','no','unknown'].includes(m.igl) || !['required','prefer','none'].includes(m.social)) fail('IGL・関係性の設定が不正です。');
       if (!Array.isArray(m.friends)||m.friends.length>59||m.friends.some(x=>!ids.has(x)||x===id)||new Set(m.friends).size!==m.friends.length) fail('知り合いの指定が不正です。');
       if (typeof m.note!=='string'||m.note.length>500) fail('メモは500文字以内にしてください。');
       const organization=legacy?'':m.organization;
       if(typeof organization!=='string'||organization.length>80)fail('所属組織が不正です。');
-      state.members[id]={attending:m.attending,rating:legacy&&m.rating!==null?Math.ceil(m.rating/2):m.rating,igl:m.igl,social:m.social,friends:[...m.friends],note:m.note,organization};
+      const rank=legacy||fivePoint?'unknown':m.rank;
+      if(typeof rank!=='string'||!Object.hasOwn(ranks,rank))fail('ランクが不正です。');
+      state.members[id]={attending:m.attending,rank,rating:fivePoint&&m.rating!==null?m.rating*2:m.rating,igl:m.igl,social:m.social,friends:[...m.friends],note:m.note,organization};
     }
     if (!raw.settings || typeof raw.settings.sameTeam!=='boolean'||typeof raw.settings.repeat!=='boolean') fail('編成方針が不正です。');
     if(!legacy&&(typeof raw.settings.pastTeam!=='boolean'||typeof raw.settings.sameOrganization!=='boolean'))fail('関係性の編成方針が不正です。');
@@ -63,7 +67,8 @@
       for(const id of teams.flat()) {
         const score=h.scores[id];
         if(!score||!Number.isInteger(score.rating)||score.rating<1||score.rating>ratingScale||!['yes','no','unknown'].includes(score.igl)||typeof score.provisional!=='boolean') fail('履歴の評価が不正です。');
-        scores[id]={rating:score.rating,igl:score.igl,provisional:score.provisional};
+        const rank=score.rank===undefined?'unknown':score.rank;if(typeof rank!=='string'||!Object.hasOwn(ranks,rank))fail('履歴のランクが不正です。');
+        scores[id]={rating:score.rating,igl:score.igl,provisional:score.provisional,rank};
       }
       state.history.push({id:h.id,confirmedAt:h.confirmedAt,teams,scores,ratingScale});
     }
@@ -75,6 +80,7 @@
     return state;
   }
   function migrateV1(raw,roster){if(raw?.version!==1)throw Error('旧設定ではありません。');return validateState(raw,roster,true);}
+  function migrateV2(raw,roster){if(raw?.version!==2)throw Error('旧5段階設定ではありません。');return validateState(raw,roster,true);}
   function pastTeamSeasons(a,b){return (a.ltkHistory||[]).filter(x=>[1,2,3].includes(x.season)&&(b.ltkHistory||[]).some(y=>x.season===y.season&&x.team===y.team)).map(x=>x.season);}
   function sameOrganization(a,b){
     const normalize=value=>{const s=(value||'').normalize('NFKC').toLocaleLowerCase().replace(/\s+/g,'').trim();const aliases={'riddleorder':'riddle','cr':'crazyraccoon','zeta':'zetadivision','dfm':'detonationfocusme','ネオポルテ':'neo-porte','neoporte':'neo-porte','ぶいすぽ':'ぶいすぽっ!','ぶいすぽっ':'ぶいすぽっ!','vspo':'ぶいすぽっ!'};return aliases[s]||s;};
@@ -161,8 +167,8 @@
     const report=analyze(state.draft.teams,roster,state);
     if(!report.valid)throw Error(report.issues.join('\n'));
     const next=clone(state),scores={};
-    for(const id of state.draft.teams.flat())scores[id]={rating:effectiveRating(state.members[id]),igl:state.members[id].igl,provisional:state.members[id].rating===null};
-    next.history.push({id:state.draft.id,confirmedAt:new Date().toISOString(),teams:clone(state.draft.teams),scores,ratingScale:5});
+    for(const id of state.draft.teams.flat())scores[id]={rating:effectiveRating(state.members[id]),igl:state.members[id].igl,provisional:state.members[id].rating===null,rank:state.members[id].rank};
+    next.history.push({id:state.draft.id,confirmedAt:new Date().toISOString(),teams:clone(state.draft.teams),scores,ratingScale:10});
     return next;
   }
   function swap(teams,a,b) {
@@ -171,5 +177,5 @@
     if(!pa||!pb||pa[0]===pb[0])throw Error('別のチームのメンバーを選択してください。');
     [next[pa[0]][pa[1]],next[pb[0]][pb[1]]]=[next[pb[0]][pb[1]],next[pa[0]][pa[1]]];return next;
   }
-  return {createState,validateState,migrateV1,capacities,analyze,generate,confirmMatch,swap,pairCounts,pairKey,effectiveRating,pastTeamSeasons,sameOrganization,clone};
+  return {createState,validateState,migrateV1,migrateV2,capacities,analyze,generate,confirmMatch,swap,pairCounts,pairKey,effectiveRating,pastTeamSeasons,sameOrganization,ranks,rankRating,clone};
 });

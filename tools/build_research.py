@@ -28,10 +28,37 @@ for r in rows:
     r['ratingSource']='user' if r['id'] in ['yukio','yufuna'] else 'inferred' if r['rating'] is not None else 'unknown'
 for id in ['yukio','yufuna']:
     assert next(r for r in rows if r['id']==id)['rating']==5
+for r in rows:
+    old=r['rating'];r['legacyRating5']=old
+    r['rating']=None if old is None else {1:2,2:4,3:6,4:7,5:8}[old]
+    if r['id']=='yukio':
+        r['rating']=10
+        r['ratingBasis']='RIDDLE公式が元APEX競技プロ・世界大会出場を明記。10段階では元競技プロの基準として仮10。'
+    elif r['id']=='yufuna':
+        r['rating']=9
+        r['ratingBasis']='ユーザーが上位基準に挙げたプレデター経験者。本人の到達動画もあり、10段階の暫定基準を9とする。'
+    elif r['id']=='kinako':
+        r['rating']=9
+    if old is not None:
+        r['ratingBasis']=r['ratingBasis'].replace('仮'+str(old),'仮'+str(r['rating'])) if r['id'] not in ['yukio','yufuna'] else r['ratingBasis']
+    r['ratingSource']='inferred' if r['rating'] is not None else 'unknown'
 by_id={r['id']:r for r in rows}
+for r in rows:
+    # Rank is a sourced accomplishment, never an inverse of subjective points.
+    r['rank']='unknown'
+    for label,key in [('プレデター','predator'),('マスター','master'),('ダイヤ','diamond'),('プラチナ','platinum'),('ゴールド','gold'),('シルバー','silver'),('ブロンズ','bronze'),('ルーキー','rookie')]:
+        if label in (r.get('rankLabel') or ''):
+            r['rank']=key
+            break
+    r['formerApexPro']=r['id']=='yukio'
+    if r['id']=='yukio':
+        r['rank']='predator'
+        r['rankLabel']='プレデター（本人の過去到達報告）／元APEXプロ'
+        r['rankPeriod']='2022-09-10の本人到達報告。競技活動は2024-10まで。現在ランクではない。'
+        r['evidence'].append({'kind':'secondary','title':'@YukioFPS プレデター到達報告の転載','url':'https://twfan.net/user/1123532598456619014/old/13','date':'2022-09-10','note':'本人投稿の転載でプレデター到達を確認。現在ランクとはしない。'})
 rows=[by_id[p['id']] for p in roster]
-summary={'searched':60,'rated':sum(r['rating'] is not None for r in rows),'unrated':sum(r['rating'] is None for r in rows),'organizationsVerified':sum(r['organizationStatus']=='verified' for r in rows),'iglVerified':sum(r['igl']=='yes' for r in rows)}
-payload={'version':'2026-11-24-r1','checkedAt':'2026-11-24','ratingScale':5,'summary':summary,'rubric':{'5':'元APEXプロ・プレデター','4':'マスター','3':'ダイヤ','2':'確認できる一般経験者','1':'本人が初心者と明示','unknown':'情報不足・未評価'},'players':rows}
+summary={'searched':60,'ranked':sum(r['rank']!='unknown' for r in rows),'rankUnknown':sum(r['rank']=='unknown' for r in rows),'rated':sum(r['rating'] is not None for r in rows),'unrated':sum(r['rating'] is None for r in rows),'organizationsVerified':sum(r['organizationStatus']=='verified' for r in rows),'iglVerified':sum(r['igl']=='yes' for r in rows)}
+payload={'version':'2026-11-24-r3-rank-display','checkedAt':'2026-11-24','ratingScale':10,'summary':summary,'rubric':{'10':'元APEX競技プロの内部基準','8-9':'プレデター実績の内部基準','7':'マスター実績','6':'ダイヤ実績','3-4':'一般経験者','1-2':'初心者','unknown':'情報不足'},'players':rows}
 out=ROOT/'site/research.js'
 out.write_text('window.LTK_RESEARCH='+json.dumps(payload,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
 (ROOT/'docs/public-research.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')

@@ -3,6 +3,8 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const crypto = require('node:crypto');
+const C = require('../site/core.js');
 
 // Exercise the exact static assets delivered to Pages, without browser globals.
 const context = { window: {} };
@@ -34,23 +36,73 @@ test('research covers the exact 60-person roster once each', () => {
   }
 });
 
-test('five-point ratings preserve unknowns and the two user-specified values', () => {
-  assert.equal(research.ratingScale, 5);
+test('ten-point calibration separates former competition pros from historical predators', () => {
+  assert.equal(research.ratingScale, 10);
   for (const p of research.players) {
-    assert.ok(p.rating === null || (Number.isInteger(p.rating) && p.rating >= 1 && p.rating <= 5), p.id);
+    assert.ok(p.rating === null || (Number.isInteger(p.rating) && p.rating >= 1 && p.rating <= 10), p.id);
     if (p.researchStatus === 'insufficient') assert.equal(p.rating, null, `${p.id}: insufficient is not beginner`);
     if (p.rating !== null) {
       assert.ok(p.ratingBasis.trim(), p.id);
       assert.ok(p.evidence.length > 0, `${p.id}: rated without evidence`);
     }
-    if (p.rating === 1) {
+    if (p.legacyRating5 === 1) {
       assert.ok(p.evidence.some(e => e.kind === 'primary'), `${p.id}: beginner needs a primary source`);
       assert.match(p.ratingBasis, /初心者|未経験/, p.id);
     }
   }
-  for (const id of ['yukio', 'yufuna']) {
-    assert.equal(players.get(id).rating, 5, id);
-    assert.equal(players.get(id).ratingSource, 'user', id);
+  assert.equal(players.get('yukio').rating, 10);
+  assert.equal(players.get('yufuna').rating, 9);
+  assert.equal(players.get('tachibana-hinano').rating, 8);
+  assert.ok(players.get('yukio').rating > players.get('tachibana-hinano').rating);
+  assert.equal(players.get('yukio').ratingSource, 'inferred');
+});
+
+test('researched ranks preserve distinctions in ability without guessing ranks from subjective points', () => {
+  for (const p of research.players) {
+    assert.equal(typeof p.rank, 'string', `${p.id}: rank missing`);
+    assert.ok(Object.hasOwn(C.ranks, p.rank), `${p.id}: invalid rank`);
+    if (p.rank !== 'unknown') {
+      assert.ok(typeof p.rankLabel === 'string' && p.rankLabel.trim(), `${p.id}: rank detail missing`);
+      assert.ok(p.evidence.length > 0, `${p.id}: rank without evidence`);
+    }
+  }
+  assert.equal(research.players.filter(p => p.rank !== 'unknown').length, 23);
+  assert.equal(research.players.filter(p => p.rank === 'unknown').length, 37);
+  assert.equal(players.get('yukio').rank, 'predator');
+  assert.equal(players.get('yufuna').rank, 'predator');
+  assert.equal(players.get('tachibana-hinano').rank, 'predator');
+  assert.deepEqual(['yukio', 'yufuna', 'tachibana-hinano'].map(id => players.get(id).rating), [10, 9, 8]);
+  const beginner = players.get('takamiya-rion');
+  assert.equal(beginner.rank, 'unknown', 'beginner evidence does not prove a Rookie placement');
+  assert.equal(beginner.rating, 2);
+  const state = C.createState(roster.players, Object.fromEntries(players));
+  for (const p of research.players) {
+    assert.equal(state.members[p.id].rank, p.rank, p.id);
+    assert.equal(state.members[p.id].rating, p.rating, p.id);
+  }
+  assert.deepEqual(C.validateState(JSON.parse(JSON.stringify(state)), roster.players), state);
+});
+
+test('all eight delivered rank images match their documented official source crops and SHA256', () => {
+  const attribution = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../docs/rank-icon-sources.json'), 'utf8'));
+  const expected = Object.keys(C.ranks).filter(rank => rank !== 'unknown');
+  assert.deepEqual(attribution.assets.map(asset => asset.id), expected);
+  assert.equal(new URL(attribution.source.pageUrl).hostname, 'help.ea.com');
+  assert.equal(new URL(attribution.source.imageUrl).hostname, 'help.ea.com');
+  assert.ok(attribution.rights.attribution.includes('Electronic Arts'));
+  for (const asset of attribution.assets) {
+    assert.equal(asset.path, `site/assets/ranks/${asset.id}.png`);
+    const bytes = fs.readFileSync(path.resolve(__dirname, '..', asset.path));
+    assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), asset.sha256, asset.id);
+    assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', asset.id);
+    assert.equal(bytes.readUInt32BE(16), asset.width, asset.id);
+    assert.equal(bytes.readUInt32BE(20), asset.height, asset.id);
+    assert.ok(asset.width > 20 && asset.height > 20, asset.id);
+    assert.equal(asset.sourceUrl, attribution.source.imageUrl, asset.id);
+    const [left, top, right, bottom] = asset.cropBox;
+    assert.ok(left >= 0 && top >= 0 && right <= attribution.source.width && bottom <= attribution.source.height, asset.id);
+    assert.equal(right - left, asset.width, asset.id);
+    assert.equal(bottom - top, asset.height, asset.id);
   }
 });
 
@@ -73,7 +125,7 @@ test('current organizations and positive IGL claims carry inspectable evidence',
 test('known historical facts do not become current affiliations or lose later achievements', () => {
   assert.equal(players.get('mother3').organizationStatus, 'former');
   assert.notEqual(players.get('mother3').organization, 'REJECT');
-  assert.equal(players.get('shaka').rating, 5);
+  assert.equal(players.get('shaka').rating, 8);
   assert.ok(players.get('shaka').evidence.some(e => e.kind === 'primary' && /プレデター/.test(`${e.title} ${e.note}`)));
 });
 
@@ -82,6 +134,8 @@ test('research summary is calculated from the delivered records', () => {
   assert.equal(research.summary.searched, research.players.length);
   assert.equal(research.summary.rated, rated);
   assert.equal(research.summary.unrated, research.players.length - rated);
+  assert.equal(research.summary.ranked, research.players.filter(p => p.rank !== 'unknown').length);
+  assert.equal(research.summary.rankUnknown, research.players.filter(p => p.rank === 'unknown').length);
   assert.equal(research.summary.organizationsVerified, research.players.filter(p => p.organizationStatus === 'verified').length);
   assert.equal(research.summary.iglVerified, research.players.filter(p => p.igl === 'yes').length);
 });

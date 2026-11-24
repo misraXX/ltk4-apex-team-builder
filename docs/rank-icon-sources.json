@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026-11-24",
+  "source": {
+    "publisher": "Electronic Arts",
+    "pageTitle": "How Apex Legends Ranked works",
+    "pageUrl": "https://help.ea.com/en/articles/apex-legends/ranked/",
+    "imageUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+    "sha256": "65822ec43e99a981e3dbed5547553db5560e5b199f97ba75dec163cc711eeabc",
+    "width": 800,
+    "height": 450,
+    "format": "JPEG",
+    "imageAlt": "The Ranked Leagues screen shows ranks from Rookie to Apex Predator. The ranks are highlighted in a red box."
+  },
+  "rights": {
+    "attribution": "Apex Legends game UI artwork and trademarks are owned by Electronic Arts Inc. and Respawn Entertainment.",
+    "copyrightNotice": "© Electronic Arts Inc. / Respawn Entertainment",
+    "licenseNote": "These are third-party game UI excerpts from an official EA help article. No permissive license or ownership of the original artwork is claimed.",
+    "sourceFooter": "https://www.ea.com/legal"
+  },
+  "currentRanks": [
+    "Rookie",
+    "Bronze",
+    "Silver",
+    "Gold",
+    "Platinum",
+    "Diamond",
+    "Master",
+    "Apex Predator"
+  ],
+  "currentRankEvidence": {
+    "url": "https://help.ea.com/en/articles/apex-legends/ranked/",
+    "summary": "EA help lists Rookie, Bronze, Silver, Gold, Platinum, Diamond, Master, and Apex Predator; Predator is the top 750 Master players per platform."
+  },
+  "futureChangesExcluded": {
+    "url": "https://www.ea.com/games/apex-legends/apex-legends/news/ranked-roadmap-31-32",
+    "publishedAt": "2026-10-20",
+    "effectiveSeason": 32,
+    "plannedPeriod": "early 2027",
+    "summary": "Iron replaces Rookie; Emerald and Grandmaster are planned under the Season 32 section. These future ranks are not part of this current icon set."
+  },
+  "limitations": [
+    "Source screenshot is 800×450; each icon is a small exact crop with the original in-game card background.",
+    "The image set represents the rank artwork shown in the official EA help screenshot; it is not an invented or generated recreation."
+  ],
+  "verification": {
+    "decode": "All 8 PNGs decoded successfully with Pillow.",
+    "nonblank": "All 8 PNGs have nonzero dimensions and channel standard deviation greater than 10.",
+    "visualReview": "All 8 crops were reviewed together against the full official screenshot; each contains the corresponding rank emblem and no rank label or rewards text."
+  },
+  "assets": [
+    {
+      "id": "rookie",
+      "name": "Rookie",
+      "path": "site/assets/ranks/rookie.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "3ac015c8ee1bbbfbe8bc86dba7fbb72a733937b4891132c6a432ffffe6bd9665",
+      "width": 71,
+      "height": 82,
+      "mode": "RGB",
+      "cropBox": [
+        13,
+        247,
+        84,
+        329
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "path": "site/assets/ranks/bronze.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "a255f097bdef359188b0b592e5908048319a080ccd16dbece19dfffd62955175",
+      "width": 70,
+      "height": 82,
+      "mode": "RGB",
+      "cropBox": [
+        103,
+        247,
+        173,
+        329
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "path": "site/assets/ranks/silver.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "1411d07f4733912e90492c9f537ef804d519cc414f0865685caa34938eac79da",
+      "width": 71,
+      "height": 82,
+      "mode": "RGB",
+      "cropBox": [
+        191,
+        247,
+        262,
+        329
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "path": "site/assets/ranks/gold.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "5a47d848064b2665a357634622d0bb65afa24f5143af285a599c711b4e238b45",
+      "width": 71,
+      "height": 82,
+      "mode": "RGB",
+      "cropBox": [
+        279,
+        247,
+        350,
+        329
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "path": "site/assets/ranks/platinum.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "6311b038cafc2016b84c94dadfd0af5462861d865f3fb2f6ecadea6bbf04c761",
+      "width": 72,
+      "height": 82,
+      "mode": "RGB",
+      "cropBox": [
+        366,
+        247,
+        438,
+        329
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "path": "site/assets/ranks/diamond.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "f9468186d49aaed0b3f19d6d0fe3c8ff442735b757dba7fe300a1bcbbc4a74fc",
+      "width": 71,
+      "height": 82,
+      "mode": "RGB",
+      "cropBox": [
+        455,
+        247,
+        526,
+        329
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    },
+    {
+      "id": "master",
+      "name": "Master",
+      "path": "site/assets/ranks/master.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "e8f76cc51313dbcec0ff97effba1d15a8430c37ba6c71289283a2bb8fbb6c358",
+      "width": 110,
+      "height": 92,
+      "mode": "RGB",
+      "cropBox": [
+        545,
+        238,
+        655,
+        330
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    },
+    {
+      "id": "predator",
+      "name": "Apex Predator",
+      "path": "site/assets/ranks/predator.png",
+      "sourcePage": "https://help.ea.com/en/articles/apex-legends/ranked/",
+      "sourceUrl": "https://help.ea.com/_images/seegk6e7ypwi/6AeRxK9HoLyqioI6g76t0Z/14602eb938ce4c0a9e1ab4c35c60bd47/apex-legends-ranks.webp",
+      "sha256": "f75f4f0ba0c8f85552a5ed9192f30817849560cee12eaaa1806bb220b3009abc",
+      "width": 107,
+      "height": 94,
+      "mode": "RGB",
+      "cropBox": [
+        680,
+        239,
+        787,
+        333
+      ],
+      "transformation": "Exact rectangular crop of the EA-hosted game screenshot, exported losslessly as PNG. No redrawing, recoloring, background removal, or upscaling. Original in-game background retained."
+    }
+  ]
+}

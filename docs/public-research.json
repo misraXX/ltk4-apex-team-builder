@@ -1,27 +1,30 @@
 {
-  "version": "2026-11-24-r1",
+  "version": "2026-11-24-r3-rank-display",
   "checkedAt": "2026-11-24",
-  "ratingScale": 5,
+  "ratingScale": 10,
   "summary": {
     "searched": 60,
+    "ranked": 23,
+    "rankUnknown": 37,
     "rated": 24,
     "unrated": 36,
     "organizationsVerified": 39,
     "iglVerified": 1
   },
   "rubric": {
-    "5": "元APEXプロ・プレデター",
-    "4": "マスター",
-    "3": "ダイヤ",
-    "2": "確認できる一般経験者",
-    "1": "本人が初心者と明示",
-    "unknown": "情報不足・未評価"
+    "10": "元APEX競技プロの内部基準",
+    "8-9": "プレデター実績の内部基準",
+    "7": "マスター実績",
+    "6": "ダイヤ実績",
+    "3-4": "一般経験者",
+    "1-2": "初心者",
+    "unknown": "情報不足"
   },
   "players": [
     {
       "id": "tachibana-hinano",
       "name": "橘ひなの",
-      "rating": 5,
+      "rating": 8,
       "ratingBasis": "非公式ぶいすぽWikiにデビュー前S2プレデターと、その後複数シーズンのマスター到達記録。歴史的実績を基準にした候補値で、2026年の現在ランクを示すものではない。S2は一次投稿リンクを追ったがX本文は取得できず。",
       "rankLabel": "プレデター（S2・デビュー前）／後年マスター",
       "rankPeriod": "S2（2019～2020年）、S6～S12のマスター記録",
@@ -59,12 +62,15 @@
         "橘ひなの 公式 プロフィール"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 5,
+      "rank": "predator",
+      "formerApexPro": false
     },
     {
       "id": "ariken",
       "name": "ありけん",
-      "rating": 4,
+      "rating": 7,
       "ratingBasis": "非公式ありけんWikiにマスター3回の記載、本人投稿の転載検索結果で2021-09-10に人生2度目のマスター到達を確認。原投稿本文を直接取得できていないので暫定。",
       "rankLabel": "マスター（過去到達）",
       "rankPeriod": "2021-09-10の到達報告を確認",
@@ -101,7 +107,10 @@
         "ありけん RIDDLE 公式"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 4,
+      "rank": "master",
+      "formerApexPro": false
     },
     {
       "id": "maitake",
@@ -145,12 +154,15 @@
         "まいたけ ちょこらび 解散 公式 2025"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "tentei-forte",
       "name": "天帝フォルテ",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "ネオポルテ非公式Wikiのランク一覧が2022-04-04のS12スプリット1ダイヤIV到達を配信時刻付きで記録。本人配信タイトルも確認したが動画内の全プレイは未視聴。",
       "rankLabel": "ダイヤモンドIV（過去到達）",
       "rankPeriod": "S12 split1、2022-04-04",
@@ -188,12 +200,15 @@
         "天帝フォルテ Neo-Porte 公式"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "shirona-shizuku",
       "name": "白那しずく",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "ネオポルテ非公式WikiがS21～S23のダイヤIV到達を原配信時刻付きで記録。配信タイトルの目標表現だけでは評価していない。",
       "rankLabel": "ダイヤモンドIV（過去到達）",
       "rankPeriod": "S21 split2：2024-07-31、S22 split2：2024-11-05、S23 split1：2024-12-13",
@@ -231,7 +246,10 @@
         "白那しずく Neo-Porte 公式"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "mittiii",
@@ -265,12 +283,15 @@
         "mittiii FENNEL Agent 公式"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "alphaazur",
       "name": "AlphaAzur",
-      "rating": 5,
+      "rating": 8,
       "ratingBasis": "複数の二次プロフィールがプレデター到達経験を記載。一次の到達報告・達成期は未確認のため要確認の候補値。元プロ経歴はPUBGで、APEX元プロとは扱わない。",
       "rankLabel": "プレデター（到達経験・二次情報）",
       "rankPeriod": "達成時期未確認",
@@ -317,7 +338,10 @@
         "AlphaAzur UltraLMTM 公式"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 5,
+      "rank": "predator",
+      "formerApexPro": false
     },
     {
       "id": "takaya-special",
@@ -354,7 +378,10 @@
         "たかやスペシャル 所属 公式"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "gonkane",
@@ -397,7 +424,10 @@
         "\"ごんかね\" \"限界\" 公式"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "regrush-lionheart",
@@ -440,7 +470,10 @@
         "レグルシュ ライオンハート 公式 プロフィール"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "raizin",
@@ -476,7 +509,10 @@
         "らいじん 所属 げまげま 公式"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "yunika",
@@ -509,7 +545,10 @@
         "Yunika FENNEL 公式"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "eugeo",
@@ -545,7 +584,10 @@
         "Eugeo AXIZ 公式 所属"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "zerost",
@@ -581,7 +623,10 @@
         "Zerost REJECT 公式"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "enty",
@@ -617,12 +662,15 @@
         "Enty DFM 公式 2026"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "kanae",
       "name": "叶",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "にじさんじ非公式Wikiの全シーズン通算表にダイヤIII（2020-05-10）と記載。マスター到達の一次根拠は確認できず。非常に古い到達記録のため現在の実力は手動確認を推奨。",
       "rankLabel": "ダイヤモンドIII（過去到達）",
       "rankPeriod": "2020-05-10",
@@ -653,13 +701,16 @@
         "叶 にじさんじ 公式"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "yufuna",
       "name": "ゆふな",
-      "rating": 5,
-      "ratingBasis": "ユーザーがプレデターとして5を指定。本人公式YouTubeのプレデター昇格動画タイトルでも到達経験を確認。現在のランクではなく過去実績。",
+      "rating": 9,
+      "ratingBasis": "ユーザーが上位基準に挙げたプレデター経験者。本人の到達動画もあり、10段階の暫定基準を9とする。",
       "rankLabel": "プレデター（過去到達）",
       "rankPeriod": "2022年頃の本人到達動画。正確な達成日・シーズンは未確認",
       "confidence": "high",
@@ -688,12 +739,15 @@
         "ゆふな JOZ 公式 プロフィール"
       ],
       "researchStatus": "found",
-      "ratingSource": "user"
+      "ratingSource": "inferred",
+      "legacyRating5": 5,
+      "rank": "predator",
+      "formerApexPro": false
     },
     {
       "id": "asumi-sena",
       "name": "空澄セナ",
-      "rating": 4,
+      "rating": 7,
       "ratingBasis": "本人の2023-06-29初マスター報告をReal Soundの記事内埋め込みで確認。S17という達成条件を残し、現在ランクとしては扱わない。",
       "rankLabel": "マスター（S17・初到達）",
       "rankPeriod": "2023-06-29、S17",
@@ -723,12 +777,15 @@
         "空澄セナ 公式 プロフィール"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 4,
+      "rank": "master",
+      "formerApexPro": false
     },
     {
       "id": "shishido-akari",
       "name": "獅子堂あかり",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "にじさんじ非公式Wikiの通算表の注釈にデビュー前最高ダイヤIVと記載。デビュー後確認ランクのゴールドIと分けて扱う。デビュー前実績の一次発言確認は未了なので暫定。",
       "rankLabel": "ダイヤモンドIV（デビュー前・非公式記録）",
       "rankPeriod": "デビュー前（2023-01-16より前）。デビュー後確認：2025-06-17ゴールドI",
@@ -759,12 +816,15 @@
         "獅子堂あかり にじさんじ 公式"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "takamiya-rion",
       "name": "鷹宮リオン",
-      "rating": 1,
+      "rating": 2,
       "ratingBasis": "2023-06-16の本人公式配信タイトルで初心者と自己表現。古い自己表現であり2026年の現在能力は未確認。新しい実績があれば手動修正する前提の候補値。",
       "rankLabel": "初心者（本人配信タイトルでの自己表現）",
       "rankPeriod": "2023-06-16",
@@ -795,15 +855,18 @@
         "鷹宮リオン にじさんじ 公式"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 1,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "yukio",
       "name": "ゆきお",
-      "rating": 5,
-      "ratingBasis": "ユーザー指定5。RIDDLE公式が元APEXプロ・ALGS世界大会複数出場、2024年10月競技引退を明記。",
-      "rankLabel": "元APEXプロ",
-      "rankPeriod": "競技活動は2024-10まで。現在はストリーマー。",
+      "rating": 10,
+      "ratingBasis": "RIDDLE公式が元APEX競技プロ・世界大会出場を明記。10段階では元競技プロの基準として仮10。",
+      "rankLabel": "プレデター（本人の過去到達報告）／元APEXプロ",
+      "rankPeriod": "2022-09-10の本人到達報告。競技活動は2024-10まで。現在ランクではない。",
       "confidence": "high",
       "igl": "unknown",
       "iglBasis": "APEXで指示役を担った一次資料は未確認。LoL等の役割やAPEXランクから推定しない。",
@@ -837,6 +900,13 @@
           "note": "本人チャンネルの元プロ表記を確認。IGL担当の確定根拠としては使用しない。",
           "date": "2026-05-25",
           "kind": "primary"
+        },
+        {
+          "kind": "secondary",
+          "title": "@YukioFPS プレデター到達報告の転載",
+          "url": "https://twfan.net/user/1123532598456619014/old/13",
+          "date": "2022-09-10",
+          "note": "本人投稿の転載でプレデター到達を確認。現在ランクとはしない。"
         }
       ],
       "queries": [
@@ -844,12 +914,15 @@
         "site:youtube.com 日本最高のIGL ゆきお"
       ],
       "researchStatus": "found",
-      "ratingSource": "user"
+      "ratingSource": "inferred",
+      "legacyRating5": 5,
+      "rank": "predator",
+      "formerApexPro": true
     },
     {
       "id": "k4sen",
       "name": "k4sen",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "2022年ごろの大会紹介の最高ランク・ダイヤ記載を仮評価の根拠にした。一次の到達場面は未確認のため低確度。",
       "rankLabel": "ダイヤ（大会紹介の記載）",
       "rankPeriod": "2022年ごろの超滅Apex2紹介。達成時期未確認。",
@@ -888,12 +961,15 @@
         "site:zetadivision.com k4sen member"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "kuzuha",
       "name": "葛葉",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "にじさんじ非公式wikiが本人配信を根拠にS12 Split1のダイヤ3を記録。配信原本は取得制限で直接再確認できておらず、歴史的実績に基づく仮評価。",
       "rankLabel": "ダイヤモンド3",
       "rankPeriod": "S12 Split1、2022-03-28の記録",
@@ -931,7 +1007,10 @@
           "note": "非公式wikiが到達根拠として案内。今回の直接取得は失敗。"
         }
       ],
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "tatsumaki-chise",
@@ -973,12 +1052,15 @@
         "site:vspo.jp \"龍巻ちせ\""
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "konkon-aria",
       "name": "昏昏アリア",
-      "rating": 4,
+      "rating": 7,
       "ratingBasis": "Neo-Porte非公式wikiがS12マスター・後半キーマウソロマスターを記録。本人のマスター耐久配信も存在するが到達瞬間は未確認。歴史的記録による仮評価。",
       "rankLabel": "マスター（S12の記録）",
       "rankPeriod": "S12後半。現在ランクではない。",
@@ -1015,7 +1097,10 @@
         "site:neo-porte.jp \"昏昏アリア\""
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 4,
+      "rank": "master",
+      "formerApexPro": false
     },
     {
       "id": "yutapon",
@@ -1056,7 +1141,10 @@
         "site:team-detonation.net Yutapon"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "rainbrain",
@@ -1086,7 +1174,10 @@
         "Rainbrain Apex ダイヤ マスター"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "ceros",
@@ -1132,7 +1223,10 @@
       "formerOrganizations": [
         "DetonatioN FocusMe"
       ],
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "yuhi",
@@ -1162,7 +1256,10 @@
         "Yuhi ストリーマー 所属 公式"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "nemoh",
@@ -1191,13 +1288,16 @@
         "\"NEMOH\" Apex 配信"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "shaka",
       "name": "SHAKA",
-      "rating": 5,
-      "ratingBasis": "本人公式SHAKAchのプレデター到達動画を確認。2020年の過去実績に基づく仮5で、現在ランクは未確認。",
+      "rating": 8,
+      "ratingBasis": "本人公式SHAKAchのプレデター到達動画を確認。2020年の過去実績に基づく仮8で、現在ランクは未確認。",
       "rankLabel": "プレデター",
       "rankPeriod": "2020-06-30（本人動画公開日）",
       "confidence": "high",
@@ -1233,7 +1333,10 @@
         "\"SHAKA\" \"所属\" \"公式\""
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 5,
+      "rank": "predator",
+      "formerApexPro": false
     },
     {
       "id": "mother3",
@@ -1278,7 +1381,10 @@
       "formerOrganizations": [
         "REJECT"
       ],
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "amanogawa-neru",
@@ -1307,12 +1413,15 @@
         "site:qtdig.com 天ノ川ねる"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "yumeno-akari",
       "name": "夢野あかり",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "ぶいすぽ非公式wikiの最高ランク表に個人時代CS版ダイヤ3の記録と本人配信リンク。現PC実力とは区別した仮評価。元配信の直接取得は制限あり。",
       "rankLabel": "ダイヤモンド3（CS版）",
       "rankPeriod": "ぶいすぽ加入前の個人活動時代。正確な達成日未確認。",
@@ -1350,12 +1459,15 @@
           "note": "非公式wikiの一次参照先。今回は本文直接取得できず。"
         }
       ],
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "shiranami-ramune",
       "name": "白波らむね",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "ぶいすぽ非公式wikiの最高ランク表が初配信を参照しS7ソロダイヤ3を記録。2022年以前の実績で現在ランクではない。一次配信直接取得は制限あり。",
       "rankLabel": "ダイヤモンド3（ソロ）",
       "rankPeriod": "Season7、2022-08-25初配信で過去実績として紹介",
@@ -1393,7 +1505,10 @@
           "note": "最高ランク表に掲載された本人初配信。今回は直接取得制限あり。"
         }
       ],
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "sakayori-soma",
@@ -1434,12 +1549,15 @@
         "\"酒寄颯馬\" \"APEX\" ランク"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "kinako",
       "name": "きなこ",
-      "rating": 5,
+      "rating": 9,
       "ratingBasis": "Crazy Raccoon公式がAPEXソロプレデター到達を明記。",
       "rankLabel": "ソロプレデター",
       "rankPeriod": "公式プロフィールに達成時期の記載なし。現在ランクではない。",
@@ -1469,7 +1587,10 @@
         "site:crazyraccoon.jp kinako"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 5,
+      "rank": "predator",
+      "formerApexPro": false
     },
     {
       "id": "stanmi",
@@ -1501,12 +1622,15 @@
       ],
       "researchStatus": "insufficient",
       "organizationNote": "配信組織の現所属を一次資料で確認できず。音楽/マネジメント契約や過去7th heavenを現eSports所属と混同しない。",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "jasper",
       "name": "じゃすぱー",
-      "rating": 3,
+      "rating": 6,
       "ratingBasis": "本人チャンネルの2021年APEX動画にダイヤ2と明記。少なくともD2の実績に基づく保守的な仮点。後年マスター到達の確証は今回得られず。",
       "rankLabel": "ダイヤモンド2（少なくとも）",
       "rankPeriod": "2021年ごろの動画。最高到達の最終確定ではない。",
@@ -1545,7 +1669,10 @@
         "\"Jasper\" \"Apex\" \"Master\" streamer"
       ],
       "researchStatus": "found",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 3,
+      "rank": "diamond",
+      "formerApexPro": false
     },
     {
       "id": "kagura-mea",
@@ -1584,7 +1711,10 @@
       ],
       "researchStatus": "insufficient",
       "organizationNote": "個人勢との二次紹介はあるが今回の一次資料での確認が不足。無所属/個人を共通所属グループとして扱わない。",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "washidai",
@@ -1627,7 +1757,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "sharuru",
@@ -1662,7 +1795,10 @@
           ]
         }
       ],
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "tanukininja",
@@ -1705,7 +1841,10 @@
           ]
         }
       ],
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "day1",
@@ -1737,7 +1876,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "hetel",
@@ -1775,7 +1917,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "kohaku-uru",
@@ -1817,13 +1962,16 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "aster-leda",
       "name": "アステル・レダ",
-      "rating": 4,
-      "ratingBasis": "2021年のソロマスター達成報道と2024年V最協S6のマスター表記を確認。過去実績をもとに今回用の仮4。プレデター到達は信頼できる根拠を確認できず5にはしない。",
+      "rating": 7,
+      "ratingBasis": "2021年のソロマスター達成報道と2024年V最協S6のマスター表記を確認。過去実績をもとに今回用の仮7。プレデター到達は信頼できる根拠を確認できず5にはしない。",
       "rankLabel": "マスター（過去実績）",
       "rankPeriod": "2021年6月・2024年8月大会時の表記。現在ランク未確認",
       "confidence": "medium",
@@ -1871,7 +2019,10 @@
       ],
       "researchStatus": "found",
       "checkedAt": "2026-11-24",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 4,
+      "rank": "master",
+      "formerApexPro": false
     },
     {
       "id": "haruchya",
@@ -1915,7 +2066,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "nagisacchi",
@@ -1944,7 +2098,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "toko",
@@ -1983,13 +2140,16 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "yakipan",
       "name": "焼きパン",
-      "rating": 4,
-      "ratingBasis": "本人の2026年APEX動画説明に過去マスターへの言及があるため仮4。ただし達成シーズンと現在の状態は不明で、本人もブランクを示唆する内容。",
+      "rating": 7,
+      "ratingBasis": "本人の2026年APEX動画説明に過去マスターへの言及があるため仮7。ただし達成シーズンと現在の状態は不明で、本人もブランクを示唆する内容。",
       "rankLabel": "マスター（過去実績への本人言及）",
       "rankPeriod": "2026-07-09公開動画で過去実績に言及。達成シーズン未確認",
       "confidence": "medium",
@@ -2018,13 +2178,16 @@
       ],
       "researchStatus": "found",
       "checkedAt": "2026-11-24",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 4,
+      "rank": "master",
+      "formerApexPro": false
     },
     {
       "id": "killin9hit",
       "name": "Killin9Hit",
-      "rating": 4,
-      "ratingBasis": "本人インタビューで加藤純一・Eurieceとマスターへ到達した経験を語るため仮4。PUBGの元プロ歴をAPEX元プロと混同しない。",
+      "rating": 7,
+      "ratingBasis": "本人インタビューで加藤純一・Eurieceとマスターへ到達した経験を語るため仮7。PUBGの元プロ歴をAPEX元プロと混同しない。",
       "rankLabel": "マスター（過去実績）",
       "rankPeriod": "2022-07-22本人インタビューで過去の到達経験を説明。現在ランク未確認",
       "confidence": "high",
@@ -2062,13 +2225,16 @@
       ],
       "researchStatus": "found",
       "checkedAt": "2026-11-24",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 4,
+      "rank": "master",
+      "formerApexPro": false
     },
     {
       "id": "inui-shinichiro",
       "name": "乾伸一郎",
-      "rating": 4,
-      "ratingBasis": "2022年2月4日のマスター到達を元配信リンク付きの二次一覧で確認。本人の直前の最高ダイヤ企画と整合するが、元動画本文は今回取得できず仮4・要確認。",
+      "rating": 7,
+      "ratingBasis": "2022年2月4日のマスター到達を元配信リンク付きの二次一覧で確認。本人の直前の最高ダイヤ企画と整合するが、元動画本文は今回取得できず仮7・要確認。",
       "rankLabel": "マスター（過去実績・二次資料）",
       "rankPeriod": "2022-02-04。現在ランク未確認",
       "confidence": "medium",
@@ -2109,13 +2275,16 @@
       ],
       "researchStatus": "found",
       "checkedAt": "2026-11-24",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 4,
+      "rank": "master",
+      "formerApexPro": false
     },
     {
       "id": "ogosho-nyunko",
       "name": "大御所にゅん子",
-      "rating": 2,
-      "ratingBasis": "2023年の本人インタビューでAPEXを半年ほど遊びゴールドまで上げたと説明。古い経験談のため今回用の仮2、現在の上達やランクは未確認。",
+      "rating": 4,
+      "ratingBasis": "2023年の本人インタビューでAPEXを半年ほど遊びゴールドまで上げたと説明。古い経験談のため今回用の仮4、現在の上達やランクは未確認。",
       "rankLabel": "ゴールド（本人の過去経験談）",
       "rankPeriod": "2023-08-08インタビュー以前。現在ランク未確認",
       "confidence": "high",
@@ -2145,7 +2314,10 @@
       ],
       "researchStatus": "found",
       "checkedAt": "2026-11-24",
-      "ratingSource": "inferred"
+      "ratingSource": "inferred",
+      "legacyRating5": 2,
+      "rank": "gold",
+      "formerApexPro": false
     },
     {
       "id": "sendo-yuuhi",
@@ -2173,7 +2345,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "apamen",
@@ -2201,7 +2376,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "nesty",
@@ -2234,7 +2412,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "recap",
@@ -2272,7 +2453,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "haretti",
@@ -2304,7 +2488,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     },
     {
       "id": "thinton",
@@ -2335,7 +2522,10 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown"
+      "ratingSource": "unknown",
+      "legacyRating5": null,
+      "rank": "unknown",
+      "formerApexPro": false
     }
   ]
 }
