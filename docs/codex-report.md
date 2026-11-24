@@ -271,3 +271,37 @@ TASK-025〜028完了。最終配点は他FPS元プロ7/最高帯6/マスター�
 公開URL https://misraxx.github.io/ltk4-apex-team-builder/ 。mainコード37d4fd65a2d19df8885d2b59c367165ddaba2e30、Pagesソースdc1d5f3db8ed8f01a59d28f040a156474668ded1 built。CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45390901702 とPages45390923993 success。公開ブラウザでv5、60名/根拠32/未確認28/14選択肢/他FPS9名と最終配点を確認。移行見送りで旧保存は上書きせず、表示画像とconsole errorなし。証跡qa/v5-public-fps-points.jpg。
 
 未対応: 同期・厳密な2人限定。未実施: 現在能力・全原映像・実ゲーム・実機スマホ。人間確認: 旧設定の移行と未確認28名/IGL/関係性・当日設定の補正。sources/他アプリ/認証・DB基盤/相手への連絡は変更なし。
+
+## 2026-11-24 v5.1 公開前
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "in_progress"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "当日設定と知り合い候補の確認"
+  nextCodexAction: "同URL公開画面を確認"
+```
+
+TASK-029〜031実装・ブラウザ検証済み、032公開待ち。変更: site/app.js/index.html/styles.css、package、設計/台帳/README/報告。本人依頼のsocial一覧編集、60名4×15スクショ、追加指示のチーム5×4とスクショを実装し最新設計に整合。56コアテスト・構文と新UI受け入れはCYCLE-007参照。UI変更Undo後の実JSON全体一致・20合計一致・PC二寸法/モバイル成功。認証/保存構造/配点/外部API変更なし。実機/本番未実施、同期/厳密制限未対応。
+
+## 2026-11-24 v5.1 公開完了
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "completed"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "メンバー表で知り合い条件と候補を設定。スクショ用一覧から撮影"
+  nextCodexAction: "追加要望へ対応"
+```
+
+TASK-029〜032完了。変更ファイルと実装内容・設計整合は直前記録、新UI受け入れ/既存56テスト/JSON保持/別担当レビュー/役割別結果はCYCLE-007参照。メンバー表の条件編集、全60名4×15スクショ、PCチーム5列と全20チーム5×4スクショを実装。
+
+公開URL https://misraxx.github.io/ltk4-apex-team-builder/ 。コードdd8befca272873bae70d27b86962b744e7d82f9a、Pagesソースcb65d081f4a377c5dd0257d8cc8920c3f8b821aa built。CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45394036928 とPages45394060021成功。公開3ファイルは改行正規化後一致。公開v5.1/条件欄60/候補60/スクショ60一意・4列各15・画像欠損0・エラーなしを確認。公開で編成・移行・設定保存は実行していない。証跡qa/v51-public-all60.jpg、qa/v51-public-member-conditions.jpg、ローカルチーム例qa/v51-teams-5x4.jpg。
+
+未対応: 同期/厳密な2人制限。未実施: 実機スマホ/ゲーム本番。人間確認: 当日の出欠/知り合い条件と候補。保存キー/形式/配点/計算/認証/公開範囲/外部API/sourcesは変更なし。狭い画面のスクショ用一覧は横スクロールを許容。
