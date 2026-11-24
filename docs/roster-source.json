@@ -1,0 +1,14 @@
+{
+  "source": "../ltk-draft-studio/data.js",
+  "sha256": "941536932bac96a33917405f7fc6cd6855fe304aa50e93e7f66d55be689e3c47",
+  "count": 60,
+  "fields": [
+    "id",
+    "name",
+    "team",
+    "tier",
+    "role",
+    "avatar"
+  ],
+  "note": "APEX評価・IGL・私的関係性の初期値は未評価"
+}

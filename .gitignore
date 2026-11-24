@@ -1,0 +1,5 @@
+node_modules/
+qa/
+*.local.json
+*.zip
+site/LTK4-APEX-settings-*.json

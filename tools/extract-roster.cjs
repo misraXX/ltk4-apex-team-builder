@@ -1,0 +1,22 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const crypto = require('node:crypto');
+const root = path.resolve(__dirname, '..');
+const source = path.resolve(root, '../ltk-draft-studio/data.js');
+const context = { window: {} };
+vm.runInNewContext(fs.readFileSync(source, 'utf8'), context);
+const data = context.window.LTK_DATA;
+if (data.roster.length !== 60 || new Set(data.roster.map(p=>p.id)).size !== 60) throw Error('Roster mismatch');
+const roster = data.roster.map(p => {
+  const uri = data.avatars[p.id];
+  if (!/^data:image\/(png|jpeg|webp);base64,/.test(uri)) throw Error('Missing avatar: ' + p.id);
+  const [head, body] = uri.split(',');
+  const ext = head.includes('jpeg') ? 'jpg' : head.includes('webp') ? 'webp' : 'png';
+  const file = `assets/avatars/${p.id}.${ext}`;
+  fs.writeFileSync(path.join(root, 'site', file), Buffer.from(body, 'base64'));
+  return { id: p.id, name: p.name, team: p.team, tier: p.tier, role: p.role, avatar: file };
+});
+fs.writeFileSync(path.join(root,'site','roster.js'), 'window.LTK_ROSTER=' + JSON.stringify({teams:data.teams,players:roster}) + ';\n');
+fs.writeFileSync(path.join(root,'docs','roster-source.json'), JSON.stringify({source:'../ltk-draft-studio/data.js',sha256:crypto.createHash('sha256').update(fs.readFileSync(source)).digest('hex'),count:60,fields:['id','name','team','tier','role','avatar'],note:'APEX評価・IGL・私的関係性の初期値は未評価'},null,2));
+console.log('Extracted 60 public names and avatars; no APEX ratings or private relationships included.');
