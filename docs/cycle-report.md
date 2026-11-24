@@ -107,3 +107,21 @@ mainコード51492e6、Pages公開ソース5f5ae874beb8c395868b2c24ba5b39b98a3b0
 コード8a0f0ed54d05a5ae798cf72dd57c1477981a9849、公開ソース63f09f699a131ab5c90592fc9b380bd1085da972がbuilt。CI45387113718 success。公開HTTPのapp.js?v=4.0.0、ブラウザ60人/ランク24/選択肢10を確認。Yukio元プロ10、Yuf/HinanoPred8、鷹宮Bronze2、表示画像欠損0、console errorなし。公開QAは移行を見送り旧保存を変えず参照、検索を全件へ戻し納品タブを保持。QAサーバーとローカルタブを終了しviewport解除。
 
 証跡qa/v4-team-points.jpg（ローカルのチーム合計・確定状態）、qa/v4-public-former-pro.jpg（公開元プロ10）。TASK-021〜024完了。残る未対応・未実施と人間補正は上記のまま。
+
+## CYCLE-006 他FPS実績・最終配点（2026-11-24）
+
+| 役割 | 結果・未実施・リスク・人間確認 |
+|---|---|
+| project-manager | TASK-025〜028。全60他FPS調査/固定区分/確認移行/検証公開。途中本人修正を他FPS7/6/5/4・未知2として反映し、APEX側は維持と明示 |
+| architect | v5別キー、apexRank原記録を保持、初期は高い根拠点・同点APEX。旧marker未知5と新marker未知2を別表で検証。旧保存・非rank設定・履歴を保持 |
+| implementer | 他FPS区分と一般アイコン、詳細のAPEX/他FPS根拠分離、未知2、合計・コピー・履歴。移行チェックON高いFPS反映/OFF既知手動区分保持。CSSの旧列幅上書きを整理し選択欄を確保 |
+| reviewer | 別担当が配点/移行と主要出典を独立確認、重大指摘なし。Ceros公式全国優勝は最高帯6でプロ契約を推測しない。Soma原動画未視聴はmedium。v3Yukio特例は旧承認仕様として維持 |
+| tester | 最終56テスト・構文成功。固定点/max/同点/60資料/145照会/旧値5/新値2/全marker混在/JSON検証。実UIで移行ON/OFF・詳細根拠・手動区分/保存・新JSON往復・全20合算・60人生成/確定・新旧履歴を確認 |
+| operator | ローカルHTTP200、console errorなし。公開前。外部API/DB/認証追加なし、実行時の画像外部取得もなし |
+| documenter | 設計/台帳/README/schema/AGENTS/調査JSON3件/生成データ/テスト/報告を更新。公開後結果を追記 |
+
+データ：他FPS全60名を確認、145照会。pro6/high17（採用候補23）からAPEX以上の9区分を採用。APEX確認24、全根拠32、未確認28。旧FPS/TPS公式全国優勝も最高帯基準。スタンミRadiant等の一部まとめサイトだけで本人根拠を追えないもの、別ゲーム/共演者/プロ組織所属だけは採用せず。現在の最高ランクや実力は未確認。
+
+実JSON：qa/v5-fps-on.json/OFF.json/final-roundtrip.json。移行ONでJasper他FPS7/不明2、OFFで旧JasperAPEX6を保持。全60人の非rank項目・旧historyがv4ファイルと完全一致。新旧2履歴markerで新点と旧点を保持。手動FPS4→Platinum5を保存、60人20チームの合計誤差0、他FPSバッジ9、画像欠損0。モバイル390/client375/scroll375、選択欄196px、console errorなし。
+
+人間確認・未実施：全映像/現在能力/実ゲーム/実機スマホ。未確認28は実績なしの断定ではなく確認不能の基準2。同期/厳密制限は未対応のまま。本人の最終指示で旧未公開8〜5/未知3案は採用しない。

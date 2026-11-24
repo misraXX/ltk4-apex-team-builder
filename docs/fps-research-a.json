@@ -1,0 +1,566 @@
+{
+  "checkedAt": "2026-11-24",
+  "scope": "LTK4名簿の最初20人。他FPS実績のみの候補値。points0は補正対象の具体記録を未確認という意味で、最終fallback3は統合側で扱う。過去ランクを現在ランクとは扱わない。",
+  "players": [
+    {
+      "id": "tachibana-hinano",
+      "name": "橘ひなの",
+      "category": "high",
+      "points": 6,
+      "game": "Overwatch",
+      "achievement": "初代OverwatchでGrandMaster（サポート）の最高到達記録。VALORANT最高Platinum3は今回の補正基準未満。既存APEX評価以上の補正は不要。",
+      "period": "初代Overwatch時代。正確な到達年月は未確認。",
+      "confidence": "medium",
+      "queries": [
+        "橘ひなの VALORANT 最高ランク"
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "橘ひなの - ぶいすぽっ！非公式Wiki",
+          "url": "https://wikiwiki.jp/vspo/橘ひなの",
+          "date": null,
+          "note": "ゲーム関連欄に初代OW GrandMaster（サポート）、OW2 Diamond3、VALORANT Platinum3とゲーム別に記載。本人アーカイブでのランク画面は未確認。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 7
+    },
+    {
+      "id": "ariken",
+      "name": "ありけん",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "最高到達Ascendant。",
+      "period": "過去到達。正確な到達日は未確認。",
+      "confidence": "medium",
+      "queries": [
+        "\"ありけん\" \"VALORANT\" \"レディアント\"",
+        "\"ありけん\" \"VALORANT\" \"最高ランク\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "ありけん非公式Wiki - VALORANT欄",
+          "url": "https://wikiwiki.jp/ariken/",
+          "date": null,
+          "note": "最高ランクAscendantと明記し、本人Xの到達報告への参照リンクあり。リンク先1599378245828640768は403で本文・画像は未確認。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人X（Wiki参照リンク、直接閲覧不可）",
+          "url": "https://twitter.com/guraburuslot777/status/1599378245828640768",
+          "date": null,
+          "note": "403のため一次資料として検証済みとは扱わない。"
+        },
+        {
+          "note": "Street Fighter 5のGrandMasterとStreet Fighter 6のMasterはFPSランクではないため除外。"
+        }
+      ],
+      "previousPoints": 6
+    },
+    {
+      "id": "maitake",
+      "name": "まいたけ",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"まいたけ\" \"VALORANT\" \"イモータル\"",
+        "\"まいたけ\" \"VALORANT\" \"アセンダント\"",
+        "\"まいたけ\" \"VALORANT\" \"ダイヤ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [],
+      "previousPoints": 0
+    },
+    {
+      "id": "tentei-forte",
+      "name": "天帝フォルテ",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "デビュー前Immortalの紹介記録、およびV最VALORANT Act1名簿で最高到達Ascendant2。どちらも今回の5の基準に該当。",
+      "period": "Immortalは2022年5月記事時点の過去実績。Ascendant2は2023年V最Act1資料。",
+      "confidence": "medium",
+      "queries": [
+        "\"天帝フォルテ\" \"VALORANT\" \"最高ランク\"",
+        "\"天帝フォルテ\" \"アセンダント2\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "頂きを目指す姿はまさに天帝！ Neo-Porte天帝フォルテ",
+          "url": "https://www.inside-games.jp/article/2022/05/28/138399.html?from=image-page-title",
+          "date": "2022-05-28",
+          "note": "ゲーム紹介でVALORANT Immortalの記録と初配信を参照。記事はImmortalをゲーム内最高と表現しているが、その表現は採用せず到達ランク名のみ参照。"
+        },
+        {
+          "kind": "secondary",
+          "title": "V最協ヴァロラントA1の出場メンバーとチーム分け",
+          "url": "https://gamewith.jp/valorant/article/show/423036",
+          "date": null,
+          "note": "出場メンバー表に天帝フォルテの最高到達Ascendant2。Immortal紹介との時期・集計範囲の差があるため、現在ランクと扱わない。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 6
+    },
+    {
+      "id": "shirona-shizuku",
+      "name": "白那しずく",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "Episode7 Act3でImmortal3の記録。",
+      "period": "Episode7 Act3。Episode5 Act3でもImmortalに到達した記録。",
+      "confidence": "medium",
+      "queries": [
+        "\"白那しずく\" \"VALORANT\" \"最高ランク\"",
+        "\"白那しずく\" \"イモータル3\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "白那しずく - Neo-Porte非公式Wiki",
+          "url": "https://wikiwiki.jp/neo-porte/白那しずく",
+          "date": null,
+          "note": "好きなゲーム欄でEpisode5 Act3のImmortal到達、Episode7 Act3のImmortal3を区別して記載。本人ランク画面までは未視聴。"
+        },
+        {
+          "kind": "secondary",
+          "title": "白那しずくのゲーム実績紹介（X投稿転載部分のみ）",
+          "url": "https://vtuber-story.jp/shironashizuku-nakanohito/",
+          "date": null,
+          "note": "ゲーム実力の項目にImmortalと、2024-12-14の本人ソロランク終了報告を転載。前世等の推測部分は使用しない。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人Xのソロランク終了報告（直接閲覧不可）",
+          "url": "https://twitter.com/shizuku_shirona/status/1867771550222758392",
+          "date": "2024-12-14",
+          "note": "直接取得は403。本文転載は確認したが画像の到達ランクは未検証で、一次根拠の確認済み扱いにはしない。"
+        }
+      ],
+      "previousPoints": 6
+    },
+    {
+      "id": "mittiii",
+      "name": "mittiii",
+      "category": "pro",
+      "points": 7,
+      "game": "VALORANT",
+      "achievement": "元FENNEL VALORANT部門プロプレイヤー。",
+      "period": "競技活動は過去。2025-10-01公式紹介時点で元プロと明記。",
+      "confidence": "high",
+      "queries": [
+        "site:fennel-esports.com mittiii VALORANT 選手 引退"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "ストリーマーmittiii・CHUNEのエージェント契約移行について",
+          "url": "https://fennel-esports.com/news/corporate/2966/",
+          "date": "2025-10-01",
+          "note": "所属チーム公式記事のmittiii紹介に元FENNEL VALORANT部門プロプレイヤーと明記。現在のストリーマー所属だけからの推定ではない。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "note": "LoLランクや格闘ゲームのMasterは他FPS補正に使用しない。"
+        }
+      ],
+      "previousPoints": 8
+    },
+    {
+      "id": "alphaazur",
+      "name": "AlphaAzur",
+      "category": "pro",
+      "points": 7,
+      "game": "PUBG: BATTLEGROUNDS",
+      "achievement": "PUBGの元プロゲーマー。",
+      "period": "2022-09-07スポンサー公式紹介時点で元プロ。具体的な活動期間は今回未確認。",
+      "confidence": "high",
+      "queries": [
+        "AlphaAzur 元プロ PUBG 公式"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "LEVEL∞とAlphaAzurのスポンサー契約締結プレスリリース",
+          "url": "https://www.unitcom.co.jp/info/press/20220907.pdf",
+          "date": "2022-09-07",
+          "note": "スポンサー公式PDFのプロフィールにPUBGの元プロゲーマーと明記。"
+        },
+        {
+          "kind": "primary",
+          "title": "元APEX開発者の新作FPSがでたと w/kinako 乾【AlphaAzur】",
+          "url": "https://www.youtube.com/watch?v=V2JhakjXU48",
+          "date": null,
+          "note": "本人チャンネルの説明欄に昔PC版PUBGでプロチーム所属と記載。これだけに依存せずスポンサー公式の元プロ明記で補強。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 8
+    },
+    {
+      "id": "takaya-special",
+      "name": "たかやスペシャル",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"たかやスペシャル\" \"VALORANT\" \"最高ランク\"",
+        "\"たかやスペシャル\" \"Overwatch\" ランク",
+        "\"たかやスペシャル\" \"VALORANT\" ダイヤ"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "LoL配信者たかやスペシャル本人インタビュー",
+          "url": "https://fistbump-news.jp/article/2026/01/01/1981.html",
+          "date": "2026-01-01",
+          "note": "DiamondやMasterの話題はLoL。VALORANTカスタム参加やSHG所属のみではFPSプロ歴・高ランクを推定しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "Twitch Rivals: VALORANT Showdown Japans出場メンバー",
+          "url": "https://gamewith.jp/valorant/article/show/370889",
+          "date": null,
+          "note": "本人名はあるが到達ランクを記載した資料ではなく、参加実績から高ランクを推定しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "gonkane",
+      "name": "ごんかね",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "Immortal到達経験。",
+      "period": "過去到達。達成年月・Actは今回未確認。",
+      "confidence": "medium",
+      "queries": [
+        "\"ごんかね\" \"VALORANT\" \"イモータル\"",
+        "\"ごんかね\" \"イモータル\" \"達成\"",
+        "\"ごんかね\" \"イモータル\" youtube",
+        "\"ごんかね\" \"VALORANT\" \"イモータル1\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "ごんかね - 限界非公式Wiki",
+          "url": "https://wikiwiki.jp/genkai/gonkane",
+          "date": null,
+          "note": "ゲーム関連欄にVALORANT ImmortalとLoL Masterを明確に分けて記載。本人ランク画面のアーカイブは確認できていない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "遊んだゲーム一覧 - 健康鯖Wiki",
+          "url": "https://wikiwiki.jp/kenkousaba/遊んだゲーム一覧",
+          "date": null,
+          "note": "VALORANT欄で、んそめ・ごんかね・焼きパンをImmortal経験者として記載。単なる同席者のランクとの取り違えを避けて確認。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "note": "LoLのMasterおよびLTKでのコーラー経験は今回の他FPS実績に算入しない。"
+        }
+      ],
+      "previousPoints": 6
+    },
+    {
+      "id": "regrush-lionheart",
+      "name": "レグルシュ・ライオンハート",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"レグルシュ\" \"VALORANT\" \"ランク\"",
+        "\"レグルシュ\" \"VALORANT\" \"ダイヤ\"",
+        "\"レグルシュ・ライオンハート\" \"Overwatch\" ランク"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [],
+      "previousPoints": 0
+    },
+    {
+      "id": "raizin",
+      "name": "らいじん",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"らいじん\" \"VALORANT\" \"最高ランク\"",
+        "\"らいじん\" \"Overwatch\" ランク",
+        "\"らいじん\" \"OW\" \"マスター\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Twitch Rivals: VALORANT Showdown Japans出場メンバー",
+          "url": "https://gamewith.jp/valorant/article/show/370889",
+          "date": null,
+          "note": "らいじん（Eclair08）本人の参加は確認できるが、到達ランクは載っていないため補正根拠にはしない。"
+        },
+        {
+          "note": "LJLの元LoLプロ歴をFPSのプロ歴に読み替えない。OW大会参加や配信時間からもランクを推定しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "yunika",
+      "name": "Yunika",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Yunika\" \"VALORANT\" \"ランク\"",
+        "\"Yunika\" \"VALORANT\" \"ダイヤ\"",
+        "\"Yunika\" \"Overwatch\" ランク"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "LoL競技プロ歴・Challenger等はFPSの競技歴・ランクではないため除外。VALORANT/OWの到達実績が検索で見つからず未確認。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "eugeo",
+      "name": "Eugeo",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Eugeo\" \"VALORANT\" \"イモータル\"",
+        "\"Eugeo\" \"VALORANT\" \"ダイヤ\"",
+        "\"Eugeo\" \"Overwatch\" rank"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "検索結果の同一ページ内に別アカウントのVALORANT Immortal耐久投稿が出たが、Eugeo本人の投稿ではなく不採用。LoL競技歴・Master等もFPS実績には算入しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "zerost",
+      "name": "Zerost",
+      "category": "pro",
+      "points": 7,
+      "game": "VALORANT",
+      "achievement": "VALORANT競技プロ選手経験。Sengoku Gaming、CYCLOPS athlete gaming等で活動。",
+      "period": "2020年にVALORANT選手として参入。2021年CAG、2022年SGの公式大会戦績の報道あり。現在ランクとは別の経歴。",
+      "confidence": "high",
+      "queries": [
+        "site:reject.jp Zerost VALORANT 選手",
+        "\"Zerost\" \"VALORANT\" \"プロ\" \"FENNEL\"",
+        "Zerost VALORANT CYCLOPS 公式 加入 2020"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "新メンバー加入のお知らせ（VALORANT部門）",
+          "url": "https://cyclops-osaka.jp/news/2021/1574.php",
+          "date": null,
+          "note": "CAG公式がVALORANT部門へのZerost・Pinck・GON加入を発表。"
+        },
+        {
+          "kind": "secondary",
+          "title": "Zerost氏がREJECTに加入｜Sengoku Gamingから移籍",
+          "url": "https://gamewith.jp/valorant/article/show/483879",
+          "date": "2025-02-02",
+          "note": "VALORANT選手として2020年6月に参入、First Strike Japan 2020やVCT/VCJ 2021・2022ベスト8等の選手戦績を記載。LoLプロ歴や現在のREJECTストリーマー所属だけを根拠にはしない。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 8
+    },
+    {
+      "id": "enty",
+      "name": "Enty",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Enty\" \"VALORANT\" \"ランク\"",
+        "\"Enty\" \"VALORANT\" \"イモータル\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "Enty本人ロングインタビュー",
+          "url": "https://fistbump-news.jp/article/2026/07/24/2713.html",
+          "date": "2026-07-24",
+          "note": "末尾のVALORANT1ヶ月Immortalチャレンジは今後の企画の提案であり、到達記録ではない。本文のChallengerや日本1・2位はLoL。冒頭L4D2のチーム歴もプロ契約・競技実績の裏付けがなく、FPSプロとして算入しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "kanae",
+      "name": "叶",
+      "category": "high",
+      "points": 4,
+      "game": "VALORANT",
+      "achievement": "最高到達Diamond2。",
+      "period": "非公式Wikiの確認日は2022-07-23。2023年V最VALORANT Act1資料でも最高到達Diamond2。",
+      "confidence": "medium",
+      "queries": [
+        "\"叶\" \"VALORANT\" \"最高ランク\"",
+        "\"叶\" \"VALORANT\" \"ダイヤ2\" 2022",
+        "\"叶\" \"オーバーウォッチ\" \"最高ランク\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "VALORANTまとめ/ランクまとめ - にじさんじWiki",
+          "url": "https://wikiwiki.jp/nijisanji/VALORANTまとめ/ランクまとめ",
+          "date": null,
+          "note": "全エピソード通算表に叶 Diamond2、確認日2022/07/23。現在ランクと扱わない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "V最協ヴァロラントA1出場メンバーと最高到達ランク",
+          "url": "https://gamewith.jp/valorant/article/show/423036",
+          "date": null,
+          "note": "Tier3メンバー表で叶の最高到達Diamond2を確認。Immortal・Ascendant等は裏付けなし。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 5
+    },
+    {
+      "id": "yufuna",
+      "name": "ゆふな",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "ゆふな VALORANT 最高ランク",
+        "\"ゆふな\" \"VALORANT\" \"最高ランク\"",
+        "\"ゆふな\" \"VALORANT\" \"イモータル\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [],
+      "previousPoints": 0
+    },
+    {
+      "id": "asumi-sena",
+      "name": "空澄セナ",
+      "category": "none",
+      "points": 0,
+      "game": "VALORANT",
+      "achievement": "確認できたVALORANT最高到達はSilver3（補正基準未満）。他FPSの補正対象記録は今回未確認。",
+      "period": "Episode5 Act3（非公式Wiki集計）",
+      "confidence": "unknown",
+      "queries": [
+        "空澄セナ VALORANT 最高ランク"
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "VALORANT/ランク - ぶいすぽっ！非公式Wiki",
+          "url": "https://wikiwiki.jp/vspo/VALORANT/ランク",
+          "date": null,
+          "note": "空澄セナの最高到達Silver3、Episode5 Act3と記載。基準未満のためpoints0。APEX実績は別に保持する。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 0
+    },
+    {
+      "id": "shishido-akari",
+      "name": "獅子堂あかり",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "最高到達Ascendant2。",
+      "period": "Episode6・8・9。Episode9の確認日は2024-08-04、2024-08-29、2024-11-10。",
+      "confidence": "medium",
+      "queries": [
+        "\"獅子堂あかり\" \"VALORANT\" \"最高ランク\"",
+        "site:wikiwiki.jp/nijisanji/VALORANT \"獅子堂あかり\" \"2024\"",
+        "\"獅子堂あかり\" \"オーバーウォッチ\" \"最高ランク\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "獅子堂あかり/進行中のゲームシリーズ",
+          "url": "https://wikiwiki.jp/nijisanji/獅子堂あかり/進行中のゲームシリーズ",
+          "date": null,
+          "note": "VALORANT欄にEpisode6・8・9で最高Ascendant2と記載。"
+        },
+        {
+          "kind": "secondary",
+          "title": "VALORANTランクまとめ/Episode9 - にじさんじWiki",
+          "url": "https://wikiwiki.jp/nijisanji/VALORANTまとめ/ランクまとめ/Episode 9",
+          "date": null,
+          "note": "本人行にAct1/2/3のAscendant2と各確認日を掲載。本人配信のランク画面は未視聴。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 6
+    },
+    {
+      "id": "takamiya-rion",
+      "name": "鷹宮リオン",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"鷹宮リオン\" \"VALORANT\" \"ランク\"",
+        "\"鷹宮リオン\" \"VALORANT\" \"ダイヤ\"",
+        "\"鷹宮リオン\" \"オーバーウォッチ\" ランク"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "Crazy RaccoonのVALORANT元プロrionは別人。鷹宮リオンのFPSプロ歴として採用しない。配信や大会の参加だけでは高ランクも推定しない。"
+        }
+      ],
+      "previousPoints": 0
+    }
+  ],
+  "pointPolicy": "other-fps-7-6-5-4 / unknown-2, user revision 2026-11-24"
+}

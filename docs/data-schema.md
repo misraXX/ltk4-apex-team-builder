@@ -97,3 +97,13 @@ RIDDLE ORDER/RIDDLEなどの表記は正規化し、個人・無所属・所属�
 - pointSystemのない旧historyは旧rating/scaleを保持し旧基準と表示。確定ボードの_snapshot:trueの評価だけは旧ratingを使う。通常の新編成には適用しない。
 - 公開researchにrankPoints/pointSystem追加、ranked24/unknown36、followupSearched37/followupAdded1/followupQueries143。全対象の照会と不採用理由はadditionalResearchとdocs/rank-followup-*.json。
 - 元プロ画像は既存Pred画像を参照、公式ランクではない独自区分。新しい画像ファイルは追加していない。
+
+## v5 他FPS実績（現在）
+
+- 保存キーltk4-apex-team-builder:v5、version5。旧v1〜4は確認移行で新キーへ保存し元キーを残す。
+- rankにother-fps-pro(7)/other-fps-top(6)/other-fps-master(5)/other-fps-diamond(4)、unknownは2。ratingはrank固定点と一致必須。APEXの既定点は維持。
+- research.apexRankに元APEX区分を保持、fpsResearchに他FPSのcategory/points/game/achievement/period/confidence/queries/evidence/rejectedEvidence。初期rankは高い方、同点APEX。
+- v4現在unknown:nullは2へ正規化。v3/v4に新FPS区分を混入させるファイルは拒否。v4既知値は旧固定表で整合確認してから移行。FPS反映ONなら高い区分、OFFなら既知手動区分維持。v3Yukio旧Pred特例は既存仕様として継続。
+- history新pointSystem:fps-evidence-v1、unknown2でprovisionalは未確認の記録用true。UIで仮2とは表示しない。旧rank-fixed-v1のunknown5は旧点表で検証、markerなし旧5/10段階もそのまま保持。旧値の画面だけ仮5等を維持。
+- 今回のv5初期未公開案（他FPS8〜5/unknown3）は公開前に本人が変更したため未使用。公開v5は7〜4/unknown2のみ。
+- 調査60名/他FPS145照会、APEX確認24、他FPSpro6/high17、他FPS採用9、全根拠確認32/未確認28。全員に固定点がありrated60/unrated0、未確認を実力確定とは扱わない。

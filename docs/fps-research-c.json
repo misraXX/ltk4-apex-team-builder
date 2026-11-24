@@ -1,0 +1,599 @@
+{
+  "checkedAt": "2026-11-24",
+  "players": [
+    {
+      "id": "washidai",
+      "name": "Washidai",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Washidai\" \"VALORANT\" ランク",
+        "\"Washidai\" \"Overwatch\" \"Master\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [],
+      "previousPoints": 0
+    },
+    {
+      "id": "sharuru",
+      "name": "しゃるる",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"しゃるる\" \"VALORANT\" \"ランク\"",
+        "\"しゃるる\" \"VALORANT\" \"ダイヤ\"",
+        "\"しゃるる\" \"イモータル\" VALORANT"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人動画・LoL最高ランク経験者しゃるるがLoLとVALORANTを比較する",
+          "url": "https://www.youtube.com/watch?v=VkDsY3Q-D9E",
+          "date": null,
+          "note": "タイトルの最高ランクはLoL。VALORANTの到達ランクとしない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "VALORANT配信者一覧",
+          "url": "https://followboard.jp/games/valorant",
+          "date": null,
+          "note": "『しゃる・しゃるる』という別配信者や他者のImmortal3記述を、げまげまのしゃるる本人に結びつけない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "tanukininja",
+      "name": "たぬき忍者",
+      "category": "none",
+      "points": 0,
+      "game": "VALORANT",
+      "achievement": "本人インタビューで過去Platinum付近、その後上がったと発言。ただしDiamond以上の到達先は特定できず、5〜6点の条件を満たす根拠なし。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"たぬき忍者\" \"VALORANT\" \"ランク\"",
+        "\"たぬき忍者\" \"VALORANT\" \"ダイヤ\"",
+        "\"たぬき忍者\" \"ヴァロラント\" \"ダイヤ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "たぬき忍者・summertimer本人対談",
+          "url": "https://fistbump-news.jp/article/2025/08/22/1469.html",
+          "date": "2025-08-22",
+          "note": "VALORANT企画でPlatinum付近に停滞し、その後ランクが上がったという本人発言。上昇後の到達ランクは不明。記事中のDiamond発言は別の話者/ゲーム文脈と混同しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "本人の2021年ダイヤ目標企画投稿の転載",
+          "url": "https://twfan.net/user/2886041192/retweet/1",
+          "date": "2021-06-23",
+          "note": "Diamondは目標。後の罰ゲーム実施や髪型の記録も到達証明にならない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "day1",
+      "name": "Day1",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Day1\" \"VALORANT\" \"ランク\"",
+        "\"Day1week\" \"VALORANT\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "VALORANTリーダーボード",
+          "url": "https://valking.gg/ja/leaderboard/ranked",
+          "date": null,
+          "note": "Day1#1119という別アカウントの上位表示が検索に出るが、LTKのDay1本人との一致根拠がないため除外。"
+        },
+        {
+          "kind": "secondary",
+          "title": "本人Xプロフィール転載",
+          "url": "https://ww.twstalker.com/Day1week",
+          "date": null,
+          "note": "本人の大規模FPSに不慣れという発言は上位到達の裏付けでも、未経験・低ランク確定の証拠でもない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "hetel",
+      "name": "hetel",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"hetel\" \"VALORANT\" ランク",
+        "\"へてる\" \"VALORANT\" \"ダイヤ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "プロ/上位プレイヤー設定一覧",
+          "url": "https://settey.com/players",
+          "date": null,
+          "note": "hetelのプロ表記はLeague of Legends。VALORANT選手が多い一覧に載っていてもFPSプロとはしない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "kohaku-uru",
+      "name": "狐白うる",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"狐白うる\" \"VALORANT\" \"ランク\"",
+        "\"狐白うる\" \"VALORANT\" \"ダイヤ\" -site:ptt.cc -site:pttweb.cc",
+        "\"狐白うる\" \"オーバーウォッチ\" \"ランク\"",
+        "\"狐白うる\" \"最高ランク\" VALO"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "VTuberのLoL最高ランク一覧",
+          "url": "https://johotaxi.com/lol-vtuber-ranked/",
+          "date": null,
+          "note": "狐白うるのGold等はLoLの記録。FPSの到達ランクや競技プロ歴として使用しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "aster-leda",
+      "name": "アステル・レダ",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"アステル\" \"元プロ\" FPS"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "VALORANTスカーミッシュトーナメント出場者紹介",
+          "url": "https://sports.smt.docomo.ne.jp/esports/shooting/gameinfo/20251113_11433.html",
+          "date": "2025-11-13",
+          "note": "hNtチームのストリーマーとして参加。プロ/元プロ1名を含む大会の出場者一覧にあるだけでアステルをFPSプロとは扱わない。既存APEX Master7を超える他FPS元プロ歴の根拠なし。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "haruchya",
+      "name": "春茶",
+      "category": "high",
+      "points": 6,
+      "game": "VALORANT",
+      "achievement": "Radiant到達（2021年本人達成投稿の転載を確認）",
+      "period": "2021-05-06の達成報告。現在ランクではない。",
+      "confidence": "medium",
+      "queries": [
+        "春茶 VALORANT レディアント 公式",
+        "\"春茶\" \"レディアント\" \"2021\"",
+        "\"春茶\" \"レディアント\" site:reject.jp",
+        "\"HARUTYA1226\" \"1390389451038224384\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "春茶のデバイス紹介・本人のRadiant達成投稿引用",
+          "url": "https://johotaxi.com/harutya-devices/",
+          "date": "2021-05-06",
+          "note": "2021-05-06の本人投稿を日付付きで引用し、最高ランク到達と説明。本人投稿のURLはhttps://x.com/HARUTYA1226/status/1390389451038224384。元投稿本文/添付の直接取得は403のため、転載を根拠とする。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "本人のVALORANT達成報告（直接取得制限）",
+          "url": "https://x.com/HARUTYA1226/status/1390389451038224384",
+          "date": "2021-05-06",
+          "note": "転載記事の出典リンクから特定した本人投稿。x.comとtwitter.comの直接取得は403。直接閲覧済みの一次証拠とは数えない。"
+        }
+      ],
+      "previousPoints": 7
+    },
+    {
+      "id": "nagisacchi",
+      "name": "なぎさっち",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"なぎさっち\" \"VALORANT\" \"ダイヤ\"",
+        "\"なぎさっち\" \"VALORANT\" \"最高\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "本人Twitch配信データ",
+          "url": "https://streamers.ludens.com.tw/ja/channel/nagisatty?period=90d",
+          "date": null,
+          "note": "VALORANT配信は確認できるが、最高同接はゲームの到達ランクではない。本人の対象ランクは不明。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "toko",
+      "name": "とおこ",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"とおこ\" \"VALORANT\" \"最高ランク\"",
+        "\"とおこ\" \"VALORANT\" \"ダイヤ\" -site:ptt.cc -site:pttweb.cc",
+        "\"とおこ\" \"Overwatch\" \"ランク\"",
+        "\"とおこ\" \"最高ランク\" VALO"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "とおこ等のLoL自己最高更新報道",
+          "url": "https://fistbump-news.jp/article/2026/04/27/2366.html",
+          "date": "2026-04-27",
+          "note": "VALORANT/LoLメディアの記事でも、内容はLoLのEmerald/Diamond到達。FPS評価に流用しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "REJECT配信者プロフィール一覧",
+          "url": "https://www.twitchclipsranking.com/streamers?text=REJECT",
+          "date": null,
+          "note": "同ページの『valo最高ランク芋2』は巫神こんの自己紹介で、とおこや乾伸一郎の実績ではない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "yakipan",
+      "name": "焼きパン",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "Immortal到達。Immortal3という最高区分は非公式Wikiの二次記録。",
+      "period": "2022-04-24本人動画のImmortal言及、2025-05時点の非公式最高ランク一覧。現在ランクではない。",
+      "confidence": "medium",
+      "queries": [
+        "焼きパン ZETA PUBG プロ 公式",
+        "\"焼きパン\" \"VALORANT\" \"ダイヤ\"",
+        "\"焼きパン\" \"イモータル3\" -site:jbbs.shitaraba.net",
+        "\"焼きパン\" \"イモータル\" site:youtube.com",
+        "\"焼きパン\" \"ほんとにイモータル\""
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "本人動画：僕ほ…ほんとにイモータルだよ…？焼きパンとぐちつぼの幼稚園VALORANT",
+          "url": "https://www.youtube.com/watch?v=kgAeuFVeKOA",
+          "date": "2022-04-24",
+          "note": "本人チャンネル・公開日・タイトルを検索索引で確認。本人のImmortal言及であり、到達目標タイトルではない。直接openはthrottle、映像内の到達シーンは未視聴。"
+        },
+        {
+          "kind": "secondary",
+          "title": "限界非公式Wiki・VALORANT最高到達ランク",
+          "url": "https://wikiwiki.jp/genkai/genkai",
+          "date": null,
+          "note": "2025年5月時点の最高到達一覧で焼きパンImmortal3。本文記載の照合で、公式戦績認定ではない。配点はImmortal1〜3で共通の6。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "ZETA公式・焼きパンプロフィール",
+          "url": "https://zetadivision.com/players/%E7%84%BC%E3%81%8D%E3%83%91%E3%83%B3",
+          "date": null,
+          "note": "CREATOR所属、osu!の実力、PUBG PARK等の出演はFPS競技プロ選手歴の根拠にならない。元FPSプロ7にはしない。"
+        }
+      ],
+      "previousPoints": 6
+    },
+    {
+      "id": "killin9hit",
+      "name": "Killin9Hit",
+      "category": "pro",
+      "points": 7,
+      "game": "PUBG: BATTLEGROUNDS",
+      "achievement": "DeToNator KOREA PUBG初期選手・リーダー。その後コーチ/GM。",
+      "period": "2017年12月のPUBG韓国部門結成時の選手歴。現在の競技選手という意味ではない。",
+      "confidence": "high",
+      "queries": [
+        "Killin9Hit ZETA PUBG 元プロ 公式",
+        "\"Killin9Hit\" \"DeToNator\" \"PUBG\" site:detonator-gg.com",
+        "site:detonator-gg.com \"Killin9Hit\" PUBG",
+        "site:zetadivision.com \"Killin9Hit\" \"PUBG\" \"加入\"",
+        "\"Killin9Hit\" \"PUBG\" \"2017\" DeToNator",
+        "\"Killin9Hit\" \"プロ選手\" \"PUBG\" -site:stcolle.com -site:wikipedia.org -site:5ch.io",
+        "\"DETONATOR KOREA PUBG部門設立\"",
+        "\"Killin9Hit\" \"PUBG\" site:realsound.jp",
+        "\"Killin9Hit\" \"PUBG\" site:detonator-gg.com/news"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "ZETA DIVISION公式・Killin9Hitプロフィール",
+          "url": "https://zetadivision.com/players/killin9hit?PageSpeed=noscript",
+          "date": null,
+          "note": "現在の公式所属先が元プロとして紹介。競技タイトルと選手歴は当時のPUBG部門結成報道で照合。クリエイター所属だけからプロと判定していない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "DeToNatorがPUBG部門を設立、日本ではなく韓国チーム",
+          "url": "https://www.negitaku.org/news/n-22157",
+          "date": "2017-12-29",
+          "note": "当時の報道がKH選手を韓国PUBG部門のリーダーとして明記し、KH・Coups・Young10000・URS4の選手名簿と公式リーグAPL予選予定を掲載。公式発表への出典リンクあり。"
+        },
+        {
+          "kind": "primary",
+          "title": "Killin9Hit本人インタビュー",
+          "url": "https://realsound.jp/tech/2023/10/post-1460538_2.html",
+          "date": "2023-10-15",
+          "note": "プロ選手からストリーマーになった経緯への本人回答が掲載。PUBG選手だった時期の特定には当時の部門結成報道を併用。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "旧DeToNator公式・PUBG韓国部門設立",
+          "url": "https://detonator-gg.com/pubg/13535/",
+          "date": "2017-12-28",
+          "note": "Negitakuの出典から辿った旧公式ページはリダイレクト先が取得不可。直接確認できた公式発表とは扱わない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "Killin9HitプロフィールのWikipedia記述",
+          "url": "https://ja.wikipedia.org/wiki/Killin9Hit",
+          "date": null,
+          "note": "PUBG選手兼コーチ歴に加えOWのプロ/GM等の記載があるが、採点根拠はより具体的な当時報道とZETA公式に絞った。OWプロ歴の裏付けとしては使用しない。"
+        }
+      ],
+      "previousPoints": 8
+    },
+    {
+      "id": "inui-shinichiro",
+      "name": "乾伸一郎",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "乾伸一郎 VALORANT イモータル アセンダント",
+        "\"乾伸一郎\" \"イモータル\"",
+        "\"乾伸一郎\" \"アセンダント\"",
+        "\"乾伸一郎\" \"VALORANT\" \"ダイヤ\"",
+        "\"乾伸一郎\" \"VALORANT\" \"プラチナ\"",
+        "\"乾伸一郎\" VALORANT ランク 最高",
+        "\"Ninja_Inui\" \"ダイヤ\"",
+        "\"乾伸一郎\" \"VALO\" \"ランク\"",
+        "\"乾伸一郎\" \"ヴァロラント\" \"最高\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "REJECT公式の乾伸一郎SSRカード告知",
+          "url": "https://www.youtube.com/watch?v=Nn964SIwXt0",
+          "date": null,
+          "note": "公式動画概要にVALORANT部門の導線があるだけで、本人が同部門の競技プロだった証明にならない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "REJECT配信者プロフィール一覧",
+          "url": "https://www.twitchclipsranking.com/streamers?text=REJECT",
+          "date": null,
+          "note": "芋2は同ページ内の巫神こんの自己紹介。乾本人のVALORANT上位到達と混同しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "ogosho-nyunko",
+      "name": "大御所にゅん子",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"大御所にゅん子\" \"VALORANT\" \"ランク\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "大御所にゅん子本人インタビュー",
+          "url": "https://esportsnewsjapan.jp/streamer-interview-oogosyo/",
+          "date": "2023-08-08",
+          "note": "既知APEX GoldとLoL/エターナルリターンの話。採点対象の他FPS上位ランク/プロ歴なし。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "sendo-yuuhi",
+      "name": "千燈ゆうひ",
+      "category": "none",
+      "points": 0,
+      "game": "VALORANT",
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"千燈ゆうひ\" \"VALORANT\" \"最高ランク\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "ぶいすぽ非公式Wiki・千燈ゆうひゲーム関連",
+          "url": "https://wikiwiki.jp/vspo/%E5%8D%83%E7%87%88%E3%82%86%E3%81%86%E3%81%B2/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%A2%E9%80%A3",
+          "date": null,
+          "note": "VALORANT Silver?の二次記録は不確実で、今回の上位ランク条件にも届かない。MasterはLoL、EmeraldはTFT、Platinum3は格ゲーのため対象外。弟の元APEXプロ歴も本人の経歴ではない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "apamen",
+      "name": "apaMEN",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"apaMEN\" \"VALORANT\" \"ランク\"",
+        "\"apaMEN\" \"Overwatch\" rank"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "apaMEN選手プロフィール",
+          "url": "https://eslive.gg/player/1084",
+          "date": null,
+          "note": "プロ歴/Worlds/コーチ歴はLoL。別にVALORANT・OWカテゴリがあるだけではFPSプロ・上位ランクの証明にならない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "nesty",
+      "name": "Nesty",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"ねすてぃー\" \"VALORANT\" \"ランク\"",
+        "\"Nesty\" \"Overwatch\" rank \"LoL\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Nestyプロフィール・配信一覧",
+          "url": "https://followboard.jp/streamers/s-1769",
+          "date": null,
+          "note": "元LJLプロはLoLの経歴。VALORANT/Overwatchカスタム参加だけから他FPS競技プロや上位ランクを付けない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "recap",
+      "name": "Recap",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"りきゃっぷ\" \"VALORANT\" \"ランク\"",
+        "\"Recap\" \"VALORANT\" \"Immortal\" \"LoL\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Recapの配信ゲーム一覧",
+          "url": "https://streamscharts.com/channels/recaplol1/streams",
+          "date": null,
+          "note": "VALORANT/OW配信カテゴリはあるが、上位到達ランクは記載されていない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "haretti",
+      "name": "Haretti",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Haretti\" \"VALORANT\" rank",
+        "\"Haretti\" \"CSGO\" \"ThintoN\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Harettiの配信ゲーム一覧",
+          "url": "https://streamscharts.com/channels/haretti/subscribers",
+          "date": null,
+          "note": "VALORANTやGunZのカテゴリがあるだけでは対象上位実績の証明にならない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "thinton",
+      "name": "ThintoN",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"ThintoN\" \"VALORANT\" rank",
+        "\"Haretti\" \"CSGO\" \"ThintoN\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [],
+      "previousPoints": 0
+    }
+  ],
+  "pointPolicy": "other-fps-7-6-5-4 / unknown-2, user revision 2026-11-24"
+}

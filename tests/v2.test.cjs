@@ -71,24 +71,42 @@ function rankV3Fixture() {
   state.history[1].scores[ids[1]].rating = 9;
   return state;
 }
+function fixedSnapshot(pointSystem, unknownPoints, id) {
+  return { id, confirmedAt: date, teams: [ids.slice(0, 2)], ratingScale: 10, pointSystem,
+    scores: {
+      [ids[0]]: { rank: 'predator', rating: 8, igl: 'yes', provisional: false },
+      [ids[1]]: { rank: 'unknown', rating: unknownPoints, igl: 'unknown', provisional: true }
+    } };
+}
+function rankV4Fixture() {
+  const state = stateWithAttendance(6);
+  state.version = 4;
+  ids.forEach(id => { state.members[id].rating = null; });
+  Object.assign(state.members[ids[0]], { rank: 'predator', rating: 8, organization: '手動の所属', social: 'required', friends: [ids[1], ids[12]], note: 'v4設定', igl: 'yes' });
+  Object.assign(state.members[ids[2]], { rank: 'former-pro', rating: 10 });
+  state.settings = { sameTeam: false, pastTeam: true, sameOrganization: false, repeat: false };
+  state.draft = { id: 'v4-current-draft', builtAt: date, teams: [ids.slice(0, 3), ids.slice(3, 6)] };
+  state.history = [snapshot(5), fixedSnapshot('rank-fixed-v1', 5, 'v4-unknown-five')];
+  return state;
+}
 
-test('v4 starts with fixed rank points and only verified current organizations', () => {
+test('v5 starts with fixed rank points and only verified current organizations', () => {
   const research = {
     [ids[0]]: { rank: 'predator', rating: 10, igl: 'yes', organization: '組織A', organizationStatus: 'verified' },
     [ids[1]]: { rating: null, organization: '過去の組織', organizationStatus: 'former' },
-    [ids[2]]: { rating: 2, organization: '未確認組織', organizationStatus: 'unknown' }
+    [ids[2]]: { rating: 9, organization: '未確認組織', organizationStatus: 'unknown' }
   };
   const before = JSON.stringify(research);
   const state = C.createState(roster, research);
-  assert.equal(state.version, 4);
+  assert.equal(state.version, 5);
   assert.equal(state.members[ids[0]].rating, 8);
   assert.equal(state.members[ids[0]].rank, 'predator');
   assert.equal(state.members[ids[0]].igl, 'yes');
   assert.equal(state.members[ids[0]].organization, '組織A');
   assert.equal(state.members[ids[1]].organization, '');
   assert.equal(state.members[ids[2]].organization, '');
-  assert.equal(state.members[ids[2]].rating, null, 'unverified rank cannot keep a subjective beginner score');
-  assert.equal(state.members[ids[3]].rating, null);
+  assert.equal(state.members[ids[2]].rating, 2, 'unverified rank uses the specified baseline rather than a subjective beginner score');
+  assert.equal(state.members[ids[3]].rating, 2);
   assert.equal(state.members[ids[3]].rank, 'unknown');
   assert.deepEqual(state.settings, { sameTeam: true, pastTeam: true, sameOrganization: true, repeat: true });
   assert.equal(JSON.stringify(research), before);
@@ -102,7 +120,7 @@ test('manual organization, directed familiarity, absence and relationship toggle
   assert.deepEqual(C.validateState(JSON.parse(JSON.stringify(state)), roster), state);
 });
 
-test('v4 accepts only points matching the selected rank, including unknown/null', () => {
+test('v5 accepts only points matching the selected classification, including unknown/2', () => {
   for (const [rank, rating] of Object.entries(C.rankPoints)) {
     const state = stateWithAttendance(); Object.assign(state.members[ids[0]], { rank, rating });
     assert.equal(C.validateState(state, roster).members[ids[0]].rating, rating);
@@ -115,16 +133,16 @@ test('v4 accepts only points matching the selected rank, including unknown/null'
 });
 
 test('rank points are fixed and ignore old individual research scores', () => {
-  assert.deepEqual(Object.keys(C.ranks), ['unknown', 'rookie', 'bronze', 'silver', 'gold', 'platinum', 'diamond', 'master', 'predator', 'former-pro']);
-  const defaults = { unknown: null, rookie: 1, bronze: 2, silver: 3, gold: 4, platinum: 5, diamond: 6, master: 7, predator: 8, 'former-pro': 10 };
+  assert.deepEqual(Object.keys(C.ranks), ['unknown', 'rookie', 'bronze', 'silver', 'gold', 'platinum', 'diamond', 'master', 'predator', 'former-pro', 'other-fps-pro', 'other-fps-top', 'other-fps-master', 'other-fps-diamond']);
+  const defaults = { unknown: 2, rookie: 1, bronze: 2, silver: 3, gold: 4, platinum: 5, diamond: 6, master: 7, predator: 8, 'former-pro': 10, 'other-fps-pro': 7, 'other-fps-top': 6, 'other-fps-master': 5, 'other-fps-diamond': 4 };
   assert.deepEqual(C.rankPoints, defaults);
   for (const [rank, expected] of Object.entries(defaults)) {
     assert.equal(C.rankRating(rank), expected, rank);
     assert.equal(C.rankRating(rank, { rank, rating: 10 }), expected, rank);
-    assert.equal(C.effectiveRating({ rank, rating: 9 }), expected ?? 5, rank);
+    assert.equal(C.effectiveRating({ rank, rating: 9 }), expected, rank);
   }
   const research = { rank: 'unknown', rating: 2 };
-  assert.equal(C.rankRating('unknown', research), null, 'beginner evidence does not establish a rank');
+  assert.equal(C.rankRating('unknown', research), 2, 'beginner evidence does not establish a rank');
   assert.deepEqual(research, { rank: 'unknown', rating: 2 });
 });
 
@@ -162,12 +180,12 @@ test('same Predator rank uses equal points, former pros remain stronger, and con
   state.draft = { id: 'individual-ability', builtAt: date, teams: [[a, c], [b, d]] };
   const confirmed = C.confirmMatch(state, roster);
   assert.equal(confirmed.history[0].ratingScale, 10);
-  assert.equal(confirmed.history[0].pointSystem, 'rank-fixed-v1');
+  assert.equal(confirmed.history[0].pointSystem, 'fps-evidence-v1');
   assert.deepEqual([confirmed.history[0].scores[a].rank, confirmed.history[0].scores[b].rank], ['former-pro', 'predator']);
   assert.deepEqual([confirmed.history[0].scores[a].rating, confirmed.history[0].scores[b].rating], [10, 8]);
   const snapshotBefore = C.clone(confirmed.history);
   Object.assign(confirmed.members[a], { rank: 'silver', rating: C.rankRating('silver') });
-  Object.assign(confirmed.members[b], { rank: 'unknown', rating: null });
+  Object.assign(confirmed.members[b], { rank: 'unknown', rating: 2 });
   assert.deepEqual(C.validateState(JSON.parse(JSON.stringify(confirmed)), roster).history, snapshotBefore);
   assert.equal(state.history.length, 0);
   assert.equal(state.members[a].rank, 'former-pro');
@@ -186,26 +204,26 @@ test('explicit historical ranks survive mixed scales, and invalid historical ran
   }
 });
 
-test('unrated participants count as provisional five points, including newly confirmed history', () => {
+test('unverified participants count as provisional two points, including newly confirmed history', () => {
   const state = stateWithAttendance(2);
   state.draft = { id: 'unrated', builtAt: date, teams: [ids.slice(0, 2)] };
   const report = C.analyze(state.draft.teams, roster, state);
-  assert.equal(report.totals[0], 10);
+  assert.equal(report.totals[0], 4);
   assert.equal(report.provisional, 2);
   const confirmed = C.confirmMatch(state, roster);
   assert.equal(confirmed.history[0].ratingScale, 10);
-  assert.equal(confirmed.history[0].pointSystem, 'rank-fixed-v1');
-  assert.deepEqual(confirmed.history[0].scores[ids[0]], { rating: 5, igl: 'unknown', provisional: true, rank: 'unknown' });
-  assert.equal(state.members[ids[0]].rating, null);
+  assert.equal(confirmed.history[0].pointSystem, 'fps-evidence-v1');
+  assert.deepEqual(confirmed.history[0].scores[ids[0]], { rating: 2, igl: 'unknown', provisional: true, rank: 'unknown' });
+  assert.equal(state.members[ids[0]].rating, 2);
   Object.assign(confirmed.members[ids[0]], { rank: 'former-pro', rating: 10 });
-  assert.equal(confirmed.history[0].scores[ids[0]].rating, 5);
+  assert.equal(confirmed.history[0].scores[ids[0]].rating, 2);
 });
 
-test('v1 subjective ratings become unknown rank/null without guessing a historical Apex rank', () => {
+test('v1 subjective ratings become unknown rank/2 without guessing a historical Apex rank', () => {
   const migrated = C.migrateV1(legacyFixture(), roster);
-  assert.equal(migrated.version, 4);
-  assert.ok(ids.every(id => migrated.members[id].rating === null));
-  assert.equal(migrated.members[ids[10]].rating, null);
+  assert.equal(migrated.version, 5);
+  assert.ok(ids.every(id => migrated.members[id].rating === 2));
+  assert.equal(migrated.members[ids[10]].rating, 2);
   assert.equal(migrated.members[ids[0]].organization, '');
   assert.ok(ids.every(id => migrated.members[id].rank === 'unknown'), 'legacy points cannot establish an Apex rank');
   assert.deepEqual(migrated.settings, { sameTeam: false, pastTeam: true, sameOrganization: true, repeat: false });
@@ -229,10 +247,10 @@ test('migration retains draft, absences, directional friends and ten-point histo
   assert.deepEqual(legacy, before, 'migration must not retain mutable references to the old state');
 });
 
-test('normal v4 validation rejects legacy schemas, and v1 migration validates its own input', () => {
+test('normal v5 validation rejects legacy schemas, and v1 migration validates its own input', () => {
   assert.throws(() => C.validateState(legacyFixture(), roster), /対応していない/);
   assert.throws(() => C.validateState(fivePointFixture(), roster), /対応していない/);
-  for (const version of [0, 2, 3, 4, '1']) {
+  for (const version of [0, 2, 3, 4, 5, '1']) {
     const state = legacyFixture(); state.version = version;
     assert.throws(() => C.migrateV1(state, roster), /旧設定/);
   }
@@ -242,13 +260,13 @@ test('normal v4 validation rejects legacy schemas, and v1 migration validates it
   }
 });
 
-test('v2 subjective current ratings become unknown/null while historical values and relationships remain intact', () => {
+test('v2 subjective current ratings become unknown/2 while historical values and relationships remain intact', () => {
   const raw = fivePointFixture();
   const before = C.clone(raw);
   const migrated = C.migrateV2(raw, roster);
-  assert.equal(migrated.version, 4);
-  assert.ok(ids.every(id => migrated.members[id].rating === null));
-  assert.equal(migrated.members[ids[5]].rating, null);
+  assert.equal(migrated.version, 5);
+  assert.ok(ids.every(id => migrated.members[id].rating === 2));
+  assert.equal(migrated.members[ids[5]].rating, 2);
   assert.deepEqual(migrated.history, withUnknownHistoricalRanks(before.history), 'past five- and ten-point snapshots retain numbers and gain only unknown rank');
   assert.ok(ids.every(id => migrated.members[id].rank === 'unknown'), 'five-point ratings cannot establish an Apex rank');
   assert.deepEqual(migrated.draft, before.draft);
@@ -268,7 +286,7 @@ test('v2 subjective current ratings become unknown/null while historical values 
 });
 
 test('v2 migration rejects unrelated versions, out-of-range current scores and inconsistent historical scales', () => {
-  for (const version of [0, 1, 3, 4, '2', undefined]) {
+  for (const version of [0, 1, 3, 4, 5, '2', undefined]) {
     const raw = fivePointFixture(); raw.version = version;
     assert.throws(() => C.migrateV2(raw, roster), /旧5段階/);
   }
@@ -288,8 +306,8 @@ test('v3 migration normalizes current rank points without changing old matches o
   const raw = rankV3Fixture(), before = C.clone(raw);
   assert.throws(() => C.validateState(raw, roster), /対応していない/);
   const migrated = C.migrateV3(raw, roster);
-  assert.equal(migrated.version, 4);
-  assert.deepEqual(ids.slice(0, 5).map(id => migrated.members[id].rating), [8, 8, 8, null, 4]);
+  assert.equal(migrated.version, 5);
+  assert.deepEqual(ids.slice(0, 5).map(id => migrated.members[id].rating), [8, 8, 8, 2, 4]);
   assert.deepEqual(ids.slice(0, 5).map(id => migrated.members[id].rank), ['predator', 'predator', 'predator', 'unknown', 'gold']);
   assert.deepEqual(migrated.history, withUnknownHistoricalRanks(before.history));
   assert.equal(migrated.history[1].scores[ids[0]].rating, 10);
@@ -308,7 +326,7 @@ test('v3 migration normalizes current rank points without changing old matches o
 });
 
 test('v3 migration rejects unrelated versions, invalid old ability values and invalid ranks', () => {
-  for (const version of [0, 1, 2, 4, '3', undefined]) {
+  for (const version of [0, 1, 2, 4, 5, '3', undefined]) {
     const raw = rankV3Fixture(); raw.version = version;
     assert.throws(() => C.migrateV3(raw, roster), /旧ランク設定/);
   }
@@ -316,10 +334,89 @@ test('v3 migration rejects unrelated versions, invalid old ability values and in
     const raw = rankV3Fixture(); raw.members[ids[0]].rating = rating;
     assert.throws(() => C.migrateV3(raw, roster), /戦力点/);
   }
-  for (const rank of [undefined, null, 'emerald', 'grandmaster', ['predator']]) {
+  for (const rank of [undefined, null, 'emerald', 'grandmaster', ['predator'], 'other-fps-pro', 'other-fps-top', 'other-fps-master', 'other-fps-diamond']) {
     const raw = rankV3Fixture(); raw.members[ids[0]].rank = rank;
     assert.throws(() => C.migrateV3(raw, roster), /ランク/);
   }
+});
+
+test('v4 migration gives unverified members 2 while retaining old unknown-5 matches and all other settings', () => {
+  const raw = rankV4Fixture(), before = C.clone(raw);
+  assert.throws(() => C.validateState(raw, roster), /対応していない/);
+  const migrated = C.migrateV4(raw, roster);
+  assert.equal(migrated.version, 5);
+  assert.equal(migrated.members[ids[0]].rating, 8);
+  assert.equal(migrated.members[ids[1]].rank, 'unknown');
+  assert.equal(migrated.members[ids[1]].rating, 2);
+  assert.equal(migrated.members[ids[2]].rating, 10);
+  assert.deepEqual(migrated.history, withUnknownHistoricalRanks(before.history));
+  assert.equal(migrated.history[1].scores[ids[1]].rating, 5);
+  assert.deepEqual(migrated.draft, before.draft);
+  assert.deepEqual(migrated.settings, before.settings);
+  for (const key of ['organization', 'social', 'friends', 'note', 'igl', 'attending']) assert.deepEqual(migrated.members[ids[0]][key], before.members[ids[0]][key], key);
+  assert.equal(migrated.members[ids[12]].attending, false);
+  assert.deepEqual(C.validateState(JSON.parse(JSON.stringify(migrated)), roster), migrated);
+  assert.deepEqual(C.validateState(raw, roster, true), migrated);
+  migrated.members[ids[0]].friends.pop();
+  migrated.draft.teams[0].reverse();
+  migrated.history[1].scores[ids[1]].rating = 3;
+  assert.deepEqual(raw, before);
+});
+
+test('v4 migration rejects wrong versions, invalid old fixed values and categories that did not exist in v4', () => {
+  for (const version of [0, 1, 2, 3, 5, '4', undefined]) {
+    const raw = rankV4Fixture(); raw.version = version;
+    assert.throws(() => C.migrateV4(raw, roster), /旧固定ポイント設定/);
+  }
+  for (const rating of [null, 0, 7, 9, 11, 2.5, '8', undefined]) {
+    const raw = rankV4Fixture(); raw.members[ids[0]].rating = rating;
+    assert.throws(() => C.migrateV4(raw, roster), /戦力点|旧ランクとポイント/);
+  }
+  for (const rating of [2, 3, 5]) {
+    const raw = rankV4Fixture(); raw.members[ids[1]].rating = rating;
+    assert.throws(() => C.migrateV4(raw, roster), /旧ランクとポイント/);
+  }
+  for (const rank of [undefined, null, 'other-fps-pro', 'other-fps-top', 'other-fps-master', 'other-fps-diamond']) {
+    const raw = rankV4Fixture(); raw.members[ids[0]].rank = rank;
+    assert.throws(() => C.migrateV4(raw, roster), /ランク/);
+  }
+});
+
+test('unmarked, old fixed and FPS evidence histories coexist using their original point systems', () => {
+  const state = stateWithAttendance(2);
+  state.history = [snapshot(5), fixedSnapshot('rank-fixed-v1', 5, 'old-fixed'), fixedSnapshot('fps-evidence-v1', 2, 'new-fps')];
+  const before = C.clone(state);
+  assert.deepEqual(C.validateState(state, roster).history, withUnknownHistoricalRanks(state.history));
+  assert.deepEqual(state, before);
+  for (const [index, rating] of [[1, 2], [2, 5]]) {
+    const bad = C.clone(state); bad.history[index].scores[ids[1]].rating = rating;
+    assert.throws(() => C.validateState(bad, roster), /履歴のランクとポイント/);
+  }
+  for (const index of [1, 2]) {
+    const bad = C.clone(state); bad.history[index].scores[ids[1]].provisional = false;
+    assert.throws(() => C.validateState(bad, roster), /履歴のランクとポイント/);
+  }
+  for (const rank of ['other-fps-pro', 'other-fps-top', 'other-fps-master', 'other-fps-diamond']) {
+    const bad = C.clone(state); Object.assign(bad.history[1].scores[ids[0]], { rank, rating: C.rankRating(rank) });
+    assert.throws(() => C.validateState(bad, roster), /履歴のランクとポイント/);
+    const fresh = C.clone(state); Object.assign(fresh.history[2].scores[ids[0]], { rank, rating: C.rankRating(rank) });
+    assert.equal(C.validateState(fresh, roster).history[2].scores[ids[0]].rank, rank);
+  }
+});
+
+test('new FPS categories participate in balanced generation and confirmed snapshots without changing Apex rank names', () => {
+  const state = stateWithAttendance(6);
+  const ranks = ['other-fps-pro', 'other-fps-top', 'other-fps-master', 'other-fps-diamond', 'unknown', 'gold'];
+  ranks.forEach((rank, i) => Object.assign(state.members[ids[i]], { rank, rating: C.rankRating(rank) }));
+  state.settings = { sameTeam: false, pastTeam: false, sameOrganization: false, repeat: false };
+  state.draft = C.generate(roster, state, { seed: 31, iterations: 2000, restarts: 3 });
+  const report = C.analyze(state.draft.teams, roster, state);
+  assert.ok(report.valid);
+  assert.deepEqual([...report.totals].sort((a, b) => a - b), [14, 14]);
+  const confirmed = C.confirmMatch(state, roster);
+  assert.equal(confirmed.history[0].pointSystem, 'fps-evidence-v1');
+  ranks.forEach((rank, i) => assert.deepEqual(confirmed.history[0].scores[ids[i]], { rank, rating: C.rankRating(rank), igl: 'unknown', provisional: rank === 'unknown' }));
+  assert.deepEqual(C.validateState(JSON.parse(JSON.stringify(confirmed)), roster), confirmed);
 });
 
 test('old snapshot boards retain historical subjective points and provisional status with the explicit snapshot flag', () => {
@@ -336,7 +433,7 @@ test('old snapshot boards retain historical subjective points and provisional st
   assert.deepEqual(state, before);
   delete state.members[a]._snapshot; delete state.members[b]._snapshot;
   const live = C.analyze([[a, b]], roster, state);
-  assert.deepEqual(live.totals, [10], 'live rank points must not reuse historical subjective scores');
+  assert.deepEqual(live.totals, [4], 'live rank points must not reuse historical subjective scores');
   assert.equal(live.provisional, 2, 'only historical snapshot flags can retain a previous non-provisional score for an unknown rank');
 });
 
@@ -349,7 +446,7 @@ test('rank-fixed history validates rank points, provisional flags, scale and its
   const changes = [
     match => { match.scores[a].rating = 9; },
     match => { match.scores[a].provisional = true; },
-    match => { match.scores[b].rating = 3; },
+    match => { match.scores[b].rating = 5; },
     match => { match.scores[b].provisional = false; },
     match => { match.scores[a].rank = 'former-pro'; },
     match => { match.ratingScale = 5; },
@@ -367,7 +464,7 @@ test('rank-fixed history validates rank points, provisional flags, scale and its
   assert.deepEqual(C.validateState(legacy, roster), legacy, 'an unmarked legacy snapshot keeps its original subjective scores');
 });
 
-test('v4 JSON can retain mixed historical rating scales and enforce each snapshot scale', () => {
+test('v5 JSON can retain mixed historical rating scales and enforce each snapshot scale', () => {
   const state = stateWithAttendance();
   state.history = [snapshot(5), { ...snapshot(10), id: 'legacy' }];
   const before = C.clone(state);

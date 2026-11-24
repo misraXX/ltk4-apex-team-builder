@@ -1,10 +1,10 @@
 {
-  "version": "2026-11-24-r4-fixed-rank-points",
+  "version": "2026-11-24-r5-fps-evidence",
   "checkedAt": "2026-11-24",
   "ratingScale": 10,
-  "pointSystem": "rank-fixed-v1",
+  "pointSystem": "fps-evidence-v1",
   "rankPoints": {
-    "unknown": null,
+    "unknown": 2,
     "rookie": 1,
     "bronze": 2,
     "silver": 3,
@@ -13,38 +13,48 @@
     "diamond": 6,
     "master": 7,
     "predator": 8,
-    "former-pro": 10
+    "former-pro": 10,
+    "other-fps-pro": 7,
+    "other-fps-top": 6,
+    "other-fps-master": 5,
+    "other-fps-diamond": 4
   },
   "summary": {
     "searched": 60,
-    "ranked": 24,
-    "rankUnknown": 36,
-    "rated": 24,
-    "unrated": 36,
+    "ranked": 32,
+    "rankUnknown": 28,
+    "apexRanked": 24,
+    "apexUnknown": 36,
+    "rated": 60,
+    "unrated": 0,
     "organizationsVerified": 39,
     "iglVerified": 1,
     "followupSearched": 37,
     "followupAdded": 1,
-    "followupQueries": 143
+    "followupQueries": 143,
+    "fpsResearched": 60,
+    "fpsPro": 6,
+    "fpsHigh": 17,
+    "fpsApplied": 9,
+    "fpsQueries": 145
   },
   "rubric": {
     "10": "元APEXプロ",
     "8": "プレデター",
-    "7": "マスター",
-    "6": "ダイヤ",
-    "5": "プラチナ",
-    "4": "ゴールド",
+    "7": "APEXマスター・他FPS元プロ",
+    "6": "APEXダイヤ・他FPS最高帯",
+    "5": "APEXプラチナ・他FPSマスター相当",
+    "4": "ゴールド・他FPSダイヤ相当",
     "3": "シルバー",
-    "2": "ブロンズ",
-    "1": "ルーキー",
-    "unknown": "未確認・編成時仮5"
+    "2": "ブロンズ・実績未確認",
+    "1": "ルーキー"
   },
   "players": [
     {
       "id": "tachibana-hinano",
       "name": "橘ひなの",
       "rating": 8,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "プレデター（S2・デビュー前）／後年マスター",
       "rankPeriod": "S2（2019～2020年）、S6～S12のマスター記録",
       "confidence": "medium",
@@ -84,13 +94,36 @@
       "ratingSource": "rank-fixed",
       "rank": "predator",
       "formerApexPro": false,
+      "apexRank": "predator",
+      "fpsResearch": {
+        "category": "high",
+        "points": 6,
+        "game": "Overwatch",
+        "achievement": "初代OverwatchでGrandMaster（サポート）の最高到達記録。VALORANT最高Platinum3は今回の補正基準未満。既存APEX評価以上の補正は不要。",
+        "period": "初代Overwatch時代。正確な到達年月は未確認。",
+        "confidence": "medium",
+        "queries": [
+          "橘ひなの VALORANT 最高ランク"
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "橘ひなの - ぶいすぽっ！非公式Wiki",
+            "url": "https://wikiwiki.jp/vspo/橘ひなの",
+            "date": null,
+            "note": "ゲーム関連欄に初代OW GrandMaster（サポート）、OW2 Diamond3、VALORANT Platinum3とゲーム別に記載。本人アーカイブでのランク画面は未確認。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 7
+      },
       "legacyRating5": 5
     },
     {
       "id": "ariken",
       "name": "ありけん",
       "rating": 7,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "マスター（過去到達）",
       "rankPeriod": "2021-09-10の到達報告を確認",
       "confidence": "medium",
@@ -129,13 +162,48 @@
       "ratingSource": "rank-fixed",
       "rank": "master",
       "formerApexPro": false,
+      "apexRank": "master",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "最高到達Ascendant。",
+        "period": "過去到達。正確な到達日は未確認。",
+        "confidence": "medium",
+        "queries": [
+          "\"ありけん\" \"VALORANT\" \"レディアント\"",
+          "\"ありけん\" \"VALORANT\" \"最高ランク\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "ありけん非公式Wiki - VALORANT欄",
+            "url": "https://wikiwiki.jp/ariken/",
+            "date": null,
+            "note": "最高ランクAscendantと明記し、本人Xの到達報告への参照リンクあり。リンク先1599378245828640768は403で本文・画像は未確認。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "本人X（Wiki参照リンク、直接閲覧不可）",
+            "url": "https://twitter.com/guraburuslot777/status/1599378245828640768",
+            "date": null,
+            "note": "403のため一次資料として検証済みとは扱わない。"
+          },
+          {
+            "note": "Street Fighter 5のGrandMasterとStreet Fighter 6のMasterはFPSランクではないため除外。"
+          }
+        ],
+        "previousPoints": 6
+      },
       "legacyRating5": 4
     },
     {
       "id": "maitake",
       "name": "まいたけ",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -184,7 +252,7 @@
         "\"まいたけ\" \"kinotake00\" \"ちょこらび\""
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -259,13 +327,30 @@
           ]
         }
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"まいたけ\" \"VALORANT\" \"イモータル\"",
+          "\"まいたけ\" \"VALORANT\" \"アセンダント\"",
+          "\"まいたけ\" \"VALORANT\" \"ダイヤ\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "tentei-forte",
       "name": "天帝フォルテ",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンドIV（過去到達）",
       "rankPeriod": "S12 split1、2022-04-04",
       "confidence": "medium",
@@ -305,13 +390,44 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "デビュー前Immortalの紹介記録、およびV最VALORANT Act1名簿で最高到達Ascendant2。どちらも今回の5の基準に該当。",
+        "period": "Immortalは2022年5月記事時点の過去実績。Ascendant2は2023年V最Act1資料。",
+        "confidence": "medium",
+        "queries": [
+          "\"天帝フォルテ\" \"VALORANT\" \"最高ランク\"",
+          "\"天帝フォルテ\" \"アセンダント2\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "頂きを目指す姿はまさに天帝！ Neo-Porte天帝フォルテ",
+            "url": "https://www.inside-games.jp/article/2022/05/28/138399.html?from=image-page-title",
+            "date": "2022-05-28",
+            "note": "ゲーム紹介でVALORANT Immortalの記録と初配信を参照。記事はImmortalをゲーム内最高と表現しているが、その表現は採用せず到達ランク名のみ参照。"
+          },
+          {
+            "kind": "secondary",
+            "title": "V最協ヴァロラントA1の出場メンバーとチーム分け",
+            "url": "https://gamewith.jp/valorant/article/show/423036",
+            "date": null,
+            "note": "出場メンバー表に天帝フォルテの最高到達Ascendant2。Immortal紹介との時期・集計範囲の差があるため、現在ランクと扱わない。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 6
+      },
       "legacyRating5": 3
     },
     {
       "id": "shirona-shizuku",
       "name": "白那しずく",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンドIV（過去到達）",
       "rankPeriod": "S21 split2：2024-07-31、S22 split2：2024-11-05、S23 split1：2024-12-13",
       "confidence": "medium",
@@ -351,13 +467,52 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "Episode7 Act3でImmortal3の記録。",
+        "period": "Episode7 Act3。Episode5 Act3でもImmortalに到達した記録。",
+        "confidence": "medium",
+        "queries": [
+          "\"白那しずく\" \"VALORANT\" \"最高ランク\"",
+          "\"白那しずく\" \"イモータル3\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "白那しずく - Neo-Porte非公式Wiki",
+            "url": "https://wikiwiki.jp/neo-porte/白那しずく",
+            "date": null,
+            "note": "好きなゲーム欄でEpisode5 Act3のImmortal到達、Episode7 Act3のImmortal3を区別して記載。本人ランク画面までは未視聴。"
+          },
+          {
+            "kind": "secondary",
+            "title": "白那しずくのゲーム実績紹介（X投稿転載部分のみ）",
+            "url": "https://vtuber-story.jp/shironashizuku-nakanohito/",
+            "date": null,
+            "note": "ゲーム実力の項目にImmortalと、2024-12-14の本人ソロランク終了報告を転載。前世等の推測部分は使用しない。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "本人Xのソロランク終了報告（直接閲覧不可）",
+            "url": "https://twitter.com/shizuku_shirona/status/1867771550222758392",
+            "date": "2024-12-14",
+            "note": "直接取得は403。本文転載は確認したが画像の到達ランクは未検証で、一次根拠の確認済み扱いにはしない。"
+          }
+        ],
+        "previousPoints": 6
+      },
       "legacyRating5": 3
     },
     {
       "id": "mittiii",
       "name": "mittiii",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 7,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -388,9 +543,9 @@
         "\"みっちー\" \"APEX\" \"最高ランク\"",
         "\"mittiii\" \"APEX\" \"プラチナ\""
       ],
-      "researchStatus": "insufficient",
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "researchStatus": "found",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-pro",
       "formerApexPro": false,
       "additionalResearch": {
         "rank": "unknown",
@@ -422,13 +577,40 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "pro",
+        "points": 7,
+        "game": "VALORANT",
+        "achievement": "元FENNEL VALORANT部門プロプレイヤー。",
+        "period": "競技活動は過去。2025-10-01公式紹介時点で元プロと明記。",
+        "confidence": "high",
+        "queries": [
+          "site:fennel-esports.com mittiii VALORANT 選手 引退"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "ストリーマーmittiii・CHUNEのエージェント契約移行について",
+            "url": "https://fennel-esports.com/news/corporate/2966/",
+            "date": "2025-10-01",
+            "note": "所属チーム公式記事のmittiii紹介に元FENNEL VALORANT部門プロプレイヤーと明記。現在のストリーマー所属だけからの推定ではない。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "note": "LoLランクや格闘ゲームのMasterは他FPS補正に使用しない。"
+          }
+        ],
+        "previousPoints": 8
+      },
       "legacyRating5": null
     },
     {
       "id": "alphaazur",
       "name": "AlphaAzur",
       "rating": 8,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "プレデター（到達経験・二次情報）",
       "rankPeriod": "達成時期未確認",
       "confidence": "low",
@@ -477,13 +659,43 @@
       "ratingSource": "rank-fixed",
       "rank": "predator",
       "formerApexPro": false,
+      "apexRank": "predator",
+      "fpsResearch": {
+        "category": "pro",
+        "points": 7,
+        "game": "PUBG: BATTLEGROUNDS",
+        "achievement": "PUBGの元プロゲーマー。",
+        "period": "2022-09-07スポンサー公式紹介時点で元プロ。具体的な活動期間は今回未確認。",
+        "confidence": "high",
+        "queries": [
+          "AlphaAzur 元プロ PUBG 公式"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "LEVEL∞とAlphaAzurのスポンサー契約締結プレスリリース",
+            "url": "https://www.unitcom.co.jp/info/press/20220907.pdf",
+            "date": "2022-09-07",
+            "note": "スポンサー公式PDFのプロフィールにPUBGの元プロゲーマーと明記。"
+          },
+          {
+            "kind": "primary",
+            "title": "元APEX開発者の新作FPSがでたと w/kinako 乾【AlphaAzur】",
+            "url": "https://www.youtube.com/watch?v=V2JhakjXU48",
+            "date": null,
+            "note": "本人チャンネルの説明欄に昔PC版PUBGでプロチーム所属と記載。これだけに依存せずスポンサー公式の元プロ明記で補強。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 8
+      },
       "legacyRating5": 5
     },
     {
       "id": "takaya-special",
       "name": "たかやスペシャル",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -517,7 +729,7 @@
         "\"たかやスペシャル\" \"えぺまつり\" \"ランク\""
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -549,13 +761,45 @@
         ],
         "rejectedEvidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"たかやスペシャル\" \"VALORANT\" \"最高ランク\"",
+          "\"たかやスペシャル\" \"Overwatch\" ランク",
+          "\"たかやスペシャル\" \"VALORANT\" ダイヤ"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "LoL配信者たかやスペシャル本人インタビュー",
+            "url": "https://fistbump-news.jp/article/2026/01/01/1981.html",
+            "date": "2026-01-01",
+            "note": "DiamondやMasterの話題はLoL。VALORANTカスタム参加やSHG所属のみではFPSプロ歴・高ランクを推定しない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "Twitch Rivals: VALORANT Showdown Japans出場メンバー",
+            "url": "https://gamewith.jp/valorant/article/show/370889",
+            "date": null,
+            "note": "本人名はあるが到達ランクを記載した資料ではなく、参加実績から高ランクを推定しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "gonkane",
       "name": "ごんかね",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 5,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -593,9 +837,9 @@
         "\"ごんかね\" \"APEX\" \"最高到達\"",
         "\"kanegon1\" \"APEX\" ランク"
       ],
-      "researchStatus": "insufficient",
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "researchStatus": "found",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-master",
       "formerApexPro": false,
       "additionalResearch": {
         "rank": "unknown",
@@ -633,13 +877,50 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "Immortal到達経験。",
+        "period": "過去到達。達成年月・Actは今回未確認。",
+        "confidence": "medium",
+        "queries": [
+          "\"ごんかね\" \"VALORANT\" \"イモータル\"",
+          "\"ごんかね\" \"イモータル\" \"達成\"",
+          "\"ごんかね\" \"イモータル\" youtube",
+          "\"ごんかね\" \"VALORANT\" \"イモータル1\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "ごんかね - 限界非公式Wiki",
+            "url": "https://wikiwiki.jp/genkai/gonkane",
+            "date": null,
+            "note": "ゲーム関連欄にVALORANT ImmortalとLoL Masterを明確に分けて記載。本人ランク画面のアーカイブは確認できていない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "遊んだゲーム一覧 - 健康鯖Wiki",
+            "url": "https://wikiwiki.jp/kenkousaba/遊んだゲーム一覧",
+            "date": null,
+            "note": "VALORANT欄で、んそめ・ごんかね・焼きパンをImmortal経験者として記載。単なる同席者のランクとの取り違えを避けて確認。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "note": "LoLのMasterおよびLTKでのコーラー経験は今回の他FPS実績に算入しない。"
+          }
+        ],
+        "previousPoints": 6
+      },
       "legacyRating5": null
     },
     {
       "id": "regrush-lionheart",
       "name": "レグルシュ・ライオンハート",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -678,7 +959,7 @@
         "\"Reglush Lionheart\" Apex rank"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -717,13 +998,30 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"レグルシュ\" \"VALORANT\" \"ランク\"",
+          "\"レグルシュ\" \"VALORANT\" \"ダイヤ\"",
+          "\"レグルシュ・ライオンハート\" \"Overwatch\" ランク"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "raizin",
       "name": "らいじん",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -770,7 +1068,7 @@
         "alfrea APEX 2022-03"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -838,13 +1136,41 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"らいじん\" \"VALORANT\" \"最高ランク\"",
+          "\"らいじん\" \"Overwatch\" ランク",
+          "\"らいじん\" \"OW\" \"マスター\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "Twitch Rivals: VALORANT Showdown Japans出場メンバー",
+            "url": "https://gamewith.jp/valorant/article/show/370889",
+            "date": null,
+            "note": "らいじん（Eclair08）本人の参加は確認できるが、到達ランクは載っていないため補正根拠にはしない。"
+          },
+          {
+            "note": "LJLの元LoLプロ歴をFPSのプロ歴に読み替えない。OW大会参加や配信時間からもランクを推定しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "yunika",
       "name": "Yunika",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -873,7 +1199,7 @@
         "\"yunika1\" \"Apex\" ランク"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -905,13 +1231,34 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Yunika\" \"VALORANT\" \"ランク\"",
+          "\"Yunika\" \"VALORANT\" \"ダイヤ\"",
+          "\"Yunika\" \"Overwatch\" ランク"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "LoL競技プロ歴・Challenger等はFPSの競技歴・ランクではないため除外。VALORANT/OWの到達実績が検索で見つからず未確認。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "eugeo",
       "name": "Eugeo",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -943,7 +1290,7 @@
         "\"eugeoja\" \"Apex\" ランク"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -975,13 +1322,34 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Eugeo\" \"VALORANT\" \"イモータル\"",
+          "\"Eugeo\" \"VALORANT\" \"ダイヤ\"",
+          "\"Eugeo\" \"Overwatch\" rank"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "検索結果の同一ページ内に別アカウントのVALORANT Immortal耐久投稿が出たが、Eugeo本人の投稿ではなく不採用。LoL競技歴・Master等もFPS実績には算入しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "zerost",
       "name": "Zerost",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 7,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1012,9 +1380,9 @@
         "\"zerost_s\" \"APEX\" \"ランク\"",
         "\"ゼロスト\" \"APEX\" \"プラチナ\""
       ],
-      "researchStatus": "insufficient",
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "researchStatus": "found",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-pro",
       "formerApexPro": false,
       "additionalResearch": {
         "rank": "unknown",
@@ -1045,13 +1413,45 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "pro",
+        "points": 7,
+        "game": "VALORANT",
+        "achievement": "VALORANT競技プロ選手経験。Sengoku Gaming、CYCLOPS athlete gaming等で活動。",
+        "period": "2020年にVALORANT選手として参入。2021年CAG、2022年SGの公式大会戦績の報道あり。現在ランクとは別の経歴。",
+        "confidence": "high",
+        "queries": [
+          "site:reject.jp Zerost VALORANT 選手",
+          "\"Zerost\" \"VALORANT\" \"プロ\" \"FENNEL\"",
+          "Zerost VALORANT CYCLOPS 公式 加入 2020"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "新メンバー加入のお知らせ（VALORANT部門）",
+            "url": "https://cyclops-osaka.jp/news/2021/1574.php",
+            "date": null,
+            "note": "CAG公式がVALORANT部門へのZerost・Pinck・GON加入を発表。"
+          },
+          {
+            "kind": "secondary",
+            "title": "Zerost氏がREJECTに加入｜Sengoku Gamingから移籍",
+            "url": "https://gamewith.jp/valorant/article/show/483879",
+            "date": "2025-02-02",
+            "note": "VALORANT選手として2020年6月に参入、First Strike Japan 2020やVCT/VCJ 2021・2022ベスト8等の選手戦績を記載。LoLプロ歴や現在のREJECTストリーマー所属だけを根拠にはしない。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 8
+      },
       "legacyRating5": null
     },
     {
       "id": "enty",
       "name": "Enty",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1084,7 +1484,7 @@
         "\"Enty\" \"APEX\" \"シルバー\""
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -1117,13 +1517,37 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Enty\" \"VALORANT\" \"ランク\"",
+          "\"Enty\" \"VALORANT\" \"イモータル\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "Enty本人ロングインタビュー",
+            "url": "https://fistbump-news.jp/article/2026/07/24/2713.html",
+            "date": "2026-07-24",
+            "note": "末尾のVALORANT1ヶ月Immortalチャレンジは今後の企画の提案であり、到達記録ではない。本文のChallengerや日本1・2位はLoL。冒頭L4D2のチーム歴もプロ契約・競技実績の裏付けがなく、FPSプロとして算入しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "kanae",
       "name": "叶",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンドIII（過去到達）",
       "rankPeriod": "2020-05-10",
       "confidence": "medium",
@@ -1156,13 +1580,45 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "high",
+        "points": 4,
+        "game": "VALORANT",
+        "achievement": "最高到達Diamond2。",
+        "period": "非公式Wikiの確認日は2022-07-23。2023年V最VALORANT Act1資料でも最高到達Diamond2。",
+        "confidence": "medium",
+        "queries": [
+          "\"叶\" \"VALORANT\" \"最高ランク\"",
+          "\"叶\" \"VALORANT\" \"ダイヤ2\" 2022",
+          "\"叶\" \"オーバーウォッチ\" \"最高ランク\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "VALORANTまとめ/ランクまとめ - にじさんじWiki",
+            "url": "https://wikiwiki.jp/nijisanji/VALORANTまとめ/ランクまとめ",
+            "date": null,
+            "note": "全エピソード通算表に叶 Diamond2、確認日2022/07/23。現在ランクと扱わない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "V最協ヴァロラントA1出場メンバーと最高到達ランク",
+            "url": "https://gamewith.jp/valorant/article/show/423036",
+            "date": null,
+            "note": "Tier3メンバー表で叶の最高到達Diamond2を確認。Immortal・Ascendant等は裏付けなし。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 5
+      },
       "legacyRating5": 3
     },
     {
       "id": "yufuna",
       "name": "ゆふな",
       "rating": 8,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "プレデター（過去到達）",
       "rankPeriod": "2022年頃の本人到達動画。正確な達成日・シーズンは未確認",
       "confidence": "high",
@@ -1194,13 +1650,30 @@
       "ratingSource": "rank-fixed",
       "rank": "predator",
       "formerApexPro": false,
+      "apexRank": "predator",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "ゆふな VALORANT 最高ランク",
+          "\"ゆふな\" \"VALORANT\" \"最高ランク\"",
+          "\"ゆふな\" \"VALORANT\" \"イモータル\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [],
+        "previousPoints": 0
+      },
       "legacyRating5": 5
     },
     {
       "id": "asumi-sena",
       "name": "空澄セナ",
       "rating": 7,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "マスター（S17・初到達）",
       "rankPeriod": "2023-06-29、S17",
       "confidence": "medium",
@@ -1232,13 +1705,36 @@
       "ratingSource": "rank-fixed",
       "rank": "master",
       "formerApexPro": false,
+      "apexRank": "master",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": "VALORANT",
+        "achievement": "確認できたVALORANT最高到達はSilver3（補正基準未満）。他FPSの補正対象記録は今回未確認。",
+        "period": "Episode5 Act3（非公式Wiki集計）",
+        "confidence": "unknown",
+        "queries": [
+          "空澄セナ VALORANT 最高ランク"
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "VALORANT/ランク - ぶいすぽっ！非公式Wiki",
+            "url": "https://wikiwiki.jp/vspo/VALORANT/ランク",
+            "date": null,
+            "note": "空澄セナの最高到達Silver3、Episode5 Act3と記載。基準未満のためpoints0。APEX実績は別に保持する。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 0
+      },
       "legacyRating5": 4
     },
     {
       "id": "shishido-akari",
       "name": "獅子堂あかり",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンドIV（デビュー前・非公式記録）",
       "rankPeriod": "デビュー前（2023-01-16より前）。デビュー後確認：2025-06-17ゴールドI",
       "confidence": "medium",
@@ -1271,13 +1767,45 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "最高到達Ascendant2。",
+        "period": "Episode6・8・9。Episode9の確認日は2024-08-04、2024-08-29、2024-11-10。",
+        "confidence": "medium",
+        "queries": [
+          "\"獅子堂あかり\" \"VALORANT\" \"最高ランク\"",
+          "site:wikiwiki.jp/nijisanji/VALORANT \"獅子堂あかり\" \"2024\"",
+          "\"獅子堂あかり\" \"オーバーウォッチ\" \"最高ランク\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "獅子堂あかり/進行中のゲームシリーズ",
+            "url": "https://wikiwiki.jp/nijisanji/獅子堂あかり/進行中のゲームシリーズ",
+            "date": null,
+            "note": "VALORANT欄にEpisode6・8・9で最高Ascendant2と記載。"
+          },
+          {
+            "kind": "secondary",
+            "title": "VALORANTランクまとめ/Episode9 - にじさんじWiki",
+            "url": "https://wikiwiki.jp/nijisanji/VALORANTまとめ/ランクまとめ/Episode 9",
+            "date": null,
+            "note": "本人行にAct1/2/3のAscendant2と各確認日を掲載。本人配信のランク画面は未視聴。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 6
+      },
       "legacyRating5": 3
     },
     {
       "id": "takamiya-rion",
       "name": "鷹宮リオン",
       "rating": 2,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ブロンズI（2021年S8 split2の確認到達・非公式記録）",
       "rankPeriod": "2021-05-01、S8 split2。現在ランク・現在の最高到達ではない",
       "confidence": "medium",
@@ -1370,13 +1898,34 @@
           }
         ]
       },
+      "apexRank": "bronze",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "今回の調査で補正基準に該当する他FPSの具体的な到達記録・競技プロ歴を確認できず。未プレイや低実力という意味ではない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"鷹宮リオン\" \"VALORANT\" \"ランク\"",
+          "\"鷹宮リオン\" \"VALORANT\" \"ダイヤ\"",
+          "\"鷹宮リオン\" \"オーバーウォッチ\" ランク"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "Crazy RaccoonのVALORANT元プロrionは別人。鷹宮リオンのFPSプロ歴として採用しない。配信や大会の参加だけでは高ランクも推定しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": 1
     },
     {
       "id": "yukio",
       "name": "ゆきお",
       "rating": 10,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "プレデター（本人の過去到達報告）／元APEXプロ",
       "rankPeriod": "2022-09-10の本人到達報告。競技活動は2024-10まで。現在ランクではない。",
       "confidence": "high",
@@ -1429,13 +1978,32 @@
       "ratingSource": "rank-fixed",
       "rank": "former-pro",
       "formerApexPro": true,
+      "apexRank": "former-pro",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"ゆきお\" \"VALORANT\" \"最高ランク\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "APEX元競技プロ10が他FPSの最大8を上回るため追加区分採用不要。VALORANT同名アカウント販売は本人不一致で除外。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": 5
     },
     {
       "id": "k4sen",
       "name": "k4sen",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤ（大会紹介の記載）",
       "rankPeriod": "2022年ごろの超滅Apex2紹介。達成時期未確認。",
       "confidence": "low",
@@ -1476,13 +2044,37 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"k4sen\" \"VALORANT\" \"ダイヤ\" 最高",
+          "\"k4sen\" \"VALORANT\" \"ダイヤ到達\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "k4sen用語・知識・ネタまとめ",
+            "url": "https://note.com/another_crown/n/n53bfbf0f56c8",
+            "date": null,
+            "note": "ダイヤ到達のゲームを明確にした本人出典を確認できず、他FPS補正に採用しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": 3
     },
     {
       "id": "kuzuha",
       "name": "葛葉",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンド3",
       "rankPeriod": "S12 Split1、2022-03-28の記録",
       "confidence": "medium",
@@ -1522,13 +2114,36 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "アセンダント2",
+        "period": "2023-11-14",
+        "confidence": "medium",
+        "queries": [
+          "\"葛葉\" \"VALORANT\" \"アセンダント2\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "にじさんじWiki 葛葉 ゲーム記録",
+            "url": "https://wikiwiki.jp/nijisanji/葛葉",
+            "date": "2023-11-14",
+            "note": "EP7 Act3のアセンダント2記録。現在ランクではない。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 6
+      },
       "legacyRating5": 3
     },
     {
       "id": "tatsumaki-chise",
       "name": "龍巻ちせ",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1567,7 +2182,7 @@
         "\"龍巻ちせ\" \"APEX\" \"プラチナ\""
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -1607,13 +2222,36 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"龍巻ちせ\" \"最高ランク\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "ぶいすぽWiki 龍巻ちせゲーム関連",
+            "url": "https://wikiwiki.jp/vspo/龍巻ちせ/ゲーム関連",
+            "date": null,
+            "note": "GrandmasterはLoL。FPS上位やFPSプロの証明ではない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "konkon-aria",
       "name": "昏昏アリア",
       "rating": 7,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "マスター（S12の記録）",
       "rankPeriod": "S12後半。現在ランクではない。",
       "confidence": "medium",
@@ -1652,13 +2290,36 @@
       "ratingSource": "rank-fixed",
       "rank": "master",
       "formerApexPro": false,
+      "apexRank": "master",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"昏昏アリア\" \"VALORANT\" ランク"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "Neo-Porte Wiki 昏昏アリア",
+            "url": "https://wikiwiki.jp/neo-porte/昏昏アリア",
+            "date": null,
+            "note": "VALORANTの低ランク記述を5〜6点のハイランクへ換算しない。APEX Masterを使用。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": 4
     },
     {
       "id": "yutapon",
       "name": "Yutapon",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 6,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1697,9 +2358,9 @@
         "\"ゆたぽん\" \"エーペックス\" ランク",
         "\"Yutapon\" \"APEX\" \"プラチナ\""
       ],
-      "researchStatus": "insufficient",
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "researchStatus": "found",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-top",
       "formerApexPro": false,
       "additionalResearch": {
         "rank": "unknown",
@@ -1740,13 +2401,36 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "high",
+        "points": 6,
+        "game": "VALORANT / CS:GO / Overwatch",
+        "achievement": "Radiant / Global Elite / Top500・当時日本1位",
+        "period": "VALORANT 2020-09-21、公式紹介2021年",
+        "confidence": "high",
+        "queries": [
+          "\"Yutapon\" \"VALORANT\" ランク"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "DetonatioN FocusMe公式 Yutaponを語りたい",
+            "url": "https://note.com/dfmwin/n/nf7ba0a504d93",
+            "date": "2021",
+            "note": "所属チーム公式スタッフが3タイトルの最高帯を説明し、2020-09-21本人Radiant到達投稿を埋込。LoLプロ歴をFPSプロと換算せずハイランク7。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 7
+      },
       "legacyRating5": null
     },
     {
       "id": "rainbrain",
       "name": "Rainbrain",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1774,7 +2458,7 @@
         "\"fujimako1231\" \"Apex\" \"ランク\""
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -1801,13 +2485,33 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Rainbrain\" \"VALORANT\" ランク",
+          "\"Rainbrain\" \"VALORANT\" \"ダイヤ\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "LoL元プロ歴やVALORANT配信の存在のみでは他FPS競技プロ/最高到達帯を証明しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "ceros",
       "name": "Ceros",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 6,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1846,12 +2550,12 @@
         "\"Ceros\" \"エーペックス\" ランク",
         "\"Ceros\" \"APEX\" \"ゴールド\""
       ],
-      "researchStatus": "insufficient",
+      "researchStatus": "found",
       "formerOrganizations": [
         "DetonatioN FocusMe"
       ],
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-top",
       "formerApexPro": false,
       "additionalResearch": {
         "rank": "unknown",
@@ -1872,13 +2576,42 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "high",
+        "points": 6,
+        "game": "鉄鬼 / Special Force 2",
+        "achievement": "公式全国大会優勝、後続FPSオフライン大会準優勝",
+        "period": "2010年鉄鬼決勝、2026-11-20本人回顧インタビュー",
+        "confidence": "high",
+        "queries": [
+          "\"Ceros\" \"VALORANT\" ランク ダイヤ",
+          "\"Ceros\" \"VALORANT\" \"アセンダント\"",
+          "\"Ceros\" \"鉄鬼\" 優勝"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "FISTBUMP Ceros本人インタビュー FPS時代",
+            "url": "https://fistbump-news.jp/article/2026/11/20/3231.html",
+            "date": "2026-11-20",
+            "note": "本人がZerostと2010年名古屋の公式決勝優勝、後続作のオフライン準優勝を説明。FPS競技プロ契約は確認できず7点にせず、全国優勝を最高帯相当6点で扱う。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "note": "LoLプロ歴はFPSプロの証拠ではない。鉄鬼全国優勝は6点相当、FPSプロ契約は未確認。"
+          }
+        ],
+        "previousPoints": 7
+      },
       "legacyRating5": null
     },
     {
       "id": "yuhi",
       "name": "Yuhi",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1904,7 +2637,7 @@
         "\"Yuhi\" \"エーペックス\" ランク"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -1925,13 +2658,33 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Yuhi\" \"VALORANT\" \"LoL\" ランク",
+          "\"Yuhi\" \"VALORANT\" \"イモータル\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "LJLのLoLプロ歴を他FPSプロへ換算しない。夕陽リリ（Yuhi Riri）とは別人。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "nemoh",
       "name": "NEMOH",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -1956,7 +2709,7 @@
         "\"ねも\" \"NEMOH\" \"APEX\""
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -1976,13 +2729,33 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"NEMOH\" \"VALORANT\" ランク",
+          "\"NEMOH\" \"VALORANT\" \"ダイヤ\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "LoL活動・FPS配信だけでは上位到達帯を証明しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "shaka",
       "name": "SHAKA",
       "rating": 8,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "プレデター",
       "rankPeriod": "2020-06-30（本人動画公開日）",
       "confidence": "high",
@@ -2021,13 +2794,43 @@
       "ratingSource": "rank-fixed",
       "rank": "predator",
       "formerApexPro": false,
+      "apexRank": "predator",
+      "fpsResearch": {
+        "category": "pro",
+        "points": 7,
+        "game": "Alliance of Valiant Arms / Overwatch",
+        "achievement": "元競技プロ、AVA日本代表・国際大会出場",
+        "period": "2010年代の競技活動、本人回顧2024年",
+        "confidence": "high",
+        "queries": [
+          "SHAKA AVA 元プロ 公式 インタビュー"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "SHAKA本人 AVAの現役選手時代を語る",
+            "url": "https://www.youtube.com/watch?v=mcrzHRBbD4w",
+            "date": "2024",
+            "note": "本人チャンネルの現役選手時代の回顧。現在所属と混同しない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "ファミ通 SHAKA対談紹介",
+            "url": "https://www.famitsu.com/news/202206/13264167.html",
+            "date": "2022-06-13",
+            "note": "取材紹介でAVA/Overwatchからの元プロ・ストリーマーへの経歴を確認。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 8
+      },
       "legacyRating5": 5
     },
     {
       "id": "mother3",
       "name": "MOTHER3",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 6,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2067,12 +2870,12 @@
         "\"mother3rrd\" \"ダイヤ\" \"APEX\"",
         "\"MOTHER3\" \"APEX\" \"プラチナ\" -VALORANT -ストリートファイター"
       ],
-      "researchStatus": "insufficient",
+      "researchStatus": "found",
       "formerOrganizations": [
         "REJECT"
       ],
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-top",
       "formerApexPro": false,
       "additionalResearch": {
         "rank": "unknown",
@@ -2103,13 +2906,45 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "high",
+        "points": 6,
+        "game": "VALORANT / Overwatch",
+        "achievement": "Radiant / 過去Grandmaster",
+        "period": "VALORANT EP2 Act1/EP3 Act2、2022-05イベント取材",
+        "confidence": "high",
+        "queries": [
+          "\"MOTHER3\" \"レディアント\" 公式",
+          "\"MOTHER3\" \"元プロ\" Overwatch",
+          "\"MOTHER3\" \"レディアント\" \"2021\""
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "ファミ通 RAGE VALORANT DAY1現地取材",
+            "url": "https://www.famitsu.com/news/202205/09260749.html",
+            "date": "2022-05-09",
+            "note": "現地取材でJasper/SurugaMonkey/MOTHER3をRadiant経験者と明記。競技プロとは断定しない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "MOTHER3デバイス紹介 過去到達ランク",
+            "url": "https://johotaxi.com/mother3-devices/",
+            "date": "2024-01-26",
+            "note": "VALORANT Radiant到達のEP2 Act1/EP3 Act2を補完。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 7
+      },
       "legacyRating5": null
     },
     {
       "id": "amanogawa-neru",
       "name": "天ノ川ねる",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2134,7 +2969,7 @@
         "\"天ノ川ねる\" \"APEX\" \"ランク\" -LTK"
       ],
       "researchStatus": "insufficient",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2155,13 +2990,33 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"天ノ川ねる\" \"VALORANT\" ランク",
+          "\"天ノ川ねる\" \"VALORANT\" \"ダイヤ\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "note": "VALORANTフルパ参加・スト6高ランクは他FPS上位の到達根拠にならない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "yumeno-akari",
       "name": "夢野あかり",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンド3（CS版）",
       "rankPeriod": "ぶいすぽ加入前の個人活動時代。正確な達成日未確認。",
       "confidence": "medium",
@@ -2201,13 +3056,36 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "イモータル3",
+        "period": "2023年Red Bull本人出演番組時点の過去到達",
+        "confidence": "high",
+        "queries": [
+          "\"夢野あかり\" \"イモータル3\""
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "Red Bull GAMEN 夢野あかり 本人出演紹介",
+            "url": "https://www.redbull.com/jp-ja/gamen-questionnaire-020",
+            "date": "2023",
+            "note": "番組主催がIronからImmortal3へ到達した実績を紹介。Radiant目標を達成扱いしない。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 6
+      },
       "legacyRating5": 3
     },
     {
       "id": "shiranami-ramune",
       "name": "白波らむね",
       "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンド3（ソロ）",
       "rankPeriod": "Season7、2022-08-25初配信で過去実績として紹介",
       "confidence": "medium",
@@ -2247,13 +3125,36 @@
       "ratingSource": "rank-fixed",
       "rank": "diamond",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "イモータル2",
+        "period": "過去到達、正確な到達日は未確認",
+        "confidence": "medium",
+        "queries": [
+          "\"白波らむね\" \"イモータル\" 公式"
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "ぶいすぽ非公式Wiki 白波らむね VALORANT欄",
+            "url": "https://wikiwiki.jp/vspo/白波らむね",
+            "date": null,
+            "note": "VALORANT最高ランクImmortal2。本人の目標配信タイトルだけでは断定せず到達記録を採用。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 6
+      },
       "legacyRating5": 3
     },
     {
       "id": "sakayori-soma",
       "name": "酒寄颯馬",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 6,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2289,9 +3190,9 @@
         "酒寄颯馬 Apex ランク ダイヤ",
         "\"酒寄颯馬\" \"APEX\" \"シルバー\""
       ],
-      "researchStatus": "insufficient",
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "researchStatus": "found",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-top",
       "formerApexPro": false,
       "additionalResearch": {
         "rank": "unknown",
@@ -2315,13 +3216,44 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "high",
+        "points": 6,
+        "game": "Overwatch / CS:GO / VALORANT",
+        "achievement": "Grandmaster 約4200 / Global Elite / Immortal3",
+        "period": "デビュー前の過去実績、2024-08初配信で言及",
+        "confidence": "medium",
+        "queries": [
+          "\"酒寄颯馬\" \"イモータル3\"",
+          "\"酒寄颯馬\" \"グランドマスター\" \"CSGO\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "にじさんじWiki 酒寄颯馬 本人エピソード",
+            "url": "https://wikiwiki.jp/nijisanji/酒寄颯馬/詳しく知りたい/本人に関するエピソード",
+            "date": null,
+            "note": "OW Grandmaster/CSGO Global Eliteを最高帯7とする。VALO Immortal3だけなら6。記事が根拠として本人初配信13分頃をリンク。原映像は未視聴。"
+          },
+          {
+            "kind": "primary",
+            "title": "酒寄颯馬 本人初配信（Wiki引用元）",
+            "url": "https://youtu.be/87ElDaN_sEQ?t=777",
+            "date": "2024-08",
+            "note": "本人初配信へのリンク。今回動画のランク紹介箇所を直接視聴できていないため総合確度はmedium。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 7
+      },
       "legacyRating5": null
     },
     {
       "id": "kinako",
       "name": "きなこ",
       "rating": 8,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ソロプレデター",
       "rankPeriod": "公式プロフィールに達成時期の記載なし。現在ランクではない。",
       "confidence": "high",
@@ -2353,13 +3285,36 @@
       "ratingSource": "rank-fixed",
       "rank": "predator",
       "formerApexPro": false,
+      "apexRank": "predator",
+      "fpsResearch": {
+        "category": "high",
+        "points": 6,
+        "game": "Overwatch",
+        "achievement": "Top500（過去）",
+        "period": "2023年第3回CRカップOW2紹介時点",
+        "confidence": "medium",
+        "queries": [
+          "\"きなこ\" \"Overwatch\" \"Top500\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "第3回CRカップOW2 参加者の過去実績",
+            "url": "https://www.esports.net/jp/news/overwatch/cr-cup-3rd-overview/",
+            "date": null,
+            "note": "最高到達実績表でkinakoをTop500枠へ掲載。元OW競技プロ枠ではない。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 7
+      },
       "legacyRating5": 5
     },
     {
       "id": "stanmi",
       "name": "スタンミじゃぱん",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2388,7 +3343,7 @@
       ],
       "researchStatus": "insufficient",
       "organizationNote": "配信組織の現所属を一次資料で確認できず。音楽/マネジメント契約や過去7th heavenを現eSports所属と混同しない。",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2410,13 +3365,39 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"スタンミ\" \"イモータル\" 到達 動画",
+          "\"スタンミ\" \"最高ランク\" VALORANT -前世",
+          "\"スタンミ\" \"VALORANT\" \"ダイヤ達成\"",
+          "\"スタンミ\" \"VALORANT\" \"ダイヤモンド\" 最高"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "VALORANT配信者ランクまとめ",
+            "url": "https://bloomeria.jp/blog/valorant-streamer-ranks",
+            "date": null,
+            "note": "Radiantとあるが本人到達投稿・大会申告・画面への根拠を追えず、今回採用しない。LoL/スト6の同名ランクも混同しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "jasper",
       "name": "じゃすぱー",
-      "rating": 6,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "rating": 7,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ダイヤモンド2（少なくとも）",
       "rankPeriod": "2021年ごろの動画。最高到達の最終確定ではない。",
       "confidence": "medium",
@@ -2455,15 +3436,38 @@
       ],
       "researchStatus": "found",
       "ratingSource": "rank-fixed",
-      "rank": "diamond",
+      "rank": "other-fps-pro",
       "formerApexPro": false,
+      "apexRank": "diamond",
+      "fpsResearch": {
+        "category": "pro",
+        "points": 7,
+        "game": "Overwatch",
+        "achievement": "元プロ、Overwatch World Cup 2017日本代表",
+        "period": "2016〜2018年頃の競技歴、主催者紹介2022-07-19",
+        "confidence": "high",
+        "queries": [
+          "じゃすぱー 元 Overwatch プロ 公式"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "南海電鉄/eスタジアム eスポーツキャンプ公式発表",
+            "url": "https://www.nankai.co.jp/library/company/news/pdf/220719.pdf",
+            "date": "2022-07-19",
+            "note": "ゲスト紹介でOverwatch元プロ/2017日本代表と明記。VALORANT Radiantも記載。APEXプロではなく他FPS元プロ8。"
+          }
+        ],
+        "rejectedEvidence": [],
+        "previousPoints": 8
+      },
       "legacyRating5": 3
     },
     {
       "id": "kagura-mea",
       "name": "神楽めあ",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2498,7 +3502,7 @@
       ],
       "researchStatus": "insufficient",
       "organizationNote": "個人勢との二次紹介はあるが今回の一次資料での確認が不足。無所属/個人を共通所属グループとして扱わない。",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2519,13 +3523,37 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "配点基準に該当する他FPS実績は未確認",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"神楽めあ\" \"VALORANT\" \"ダイヤ\" 到達",
+          "\"神楽めあ\" \"VALORANT\" \"最高ランク\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "FISTBUMP Riot発表 神楽めあダイヤ到達計画",
+            "url": "https://fistbump-news.jp/article/2026/05/01/2383.html",
+            "date": "2026-05-01",
+            "note": "スカーミッシュアセンションの目標企画で、コンペティティブ実到達を証明しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "washidai",
       "name": "Washidai",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2564,7 +3592,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2585,13 +3613,29 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Washidai\" \"VALORANT\" ランク",
+          "\"Washidai\" \"Overwatch\" \"Master\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "sharuru",
       "name": "しゃるる",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2626,7 +3670,7 @@
           ]
         }
       ],
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2655,13 +3699,45 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"しゃるる\" \"VALORANT\" \"ランク\"",
+          "\"しゃるる\" \"VALORANT\" \"ダイヤ\"",
+          "\"しゃるる\" \"イモータル\" VALORANT"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "本人動画・LoL最高ランク経験者しゃるるがLoLとVALORANTを比較する",
+            "url": "https://www.youtube.com/watch?v=VkDsY3Q-D9E",
+            "date": null,
+            "note": "タイトルの最高ランクはLoL。VALORANTの到達ランクとしない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "VALORANT配信者一覧",
+            "url": "https://followboard.jp/games/valorant",
+            "date": null,
+            "note": "『しゃる・しゃるる』という別配信者や他者のImmortal3記述を、げまげまのしゃるる本人に結びつけない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "tanukininja",
       "name": "たぬき忍者",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2700,7 +3776,7 @@
           ]
         }
       ],
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2721,13 +3797,45 @@
           }
         ]
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": "VALORANT",
+        "achievement": "本人インタビューで過去Platinum付近、その後上がったと発言。ただしDiamond以上の到達先は特定できず、5〜6点の条件を満たす根拠なし。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"たぬき忍者\" \"VALORANT\" \"ランク\"",
+          "\"たぬき忍者\" \"VALORANT\" \"ダイヤ\"",
+          "\"たぬき忍者\" \"ヴァロラント\" \"ダイヤ\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "たぬき忍者・summertimer本人対談",
+            "url": "https://fistbump-news.jp/article/2025/08/22/1469.html",
+            "date": "2025-08-22",
+            "note": "VALORANT企画でPlatinum付近に停滞し、その後ランクが上がったという本人発言。上昇後の到達ランクは不明。記事中のDiamond発言は別の話者/ゲーム文脈と混同しない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "本人の2021年ダイヤ目標企画投稿の転載",
+            "url": "https://twfan.net/user/2886041192/retweet/1",
+            "date": "2021-06-23",
+            "note": "Diamondは目標。後の罰ゲーム実施や髪型の記録も到達証明にならない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "day1",
       "name": "Day1",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2757,7 +3865,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2790,13 +3898,44 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Day1\" \"VALORANT\" \"ランク\"",
+          "\"Day1week\" \"VALORANT\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "VALORANTリーダーボード",
+            "url": "https://valking.gg/ja/leaderboard/ranked",
+            "date": null,
+            "note": "Day1#1119という別アカウントの上位表示が検索に出るが、LTKのDay1本人との一致根拠がないため除外。"
+          },
+          {
+            "kind": "secondary",
+            "title": "本人Xプロフィール転載",
+            "url": "https://ww.twstalker.com/Day1week",
+            "date": null,
+            "note": "本人の大規模FPSに不慣れという発言は上位到達の裏付けでも、未経験・低ランク確定の証拠でもない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "hetel",
       "name": "hetel",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2832,7 +3971,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2865,13 +4004,37 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"hetel\" \"VALORANT\" ランク",
+          "\"へてる\" \"VALORANT\" \"ダイヤ\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "プロ/上位プレイヤー設定一覧",
+            "url": "https://settey.com/players",
+            "date": null,
+            "note": "hetelのプロ表記はLeague of Legends。VALORANT選手が多い一覧に載っていてもFPSプロとはしない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "kohaku-uru",
       "name": "狐白うる",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -2913,7 +4076,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -2962,13 +4125,39 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"狐白うる\" \"VALORANT\" \"ランク\"",
+          "\"狐白うる\" \"VALORANT\" \"ダイヤ\" -site:ptt.cc -site:pttweb.cc",
+          "\"狐白うる\" \"オーバーウォッチ\" \"ランク\"",
+          "\"狐白うる\" \"最高ランク\" VALO"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "VTuberのLoL最高ランク一覧",
+            "url": "https://johotaxi.com/lol-vtuber-ranked/",
+            "date": null,
+            "note": "狐白うるのGold等はLoLの記録。FPSの到達ランクや競技プロ歴として使用しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "aster-leda",
       "name": "アステル・レダ",
       "rating": 7,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "マスター（過去実績）",
       "rankPeriod": "2021年6月・2024年8月大会時の表記。現在ランク未確認",
       "confidence": "medium",
@@ -3019,13 +4208,36 @@
       "ratingSource": "rank-fixed",
       "rank": "master",
       "formerApexPro": false,
+      "apexRank": "master",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"アステル\" \"元プロ\" FPS"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "VALORANTスカーミッシュトーナメント出場者紹介",
+            "url": "https://sports.smt.docomo.ne.jp/esports/shooting/gameinfo/20251113_11433.html",
+            "date": "2025-11-13",
+            "note": "hNtチームのストリーマーとして参加。プロ/元プロ1名を含む大会の出場者一覧にあるだけでアステルをFPSプロとは扱わない。既存APEX Master7を超える他FPS元プロ歴の根拠なし。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": 4
     },
     {
       "id": "haruchya",
       "name": "春茶",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 6,
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3067,10 +4279,10 @@
         "\"HARUTYA1226\" \"Apex\" \"ダイヤ\"",
         "\"HARUTYA1226\" \"APEX\" \"ランク\""
       ],
-      "researchStatus": "insufficient",
+      "researchStatus": "found",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
-      "rank": "unknown",
+      "ratingSource": "rank-fixed",
+      "rank": "other-fps-top",
       "formerApexPro": false,
       "additionalResearch": {
         "queries": [
@@ -3104,13 +4316,47 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "high",
+        "points": 6,
+        "game": "VALORANT",
+        "achievement": "Radiant到達（2021年本人達成投稿の転載を確認）",
+        "period": "2021-05-06の達成報告。現在ランクではない。",
+        "confidence": "medium",
+        "queries": [
+          "春茶 VALORANT レディアント 公式",
+          "\"春茶\" \"レディアント\" \"2021\"",
+          "\"春茶\" \"レディアント\" site:reject.jp",
+          "\"HARUTYA1226\" \"1390389451038224384\""
+        ],
+        "evidence": [
+          {
+            "kind": "secondary",
+            "title": "春茶のデバイス紹介・本人のRadiant達成投稿引用",
+            "url": "https://johotaxi.com/harutya-devices/",
+            "date": "2021-05-06",
+            "note": "2021-05-06の本人投稿を日付付きで引用し、最高ランク到達と説明。本人投稿のURLはhttps://x.com/HARUTYA1226/status/1390389451038224384。元投稿本文/添付の直接取得は403のため、転載を根拠とする。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "本人のVALORANT達成報告（直接取得制限）",
+            "url": "https://x.com/HARUTYA1226/status/1390389451038224384",
+            "date": "2021-05-06",
+            "note": "転載記事の出典リンクから特定した本人投稿。x.comとtwitter.comの直接取得は403。直接閲覧済みの一次証拠とは数えない。"
+          }
+        ],
+        "previousPoints": 7
+      },
       "legacyRating5": null
     },
     {
       "id": "nagisacchi",
       "name": "なぎさっち",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3136,7 +4382,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3168,13 +4414,37 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"なぎさっち\" \"VALORANT\" \"ダイヤ\"",
+          "\"なぎさっち\" \"VALORANT\" \"最高\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "本人Twitch配信データ",
+            "url": "https://streamers.ludens.com.tw/ja/channel/nagisatty?period=90d",
+            "date": null,
+            "note": "VALORANT配信は確認できるが、最高同接はゲームの到達ランクではない。本人の対象ランクは不明。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "toko",
       "name": "とおこ",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3214,7 +4484,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3257,13 +4527,46 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"とおこ\" \"VALORANT\" \"最高ランク\"",
+          "\"とおこ\" \"VALORANT\" \"ダイヤ\" -site:ptt.cc -site:pttweb.cc",
+          "\"とおこ\" \"Overwatch\" \"ランク\"",
+          "\"とおこ\" \"最高ランク\" VALO"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "とおこ等のLoL自己最高更新報道",
+            "url": "https://fistbump-news.jp/article/2026/04/27/2366.html",
+            "date": "2026-04-27",
+            "note": "VALORANT/LoLメディアの記事でも、内容はLoLのEmerald/Diamond到達。FPS評価に流用しない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "REJECT配信者プロフィール一覧",
+            "url": "https://www.twitchclipsranking.com/streamers?text=REJECT",
+            "date": null,
+            "note": "同ページの『valo最高ランク芋2』は巫神こんの自己紹介で、とおこや乾伸一郎の実績ではない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "yakipan",
       "name": "焼きパン",
       "rating": 7,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "マスター（過去実績への本人言及）",
       "rankPeriod": "2026-07-09公開動画で過去実績に言及。達成シーズン未確認",
       "confidence": "medium",
@@ -3295,13 +4598,55 @@
       "ratingSource": "rank-fixed",
       "rank": "master",
       "formerApexPro": false,
+      "apexRank": "master",
+      "fpsResearch": {
+        "category": "high",
+        "points": 5,
+        "game": "VALORANT",
+        "achievement": "Immortal到達。Immortal3という最高区分は非公式Wikiの二次記録。",
+        "period": "2022-04-24本人動画のImmortal言及、2025-05時点の非公式最高ランク一覧。現在ランクではない。",
+        "confidence": "medium",
+        "queries": [
+          "焼きパン ZETA PUBG プロ 公式",
+          "\"焼きパン\" \"VALORANT\" \"ダイヤ\"",
+          "\"焼きパン\" \"イモータル3\" -site:jbbs.shitaraba.net",
+          "\"焼きパン\" \"イモータル\" site:youtube.com",
+          "\"焼きパン\" \"ほんとにイモータル\""
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "本人動画：僕ほ…ほんとにイモータルだよ…？焼きパンとぐちつぼの幼稚園VALORANT",
+            "url": "https://www.youtube.com/watch?v=kgAeuFVeKOA",
+            "date": "2022-04-24",
+            "note": "本人チャンネル・公開日・タイトルを検索索引で確認。本人のImmortal言及であり、到達目標タイトルではない。直接openはthrottle、映像内の到達シーンは未視聴。"
+          },
+          {
+            "kind": "secondary",
+            "title": "限界非公式Wiki・VALORANT最高到達ランク",
+            "url": "https://wikiwiki.jp/genkai/genkai",
+            "date": null,
+            "note": "2025年5月時点の最高到達一覧で焼きパンImmortal3。本文記載の照合で、公式戦績認定ではない。配点はImmortal1〜3で共通の6。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "ZETA公式・焼きパンプロフィール",
+            "url": "https://zetadivision.com/players/%E7%84%BC%E3%81%8D%E3%83%91%E3%83%B3",
+            "date": null,
+            "note": "CREATOR所属、osu!の実力、PUBG PARK等の出演はFPS競技プロ選手歴の根拠にならない。元FPSプロ7にはしない。"
+          }
+        ],
+        "previousPoints": 6
+      },
       "legacyRating5": 4
     },
     {
       "id": "killin9hit",
       "name": "Killin9Hit",
       "rating": 7,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "マスター（過去実績）",
       "rankPeriod": "2022-07-22本人インタビューで過去の到達経験を説明。現在ランク未確認",
       "confidence": "high",
@@ -3342,13 +4687,73 @@
       "ratingSource": "rank-fixed",
       "rank": "master",
       "formerApexPro": false,
+      "apexRank": "master",
+      "fpsResearch": {
+        "category": "pro",
+        "points": 7,
+        "game": "PUBG: BATTLEGROUNDS",
+        "achievement": "DeToNator KOREA PUBG初期選手・リーダー。その後コーチ/GM。",
+        "period": "2017年12月のPUBG韓国部門結成時の選手歴。現在の競技選手という意味ではない。",
+        "confidence": "high",
+        "queries": [
+          "Killin9Hit ZETA PUBG 元プロ 公式",
+          "\"Killin9Hit\" \"DeToNator\" \"PUBG\" site:detonator-gg.com",
+          "site:detonator-gg.com \"Killin9Hit\" PUBG",
+          "site:zetadivision.com \"Killin9Hit\" \"PUBG\" \"加入\"",
+          "\"Killin9Hit\" \"PUBG\" \"2017\" DeToNator",
+          "\"Killin9Hit\" \"プロ選手\" \"PUBG\" -site:stcolle.com -site:wikipedia.org -site:5ch.io",
+          "\"DETONATOR KOREA PUBG部門設立\"",
+          "\"Killin9Hit\" \"PUBG\" site:realsound.jp",
+          "\"Killin9Hit\" \"PUBG\" site:detonator-gg.com/news"
+        ],
+        "evidence": [
+          {
+            "kind": "primary",
+            "title": "ZETA DIVISION公式・Killin9Hitプロフィール",
+            "url": "https://zetadivision.com/players/killin9hit?PageSpeed=noscript",
+            "date": null,
+            "note": "現在の公式所属先が元プロとして紹介。競技タイトルと選手歴は当時のPUBG部門結成報道で照合。クリエイター所属だけからプロと判定していない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "DeToNatorがPUBG部門を設立、日本ではなく韓国チーム",
+            "url": "https://www.negitaku.org/news/n-22157",
+            "date": "2017-12-29",
+            "note": "当時の報道がKH選手を韓国PUBG部門のリーダーとして明記し、KH・Coups・Young10000・URS4の選手名簿と公式リーグAPL予選予定を掲載。公式発表への出典リンクあり。"
+          },
+          {
+            "kind": "primary",
+            "title": "Killin9Hit本人インタビュー",
+            "url": "https://realsound.jp/tech/2023/10/post-1460538_2.html",
+            "date": "2023-10-15",
+            "note": "プロ選手からストリーマーになった経緯への本人回答が掲載。PUBG選手だった時期の特定には当時の部門結成報道を併用。"
+          }
+        ],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "旧DeToNator公式・PUBG韓国部門設立",
+            "url": "https://detonator-gg.com/pubg/13535/",
+            "date": "2017-12-28",
+            "note": "Negitakuの出典から辿った旧公式ページはリダイレクト先が取得不可。直接確認できた公式発表とは扱わない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "Killin9HitプロフィールのWikipedia記述",
+            "url": "https://ja.wikipedia.org/wiki/Killin9Hit",
+            "date": null,
+            "note": "PUBG選手兼コーチ歴に加えOWのプロ/GM等の記載があるが、採点根拠はより具体的な当時報道とZETA公式に絞った。OWプロ歴の裏付けとしては使用しない。"
+          }
+        ],
+        "previousPoints": 8
+      },
       "legacyRating5": 4
     },
     {
       "id": "inui-shinichiro",
       "name": "乾伸一郎",
       "rating": 7,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "マスター（過去実績・二次資料）",
       "rankPeriod": "2022-02-04。現在ランク未確認",
       "confidence": "medium",
@@ -3392,13 +4797,51 @@
       "ratingSource": "rank-fixed",
       "rank": "master",
       "formerApexPro": false,
+      "apexRank": "master",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "乾伸一郎 VALORANT イモータル アセンダント",
+          "\"乾伸一郎\" \"イモータル\"",
+          "\"乾伸一郎\" \"アセンダント\"",
+          "\"乾伸一郎\" \"VALORANT\" \"ダイヤ\"",
+          "\"乾伸一郎\" \"VALORANT\" \"プラチナ\"",
+          "\"乾伸一郎\" VALORANT ランク 最高",
+          "\"Ninja_Inui\" \"ダイヤ\"",
+          "\"乾伸一郎\" \"VALO\" \"ランク\"",
+          "\"乾伸一郎\" \"ヴァロラント\" \"最高\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "REJECT公式の乾伸一郎SSRカード告知",
+            "url": "https://www.youtube.com/watch?v=Nn964SIwXt0",
+            "date": null,
+            "note": "公式動画概要にVALORANT部門の導線があるだけで、本人が同部門の競技プロだった証明にならない。"
+          },
+          {
+            "kind": "secondary",
+            "title": "REJECT配信者プロフィール一覧",
+            "url": "https://www.twitchclipsranking.com/streamers?text=REJECT",
+            "date": null,
+            "note": "芋2は同ページ内の巫神こんの自己紹介。乾本人のVALORANT上位到達と混同しない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": 4
     },
     {
       "id": "ogosho-nyunko",
       "name": "大御所にゅん子",
       "rating": 4,
-      "ratingBasis": "ランクに対応する固定ポイント。個人別の主観加点なし。",
+      "ratingBasis": "APEX実績と他FPS実績の固定ポイントのうち高い方を採用。",
       "rankLabel": "ゴールド（本人の過去経験談）",
       "rankPeriod": "2023-08-08インタビュー以前。現在ランク未確認",
       "confidence": "high",
@@ -3431,13 +4874,36 @@
       "ratingSource": "rank-fixed",
       "rank": "gold",
       "formerApexPro": false,
+      "apexRank": "gold",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"大御所にゅん子\" \"VALORANT\" \"ランク\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "primary",
+            "title": "大御所にゅん子本人インタビュー",
+            "url": "https://esportsnewsjapan.jp/streamer-interview-oogosyo/",
+            "date": "2023-08-08",
+            "note": "既知APEX GoldとLoL/エターナルリターンの話。採点対象の他FPS上位ランク/プロ歴なし。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": 2
     },
     {
       "id": "sendo-yuuhi",
       "name": "千燈ゆうひ",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3463,7 +4929,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3503,13 +4969,36 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": "VALORANT",
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"千燈ゆうひ\" \"VALORANT\" \"最高ランク\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "ぶいすぽ非公式Wiki・千燈ゆうひゲーム関連",
+            "url": "https://wikiwiki.jp/vspo/%E5%8D%83%E7%87%88%E3%82%86%E3%81%86%E3%81%B2/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%A2%E9%80%A3",
+            "date": null,
+            "note": "VALORANT Silver?の二次記録は不確実で、今回の上位ランク条件にも届かない。MasterはLoL、EmeraldはTFT、Platinum3は格ゲーのため対象外。弟の元APEXプロ歴も本人の経歴ではない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "apamen",
       "name": "apaMEN",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3533,7 +5022,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3564,13 +5053,37 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"apaMEN\" \"VALORANT\" \"ランク\"",
+          "\"apaMEN\" \"Overwatch\" rank"
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "apaMEN選手プロフィール",
+            "url": "https://eslive.gg/player/1084",
+            "date": null,
+            "note": "プロ歴/Worlds/コーチ歴はLoL。別にVALORANT・OWカテゴリがあるだけではFPSプロ・上位ランクの証明にならない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "nesty",
       "name": "Nesty",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3600,7 +5113,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3632,13 +5145,37 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"ねすてぃー\" \"VALORANT\" \"ランク\"",
+          "\"Nesty\" \"Overwatch\" rank \"LoL\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "Nestyプロフィール・配信一覧",
+            "url": "https://followboard.jp/streamers/s-1769",
+            "date": null,
+            "note": "元LJLプロはLoLの経歴。VALORANT/Overwatchカスタム参加だけから他FPS競技プロや上位ランクを付けない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "recap",
       "name": "Recap",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3673,7 +5210,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3705,13 +5242,37 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"りきゃっぷ\" \"VALORANT\" \"ランク\"",
+          "\"Recap\" \"VALORANT\" \"Immortal\" \"LoL\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "Recapの配信ゲーム一覧",
+            "url": "https://streamscharts.com/channels/recaplol1/streams",
+            "date": null,
+            "note": "VALORANT/OW配信カテゴリはあるが、上位到達ランクは記載されていない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "haretti",
       "name": "Haretti",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3739,7 +5300,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3770,13 +5331,37 @@
         "researchStatus": "insufficient",
         "evidence": []
       },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"Haretti\" \"VALORANT\" rank",
+          "\"Haretti\" \"CSGO\" \"ThintoN\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [
+          {
+            "kind": "secondary",
+            "title": "Harettiの配信ゲーム一覧",
+            "url": "https://streamscharts.com/channels/haretti/subscribers",
+            "date": null,
+            "note": "VALORANTやGunZのカテゴリがあるだけでは対象上位実績の証明にならない。"
+          }
+        ],
+        "previousPoints": 0
+      },
       "legacyRating5": null
     },
     {
       "id": "thinton",
       "name": "ThintoN",
-      "rating": null,
-      "ratingBasis": "到達ランクの根拠不足。未確認は編成時のみ仮5。",
+      "rating": 2,
+      "ratingBasis": "配点基準に該当するFPS実績を確認できず、本人指定の基準2点。",
       "rankLabel": null,
       "rankPeriod": null,
       "confidence": "unknown",
@@ -3803,7 +5388,7 @@
       ],
       "researchStatus": "insufficient",
       "checkedAt": "2026-11-24",
-      "ratingSource": "unknown",
+      "ratingSource": "user-default",
       "rank": "unknown",
       "formerApexPro": false,
       "additionalResearch": {
@@ -3833,6 +5418,22 @@
         "confidence": "unknown",
         "researchStatus": "insufficient",
         "evidence": []
+      },
+      "apexRank": "unknown",
+      "fpsResearch": {
+        "category": "none",
+        "points": 0,
+        "game": null,
+        "achievement": "採点対象の他FPS競技プロ歴・上位ランク到達を今回の公開調査では確認できず。未経験や低実力を意味しない。",
+        "period": null,
+        "confidence": "unknown",
+        "queries": [
+          "\"ThintoN\" \"VALORANT\" rank",
+          "\"Haretti\" \"CSGO\" \"ThintoN\""
+        ],
+        "evidence": [],
+        "rejectedEvidence": [],
+        "previousPoints": 0
       },
       "legacyRating5": null
     }

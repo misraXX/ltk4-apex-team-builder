@@ -57,16 +57,32 @@ for update in followup:
         for key in ['rank','rankLabel','rankPeriod','confidence','researchStatus']:
             r[key]=update[key]
         r['evidence'].extend(update['evidence'])
-points={'unknown':None,'rookie':1,'bronze':2,'silver':3,'gold':4,'platinum':5,'diamond':6,'master':7,'predator':8,'former-pro':10}
+points={'unknown':2,'rookie':1,'bronze':2,'silver':3,'gold':4,'platinum':5,'diamond':6,'master':7,'predator':8,'former-pro':10,'other-fps-pro':7,'other-fps-top':6,'other-fps-master':5,'other-fps-diamond':4}
+fps=[]
+for group in ['a','b','c']:
+    fps.extend(json.loads((ROOT/f'docs/fps-research-{group}.json').read_text(encoding='utf-8'))['players'])
+assert len(fps)==60 and {r['id'] for r in fps}==set(by_id) and len({r['id'] for r in fps})==60
+fps_by_id={r['id']:r for r in fps}
+for f in fps:
+    assert f['category'] in ['pro','high','none'] and f['queries']
+    assert f['points'] in ({'pro':[7],'high':[4,5,6],'none':[0]})[f['category']]
+    if f['points']:
+        assert f['game'] and f['achievement'] and f['evidence'],f['id']
+        assert all(e['url'].startswith('https://') for e in f['evidence'])
 for r in rows:
+    r['apexRank']=r['rank']
+    f=fps_by_id[r['id']]
+    r['fpsResearch']={k:v for k,v in f.items() if k not in ['id','name']}
+    if f['points']>points[r['rank']]:
+        r['rank']='other-fps-pro' if f['category']=='pro' else {6:'other-fps-top',5:'other-fps-master',4:'other-fps-diamond'}[f['points']]
     r['legacyRating5']=r['rating']
     r['rating']=points[r['rank']]
-    r['ratingSource']='rank-fixed' if r['rank']!='unknown' else 'unknown'
-    r['ratingBasis']='ランクに対応する固定ポイント。個人別の主観加点なし。' if r['rank']!='unknown' else '到達ランクの根拠不足。未確認は編成時のみ仮5。'
+    r['ratingSource']='rank-fixed' if r['rank']!='unknown' else 'user-default'
+    r['ratingBasis']='APEX実績と他FPS実績の固定ポイントのうち高い方を採用。' if r['rank']!='unknown' else '配点基準に該当するFPS実績を確認できず、本人指定の基準2点。'
     r['researchStatus']='found' if r['rank']!='unknown' else 'insufficient'
 rows=[by_id[p['id']] for p in roster]
-summary={'searched':60,'ranked':sum(r['rank']!='unknown' for r in rows),'rankUnknown':sum(r['rank']=='unknown' for r in rows),'rated':sum(r['rating'] is not None for r in rows),'unrated':sum(r['rating'] is None for r in rows),'organizationsVerified':sum(r['organizationStatus']=='verified' for r in rows),'iglVerified':sum(r['igl']=='yes' for r in rows),'followupSearched':len(followup),'followupAdded':sum(r['rank']!='unknown' for r in followup),'followupQueries':sum(len(r['queries']) for r in followup)}
-payload={'version':'2026-11-24-r4-fixed-rank-points','checkedAt':'2026-11-24','ratingScale':10,'pointSystem':'rank-fixed-v1','rankPoints':points,'summary':summary,'rubric':{'10':'元APEXプロ','8':'プレデター','7':'マスター','6':'ダイヤ','5':'プラチナ','4':'ゴールド','3':'シルバー','2':'ブロンズ','1':'ルーキー','unknown':'未確認・編成時仮5'},'players':rows}
+summary={'searched':60,'ranked':sum(r['rank']!='unknown' for r in rows),'rankUnknown':sum(r['rank']=='unknown' for r in rows),'apexRanked':sum(r['apexRank']!='unknown' for r in rows),'apexUnknown':sum(r['apexRank']=='unknown' for r in rows),'rated':60,'unrated':0,'organizationsVerified':sum(r['organizationStatus']=='verified' for r in rows),'iglVerified':sum(r['igl']=='yes' for r in rows),'followupSearched':len(followup),'followupAdded':sum(r['rank']!='unknown' for r in followup),'followupQueries':sum(len(r['queries']) for r in followup),'fpsResearched':len(fps),'fpsPro':sum(r['category']=='pro' for r in fps),'fpsHigh':sum(r['category']=='high' for r in fps),'fpsApplied':sum(r['rank'].startswith('other-fps-') for r in rows),'fpsQueries':sum(len(r['queries']) for r in fps)}
+payload={'version':'2026-11-24-r5-fps-evidence','checkedAt':'2026-11-24','ratingScale':10,'pointSystem':'fps-evidence-v1','rankPoints':points,'summary':summary,'rubric':{'10':'元APEXプロ','8':'プレデター','7':'APEXマスター・他FPS元プロ','6':'APEXダイヤ・他FPS最高帯','5':'APEXプラチナ・他FPSマスター相当','4':'ゴールド・他FPSダイヤ相当','3':'シルバー','2':'ブロンズ・実績未確認','1':'ルーキー'},'players':rows}
 out=ROOT/'site/research.js'
 out.write_text('window.LTK_RESEARCH='+json.dumps(payload,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf-8')
 (ROOT/'docs/public-research.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')

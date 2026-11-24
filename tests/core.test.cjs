@@ -56,8 +56,8 @@ test('confirmed history informs the next match and repeated pairs are reduced',(
  let s=fixture(12);for(const m of Object.values(s.members)){m.rank='platinum';m.rating=5;}s.settings.sameTeam=false;s.draft=C.generate(roster,s,quick);s=C.confirmMatch(s,roster);s.draft=null;
  const next=C.generate(roster,s,{...quick,seed:123});assert.equal(C.analyze(next.teams,roster,s).repeats,0);assert.equal(s.history.length,1);
 });
-test('unrated players remain null while provisional 5 points are used in totals',()=>{
- const s=C.createState(roster);for(let i=2;i<60;i++)s.members[roster[i].id].attending=false;const d=C.generate(roster,s,quick),r=C.analyze(d.teams,roster,s);assert.equal(r.totals[0],10);assert.equal(r.provisional,2);assert.equal(s.members[roster[0].id].rating,null);
+test('unverified players use the specified baseline of 2 points and remain provisional',()=>{
+ const s=C.createState(roster);for(let i=2;i<60;i++)s.members[roster[i].id].attending=false;const d=C.generate(roster,s,quick),r=C.analyze(d.teams,roster,s);assert.equal(r.totals[0],4);assert.equal(r.provisional,2);assert.equal(s.members[roster[0].id].rating,2);assert.equal(s.members[roster[0].id].rank,'unknown');
 });
 test('JSON round trip retains edits, directed friends, current draft and history',()=>{
  let s=fixture(9);s.members[roster[0].id].note='<script>not markup</script>';s.members[roster[0].id].friends=[roster[1].id];s.draft=C.generate(roster,s,quick);s=C.confirmMatch(s,roster);

@@ -1,0 +1,506 @@
+{
+  "checkedAt": "2026-11-24",
+  "players": [
+    {
+      "id": "yukio",
+      "name": "ゆきお",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"ゆきお\" \"VALORANT\" \"最高ランク\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "APEX元競技プロ10が他FPSの最大8を上回るため追加区分採用不要。VALORANT同名アカウント販売は本人不一致で除外。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "k4sen",
+      "name": "k4sen",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"k4sen\" \"VALORANT\" \"ダイヤ\" 最高",
+        "\"k4sen\" \"VALORANT\" \"ダイヤ到達\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "k4sen用語・知識・ネタまとめ",
+          "url": "https://note.com/another_crown/n/n53bfbf0f56c8",
+          "date": null,
+          "note": "ダイヤ到達のゲームを明確にした本人出典を確認できず、他FPS補正に採用しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "kuzuha",
+      "name": "葛葉",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "アセンダント2",
+      "period": "2023-11-14",
+      "confidence": "medium",
+      "queries": [
+        "\"葛葉\" \"VALORANT\" \"アセンダント2\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "にじさんじWiki 葛葉 ゲーム記録",
+          "url": "https://wikiwiki.jp/nijisanji/葛葉",
+          "date": "2023-11-14",
+          "note": "EP7 Act3のアセンダント2記録。現在ランクではない。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 6
+    },
+    {
+      "id": "tatsumaki-chise",
+      "name": "龍巻ちせ",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"龍巻ちせ\" \"最高ランク\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "ぶいすぽWiki 龍巻ちせゲーム関連",
+          "url": "https://wikiwiki.jp/vspo/龍巻ちせ/ゲーム関連",
+          "date": null,
+          "note": "GrandmasterはLoL。FPS上位やFPSプロの証明ではない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "konkon-aria",
+      "name": "昏昏アリア",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"昏昏アリア\" \"VALORANT\" ランク"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "Neo-Porte Wiki 昏昏アリア",
+          "url": "https://wikiwiki.jp/neo-porte/昏昏アリア",
+          "date": null,
+          "note": "VALORANTの低ランク記述を5〜6点のハイランクへ換算しない。APEX Masterを使用。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "yutapon",
+      "name": "Yutapon",
+      "category": "high",
+      "points": 6,
+      "game": "VALORANT / CS:GO / Overwatch",
+      "achievement": "Radiant / Global Elite / Top500・当時日本1位",
+      "period": "VALORANT 2020-09-21、公式紹介2021年",
+      "confidence": "high",
+      "queries": [
+        "\"Yutapon\" \"VALORANT\" ランク"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "DetonatioN FocusMe公式 Yutaponを語りたい",
+          "url": "https://note.com/dfmwin/n/nf7ba0a504d93",
+          "date": "2021",
+          "note": "所属チーム公式スタッフが3タイトルの最高帯を説明し、2020-09-21本人Radiant到達投稿を埋込。LoLプロ歴をFPSプロと換算せずハイランク7。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 7
+    },
+    {
+      "id": "rainbrain",
+      "name": "Rainbrain",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Rainbrain\" \"VALORANT\" ランク",
+        "\"Rainbrain\" \"VALORANT\" \"ダイヤ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "LoL元プロ歴やVALORANT配信の存在のみでは他FPS競技プロ/最高到達帯を証明しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "ceros",
+      "name": "Ceros",
+      "category": "high",
+      "points": 6,
+      "game": "鉄鬼 / Special Force 2",
+      "achievement": "公式全国大会優勝、後続FPSオフライン大会準優勝",
+      "period": "2010年鉄鬼決勝、2026-11-20本人回顧インタビュー",
+      "confidence": "high",
+      "queries": [
+        "\"Ceros\" \"VALORANT\" ランク ダイヤ",
+        "\"Ceros\" \"VALORANT\" \"アセンダント\"",
+        "\"Ceros\" \"鉄鬼\" 優勝"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "FISTBUMP Ceros本人インタビュー FPS時代",
+          "url": "https://fistbump-news.jp/article/2026/11/20/3231.html",
+          "date": "2026-11-20",
+          "note": "本人がZerostと2010年名古屋の公式決勝優勝、後続作のオフライン準優勝を説明。FPS競技プロ契約は確認できず7点にせず、全国優勝を最高帯相当6点で扱う。"
+        }
+      ],
+      "rejectedEvidence": [
+        {
+          "note": "LoLプロ歴はFPSプロの証拠ではない。鉄鬼全国優勝は6点相当、FPSプロ契約は未確認。"
+        }
+      ],
+      "previousPoints": 7
+    },
+    {
+      "id": "yuhi",
+      "name": "Yuhi",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"Yuhi\" \"VALORANT\" \"LoL\" ランク",
+        "\"Yuhi\" \"VALORANT\" \"イモータル\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "LJLのLoLプロ歴を他FPSプロへ換算しない。夕陽リリ（Yuhi Riri）とは別人。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "nemoh",
+      "name": "NEMOH",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"NEMOH\" \"VALORANT\" ランク",
+        "\"NEMOH\" \"VALORANT\" \"ダイヤ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "LoL活動・FPS配信だけでは上位到達帯を証明しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "shaka",
+      "name": "SHAKA",
+      "category": "pro",
+      "points": 7,
+      "game": "Alliance of Valiant Arms / Overwatch",
+      "achievement": "元競技プロ、AVA日本代表・国際大会出場",
+      "period": "2010年代の競技活動、本人回顧2024年",
+      "confidence": "high",
+      "queries": [
+        "SHAKA AVA 元プロ 公式 インタビュー"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "SHAKA本人 AVAの現役選手時代を語る",
+          "url": "https://www.youtube.com/watch?v=mcrzHRBbD4w",
+          "date": "2024",
+          "note": "本人チャンネルの現役選手時代の回顧。現在所属と混同しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "ファミ通 SHAKA対談紹介",
+          "url": "https://www.famitsu.com/news/202206/13264167.html",
+          "date": "2022-06-13",
+          "note": "取材紹介でAVA/Overwatchからの元プロ・ストリーマーへの経歴を確認。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 8
+    },
+    {
+      "id": "mother3",
+      "name": "MOTHER3",
+      "category": "high",
+      "points": 6,
+      "game": "VALORANT / Overwatch",
+      "achievement": "Radiant / 過去Grandmaster",
+      "period": "VALORANT EP2 Act1/EP3 Act2、2022-05イベント取材",
+      "confidence": "high",
+      "queries": [
+        "\"MOTHER3\" \"レディアント\" 公式",
+        "\"MOTHER3\" \"元プロ\" Overwatch",
+        "\"MOTHER3\" \"レディアント\" \"2021\""
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "ファミ通 RAGE VALORANT DAY1現地取材",
+          "url": "https://www.famitsu.com/news/202205/09260749.html",
+          "date": "2022-05-09",
+          "note": "現地取材でJasper/SurugaMonkey/MOTHER3をRadiant経験者と明記。競技プロとは断定しない。"
+        },
+        {
+          "kind": "secondary",
+          "title": "MOTHER3デバイス紹介 過去到達ランク",
+          "url": "https://johotaxi.com/mother3-devices/",
+          "date": "2024-01-26",
+          "note": "VALORANT Radiant到達のEP2 Act1/EP3 Act2を補完。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 7
+    },
+    {
+      "id": "amanogawa-neru",
+      "name": "天ノ川ねる",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"天ノ川ねる\" \"VALORANT\" ランク",
+        "\"天ノ川ねる\" \"VALORANT\" \"ダイヤ\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "note": "VALORANTフルパ参加・スト6高ランクは他FPS上位の到達根拠にならない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "yumeno-akari",
+      "name": "夢野あかり",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "イモータル3",
+      "period": "2023年Red Bull本人出演番組時点の過去到達",
+      "confidence": "high",
+      "queries": [
+        "\"夢野あかり\" \"イモータル3\""
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "Red Bull GAMEN 夢野あかり 本人出演紹介",
+          "url": "https://www.redbull.com/jp-ja/gamen-questionnaire-020",
+          "date": "2023",
+          "note": "番組主催がIronからImmortal3へ到達した実績を紹介。Radiant目標を達成扱いしない。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 6
+    },
+    {
+      "id": "shiranami-ramune",
+      "name": "白波らむね",
+      "category": "high",
+      "points": 5,
+      "game": "VALORANT",
+      "achievement": "イモータル2",
+      "period": "過去到達、正確な到達日は未確認",
+      "confidence": "medium",
+      "queries": [
+        "\"白波らむね\" \"イモータル\" 公式"
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "ぶいすぽ非公式Wiki 白波らむね VALORANT欄",
+          "url": "https://wikiwiki.jp/vspo/白波らむね",
+          "date": null,
+          "note": "VALORANT最高ランクImmortal2。本人の目標配信タイトルだけでは断定せず到達記録を採用。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 6
+    },
+    {
+      "id": "sakayori-soma",
+      "name": "酒寄颯馬",
+      "category": "high",
+      "points": 6,
+      "game": "Overwatch / CS:GO / VALORANT",
+      "achievement": "Grandmaster 約4200 / Global Elite / Immortal3",
+      "period": "デビュー前の過去実績、2024-08初配信で言及",
+      "confidence": "medium",
+      "queries": [
+        "\"酒寄颯馬\" \"イモータル3\"",
+        "\"酒寄颯馬\" \"グランドマスター\" \"CSGO\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "にじさんじWiki 酒寄颯馬 本人エピソード",
+          "url": "https://wikiwiki.jp/nijisanji/酒寄颯馬/詳しく知りたい/本人に関するエピソード",
+          "date": null,
+          "note": "OW Grandmaster/CSGO Global Eliteを最高帯7とする。VALO Immortal3だけなら6。記事が根拠として本人初配信13分頃をリンク。原映像は未視聴。"
+        },
+        {
+          "kind": "primary",
+          "title": "酒寄颯馬 本人初配信（Wiki引用元）",
+          "url": "https://youtu.be/87ElDaN_sEQ?t=777",
+          "date": "2024-08",
+          "note": "本人初配信へのリンク。今回動画のランク紹介箇所を直接視聴できていないため総合確度はmedium。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 7
+    },
+    {
+      "id": "kinako",
+      "name": "きなこ",
+      "category": "high",
+      "points": 6,
+      "game": "Overwatch",
+      "achievement": "Top500（過去）",
+      "period": "2023年第3回CRカップOW2紹介時点",
+      "confidence": "medium",
+      "queries": [
+        "\"きなこ\" \"Overwatch\" \"Top500\""
+      ],
+      "evidence": [
+        {
+          "kind": "secondary",
+          "title": "第3回CRカップOW2 参加者の過去実績",
+          "url": "https://www.esports.net/jp/news/overwatch/cr-cup-3rd-overview/",
+          "date": null,
+          "note": "最高到達実績表でkinakoをTop500枠へ掲載。元OW競技プロ枠ではない。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 7
+    },
+    {
+      "id": "stanmi",
+      "name": "スタンミじゃぱん",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"スタンミ\" \"イモータル\" 到達 動画",
+        "\"スタンミ\" \"最高ランク\" VALORANT -前世",
+        "\"スタンミ\" \"VALORANT\" \"ダイヤ達成\"",
+        "\"スタンミ\" \"VALORANT\" \"ダイヤモンド\" 最高"
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "secondary",
+          "title": "VALORANT配信者ランクまとめ",
+          "url": "https://bloomeria.jp/blog/valorant-streamer-ranks",
+          "date": null,
+          "note": "Radiantとあるが本人到達投稿・大会申告・画面への根拠を追えず、今回採用しない。LoL/スト6の同名ランクも混同しない。"
+        }
+      ],
+      "previousPoints": 0
+    },
+    {
+      "id": "jasper",
+      "name": "じゃすぱー",
+      "category": "pro",
+      "points": 7,
+      "game": "Overwatch",
+      "achievement": "元プロ、Overwatch World Cup 2017日本代表",
+      "period": "2016〜2018年頃の競技歴、主催者紹介2022-07-19",
+      "confidence": "high",
+      "queries": [
+        "じゃすぱー 元 Overwatch プロ 公式"
+      ],
+      "evidence": [
+        {
+          "kind": "primary",
+          "title": "南海電鉄/eスタジアム eスポーツキャンプ公式発表",
+          "url": "https://www.nankai.co.jp/library/company/news/pdf/220719.pdf",
+          "date": "2022-07-19",
+          "note": "ゲスト紹介でOverwatch元プロ/2017日本代表と明記。VALORANT Radiantも記載。APEXプロではなく他FPS元プロ8。"
+        }
+      ],
+      "rejectedEvidence": [],
+      "previousPoints": 8
+    },
+    {
+      "id": "kagura-mea",
+      "name": "神楽めあ",
+      "category": "none",
+      "points": 0,
+      "game": null,
+      "achievement": "配点基準に該当する他FPS実績は未確認",
+      "period": null,
+      "confidence": "unknown",
+      "queries": [
+        "\"神楽めあ\" \"VALORANT\" \"ダイヤ\" 到達",
+        "\"神楽めあ\" \"VALORANT\" \"最高ランク\""
+      ],
+      "evidence": [],
+      "rejectedEvidence": [
+        {
+          "kind": "primary",
+          "title": "FISTBUMP Riot発表 神楽めあダイヤ到達計画",
+          "url": "https://fistbump-news.jp/article/2026/05/01/2383.html",
+          "date": "2026-05-01",
+          "note": "スカーミッシュアセンションの目標企画で、コンペティティブ実到達を証明しない。"
+        }
+      ],
+      "previousPoints": 0
+    }
+  ],
+  "criteriaNote": "公式全国大会優勝はランク制度のない旧FPS/TPSで最高帯相当7。FPSプロ契約や報酬を推測して7にはしない。",
+  "pointPolicy": "other-fps-7-6-5-4 / unknown-2, user revision 2026-11-24"
+}
