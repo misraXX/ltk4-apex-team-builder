@@ -37,7 +37,7 @@ npm.cmd test
 npm.cmd run serve
 ```
 
-ローカルプレビューは `http://127.0.0.1:4178/`。GitHub Actionsは構文・編成テスト後、`site/` のみをGitHub Pagesへ公開します。PagesのBuild and deploymentをGitHub Actionsに設定してください。`main`の画面コード変更が自動公開の対象です。
+ローカルプレビューは `http://127.0.0.1:4178/`。GitHub Actionsは構文・編成・データのテストを実行します。公開対象はsite/だけを抽出したgh-pagesブランチで、GitHub Pagesのソースをgh-pagesのルートに設定します。変更をコミット後、node tools/publish.cjsで再検証して公開ブランチを更新できます。公開ビルドの完了も確認してください。
 
 `site/roster.js` と同梱人物アイコンは既存LTK4資料から抽出しました。公開活動名・LTK所属の参考データであり、APEX戦力・IGL・私的な関係性を推測していません。既存資料とsourcesは変更していません。生成元の確認情報は `docs/roster-source.json`、補助抽出スクリプトは `tools/extract-roster.cjs` です。抽出スクリプトの再実行には元の隣接BPプロジェクトが必要ですが、ツールの起動・公開には不要です。
 

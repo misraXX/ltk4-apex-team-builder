@@ -130,3 +130,30 @@ codex-meta:
 セキュリティ確認: 本人が認めた簡易ロックであり、暗号化や強固な認証は主張しない。入力した設定をサーバー・URLへ送信しない。JSONを全体検証してから確認付きで置換し、入力文字はエスケープする。公開物に検証用の主観評価や私的関係性、秘密の資格情報は含めていない。
 
 未対応: 2人の自動同期、厳密な2人限定。未実施: 実スマートフォンでの操作・APEX本番の受け入れ。実際の評価/IGL/関係性の入力は運営者が行う。変更ファイルと役割別の結果はtask-board/cycle-reportを参照。
+
+## 2026-11-24 v2：5段階・60人調査・関係性追加・注釈削除
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "completed"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "同じ公開URLで調査一覧を確認し、必要な仮評価を修正する。旧設定は画面の移行確認で扱う"
+  nextCodexAction: "運営者の修正を反映し、次の要望に対応する"
+```
+
+公開URL: https://misraxx.github.io/ltk4-apex-team-builder/
+
+主な変更: site/app.js、core.js、index.html、styles.css、research.js、ltk-relations.js、docs/public-research.json、tests/core.test.cjs、v2.test.cjs、research.test.cjs、tools/build_research.py、build_ltk_relations.py、publish.cjs、GitHub Actions、READMEと運用資料。人物画像・名簿は変更していない。
+
+内容: 5段階化と指定2名5、60人検索と出典/時期/確度、24人仮評価/36人未評価、現組織39、明示IGL1。LTK1〜4所属と675ペア（過去1〜3は370）、組織/過去同チームの候補と編成優先、組織手動編集。未指定のキャッチコピー/注釈を削除。v2別キー、確認付き換算、過去10段階保持、手動値の非上書き補完。
+
+検証: npm.cmd run check成功、npm.cmd test 38/38成功。追加独立レビューで範囲外LTKシーズンと所属不明同士の結合を修正。出典監査でSHAKAの本人Pred動画、MOTHER3卒業、RIDDLE表記を修正。未評価36人も追加検索し、別ゲーム・別人物の実績を除外。ブラウザで移行・旧履歴保持・組織/候補・実JSON・60人編成・手動保持・注釈削除・スマホ幅を確認。
+
+公開: 323d9cfのartifact経由デプロイは2回失敗（テストは成功）。a6db423で検証CI＋gh-pagesソースへ切替。公開ブランチc54b992adcfb27cdd0fad6cc146aa9b3d7ccb6cbがbuilt、CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45380348059 はsuccess。公開URLと主要資産HTTP200、公開版で指定2名5/全60人/6選択肢/エラーなしを確認した。
+
+設計整合: 最新要望を実装前に設計へ反映し、データ/保存形式の旧値を保持する確認付き移行とした。外部DB/Cloudflare/Firebaseは使わない。資料にある役割分担に従い調査3担当と独立レビュー/検証を実施した。公開前に許可したユーザー操作以外の設定をサーバーへ送信しない。公開QAでも既存ユーザーデータを上書きしていない。
+
+未対応: 自動同期・厳密な2人限定は従来どおり未対応。未評価36人は調査済みだが確証不足で、仮3として編成される。24人も過去実績に基づく仮値で現在能力の確定ではない。人間確認: 実際の5段階の妥当性、IGL/関係性の補正、ゲーム本番/実スマホ。既存sources・BPアプリ・正本・他サイトは未変更。
