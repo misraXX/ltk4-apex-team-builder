@@ -79,3 +79,7 @@ LTK名簿: 1〜4の正規選手40/40/60/60、現60人に一致27/26/48/60。共�
 実JSON: qa/v3-rank-roundtrip.jsonのYukio=Pred/内部10、Hinano=Pred/内部8、まいたけ=手動Platinum/内部5を検証。v1旧JSONの59人のattending/rating/IGL/social/friends/note・履歴teams/scoresは書出し後も一致。旧ファイルとキーは保持。スマホCSS幅355/client341/scroll341、PCclient1265/scroll1265。実機スマホとゲーム本番は未実施。
 
 残るリスク・人間確認: 過去実績は現在ランクの確定ではない。37人の未確認ランクとIGL/関係性は運営者が補正。内部点はJSON/静的コードには残り、非表示は暗号化ではない。画像の権利取得済みとは主張しない。同期・厳密アクセス制限を完了扱いにしない。
+
+### CYCLE-004 公開後確認
+
+mainコード51492e6、Pages公開ソース5f5ae874beb8c395868b2c24ba5b39b98a3b03d7 built。CI45384371220 success。公開URLのHTML v3.0.0をHTTPで確認。ブラウザで移行確認を見送り、ユーザー旧保存データを変えずに新初期値を参照。公開版60人、ランク確認23人、9選択肢、Yukio/HinanoともPred表示、画像欠損0、点数表示なし、console errorなし。証跡qa/v3-public-ranks.jpg。viewportリセット、ローカルQAタブは閉じた。追加スマホ幅390/client375/scroll375でも横はみ出しなし。TASK-018〜020完了。ゲーム本番/実機スマホ/37人ランク確認は運営者へ残す。

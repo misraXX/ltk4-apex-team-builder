@@ -176,3 +176,22 @@ TASK-015/016内部10段階/移行完了。017点数表示公開は本人変更�
 46テスト・構文・別担当diffレビュー成功。旧実JSONの59人出欠/内部点/IGL/関係性/メモ/履歴を保持し、ランクは独立付与。ブラウザで編集・書出し/読込/再読込・59人20チーム・次マッチ確定・全画面点数非表示・PC/モバイル幅・コンソールエラーなしを確認。画像は公式EA記事の切り出し、元と座標/SHAを記録。
 
 未対応: 自動同期/厳密アクセス制限。37人のランク不明・古い到達実績の補正、実ゲームと実機スマホは人間確認。公開完了とCI結果は次の追記を正とする。sources/既存アプリ/他サイトは未変更。
+
+## 2026-11-24 ランク表示版 公開完了
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "completed"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "旧設定があれば移行確認。37人の未確認ランク・IGL・関係性を運営用に補正"
+  nextCodexAction: "運営者の補正と追加要望に対応"
+```
+
+TASK-015/016/018/019/020完了。TASK-017点数表示公開は本人変更で保留。変更ファイル・実装・46件検証は上記公開前記録とCYCLE-004を参照。最新の設計に整合し、点数の画面表示は全廃、編成内部値は保持。過去到達ランク23人、未確認37人。
+
+mainコード51492e69bb79b74d60d69e271e22ebe53158d22b、Pagesソース5f5ae874beb8c395868b2c24ba5b39b98a3b03d7がbuilt。CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45384371220 success。公開 https://misraxx.github.io/ltk4-apex-team-builder/ の60人・23ランク・9選択肢・Yukio/HinanoのPred・全ランク画像欠損0・点数表示なし・コンソールエラーなしをブラウザ確認。公開QAは旧設定を上書きせず移行見送りで参照した。
+
+未対応: 自動同期/厳密な2人限定。未実施: 実ゲーム/実機スマホ。次の人間確認: 古い到達実績・ランク不明37人・IGL/知り合い条件の補正。同期・認証基盤の追加や、相手への直接連絡は行っていない。証跡qa/v3-public-ranks.jpg。
