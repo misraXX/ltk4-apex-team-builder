@@ -125,3 +125,9 @@ mainコード51492e6、Pages公開ソース5f5ae874beb8c395868b2c24ba5b39b98a3b0
 実JSON：qa/v5-fps-on.json/OFF.json/final-roundtrip.json。移行ONでJasper他FPS7/不明2、OFFで旧JasperAPEX6を保持。全60人の非rank項目・旧historyがv4ファイルと完全一致。新旧2履歴markerで新点と旧点を保持。手動FPS4→Platinum5を保存、60人20チームの合計誤差0、他FPSバッジ9、画像欠損0。モバイル390/client375/scroll375、選択欄196px、console errorなし。
 
 人間確認・未実施：全映像/現在能力/実ゲーム/実機スマホ。未確認28は実績なしの断定ではなく確認不能の基準2。同期/厳密制限は未対応のまま。本人の最終指示で旧未公開8〜5/未知3案は採用しない。
+
+### CYCLE-006 公開後確認
+
+mainコード37d4fd65a2d19df8885d2b59c367165ddaba2e30、Pages公開ソースdc1d5f3db8ed8f01a59d28f040a156474668ded1 built。CI45390901702、Pages45390923993 success。公開ブラウザでv5.0、移行確認の未確認2と反映選択を確認後、移行を見送って旧保存を保持。60名/根拠32/未確認28/他FPS採用9と14選択肢を確認。他FPS元プロ7/最高帯6/マスター相当5/ダイヤ相当4・未確認2、APEX元プロ10/Pred8を確認。FENNEL絞り込みでmittiii他FPS元プロ7と表示画像3件の読込、console errorなし。全件検索へ戻し納品タブ保持、ローカルQAタブ終了。証跡qa/v5-public-fps-points.jpg。全件表示の未読込画像は画面外lazy loadingが含まれるため欠損とは扱っていない。
+
+TASK-025〜028完了。現在能力/原映像全件/実ゲーム/実機スマホは未実施、未確認28人とIGL/関係性は運営者が必要に応じ補正。同期・厳密なアクセス制限は未対応のまま。

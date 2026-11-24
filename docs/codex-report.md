@@ -252,3 +252,22 @@ TASK-025〜027実装・検証済み、028公開待ち。全60名145照会、他F
 変更：site/core/app/index/styles/research、tools/build_research、tests3件、FPS資料3JSON、README/package/AGENTS/運用docs。APEX記録を別保持し、一般FPSアイコン・詳細出典・チーム合計に反映。56テスト・別担当レビュー・ブラウザ/実JSON比較成功。旧履歴・全60非rank項目不変、移行ON/OFF、旧未知5と新2・合計・手動保存・PC/モバイルを確認。
 
 残る確認：未確認28の手動補正、現在能力/原映像全件/実機/本番。Soma等は二次記録でmedium。自動同期/厳密アクセス制限は未対応、Cloudflare/DB/認証/相手への連絡は追加なし。公開結果は後続追記。
+
+## 2026-11-24 v5 公開完了
+
+```yaml
+codex-meta:
+  projectId: "ltk4-apex-team-builder"
+  status: "completed"
+  humanCheckNeeded: true
+  designUpdateNeeded: false
+  blocked: false
+  nextHumanAction: "旧設定は移行確認。未確認28人と当日の設定を必要に応じて補正"
+  nextCodexAction: "追加情報・改善要望に対応"
+```
+
+TASK-025〜028完了。最終配点は他FPS元プロ7/最高帯6/マスター相当5/ダイヤ相当4・実績未確認2。APEX側の配点と旧確定履歴は維持。全60名の他FPS実績を調査し、9名の初期区分へ採用、全根拠32名/未確認28名。変更ファイル・設計整合・56テスト・旧データ保持・UI/JSON/モバイル検証は直前記録とCYCLE-006に記載。
+
+公開URL https://misraxx.github.io/ltk4-apex-team-builder/ 。mainコード37d4fd65a2d19df8885d2b59c367165ddaba2e30、Pagesソースdc1d5f3db8ed8f01a59d28f040a156474668ded1 built。CI https://github.com/misraXX/ltk4-apex-team-builder/actions/runs/45390901702 とPages45390923993 success。公開ブラウザでv5、60名/根拠32/未確認28/14選択肢/他FPS9名と最終配点を確認。移行見送りで旧保存は上書きせず、表示画像とconsole errorなし。証跡qa/v5-public-fps-points.jpg。
+
+未対応: 同期・厳密な2人限定。未実施: 現在能力・全原映像・実ゲーム・実機スマホ。人間確認: 旧設定の移行と未確認28名/IGL/関係性・当日設定の補正。sources/他アプリ/認証・DB基盤/相手への連絡は変更なし。
